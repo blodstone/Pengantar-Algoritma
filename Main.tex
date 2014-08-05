@@ -1,0 +1,118 @@
+\documentclass[a4paper]{tufte-book}
+\newcounter{ccounter}
+\newcounter{clatihan}
+\newcounter{clisting}
+\renewcommand\theccounter{\arabic{ccounter}}
+\renewcommand\theclatihan{\arabic{clatihan}}
+\renewcommand\theclisting{\arabic{clisting}}
+\usepackage{soul,color}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{placeins}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{makeidx}
+\usepackage{mathtools}
+\usepackage{bookmark}
+%\usepackage{letterspace}
+%\renewcommand\allcapsspacing[1]{{\addfontfeature{LetterSpace=15}#1}}
+%\renewcommand\smallcapsspacing[1]{{\addfontfeature{LetterSpace=10}#1}}
+\lstset{
+	language=[Visual]C++,
+	keywordstyle=\bfseries\ttfamily\color[rgb]{0,0,1},
+	identifierstyle=\ttfamily,
+	commentstyle=\color[rgb]{0.133,0.545,0.133},
+	stringstyle=\ttfamily\color[rgb]{0.627,0.126,0.941},
+	showstringspaces=false,
+	basicstyle=\small,
+	numberstyle=\footnotesize,
+	numbers=left,
+	stepnumber=1,
+	numbersep=10pt,
+	tabsize=2,
+	breaklines=true,
+	prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+	breakatwhitespace=false,
+	aboveskip={1.5\baselineskip},
+  columns=fixed,
+  extendedchars=true,
+	frame=single,
+% backgroundcolor=\color{lbcolor},
+}
+\author{Hardy Huang \& Harrison}
+\title{Pengantar Algoritma}
+\publisher{Teknik Informatika -- STMIK Mikroskil}
+\newenvironment{myindentpar}[1]%
+{
+	\begin{list}{}%
+  {
+  	\setlength{\leftmargin}{#1}}%
+    \item[]%
+	}
+{\end{list}}
+
+\newenvironment{contoh}{
+	\refstepcounter{ccounter}
+	\begin{myindentpar}{1cm}
+	\textbf{\underline{Contoh \arabic{ccounter}}}
+}{	
+	\end{myindentpar}
+}
+
+\newenvironment{latihan}{
+	\refstepcounter{clatihan}
+	\begin{myindentpar}{1cm}
+	\textbf{\underline{Latihan \arabic{clatihan}}}	
+}{	
+	\end{myindentpar}
+}
+
+\newenvironment{konsep}{
+	\begin{latihan}
+	\small\textbf{(Konsep)}
+}{
+	\end{latihan}
+}
+
+\newenvironment{pemrograman}{
+	\begin{latihan}
+	\small\textbf{(Pemrograman)}
+}{
+	\end{latihan}
+}
+
+\newenvironment{proyek}{
+	\begin{latihan}
+	\small\textbf{(Kelompok)}
+}{
+	\end{latihan}
+}
+
+\newenvironment{listprog}[1]{
+	\refstepcounter{clisting}
+	\begin{myindentpar}{1cm}
+	\textbf{\underline{Listing \arabic{clisting}} {#1}}
+	
+}{
+	\end{myindentpar}
+}
+\makeindex
+\begin{document}
+
+\maketitle
+%\tableofcontents
+%\renewcommand{\chaptername}{Modul}
+\renewcommand{\figurename}{Gambar}
+\floatname{algorithm}{Algoritma}
+%\include{test}
+\include{ch_pengantarAlgoritma}
+\include{ch_keputusan}
+\include{ch_pengurutan}
+\include{ch_fungsi}
+\include{ch_permasalahanMatematis}
+\include{ch_kompleksitas}
+\include{ch_divideAndConguer}
+%\include{ch_dynamicProgramming}
+%\include{ch_modul6}
+
+\end{document}

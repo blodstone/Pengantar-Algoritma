@@ -1,0 +1,81 @@
+\chapter{Teknik \textit{Pencarian}}\label{ch:modul4}
+
+\section{Permasalahan Pencarian Minimum dan Maksimum}
+Diberikan sebuah rangkaian bilangan, bagaimana cara paling cepat untuk mencari bilangan terbesar dan terkecil dari rangkaian tersebut? 
+
+Untuk menyelesaikan masalah tersebut, ada beberapa pendekatan. Pendekatan yang naif adalah dengan melakukan \textit{looping} dari awal rangkaian sampai akhir rangkaian yang diperlihatkan di Algoritma \ref{algo:minmaxnaif}. Sedangkan untuk pendekatan \textit{Divide and Conguer} bisa dilihat di Algoritma \ref{algo:minmaxdac}.
+
+\begin{algorithm}[H]
+	\caption{MIN-MAX-NAIF($A$)}
+	\label{algo:minmaxnaif}
+	\begin{algorithmic}[1]
+		\STATE $min = A[1]$
+		\STATE $max = A[1]$
+		\FOR{$i=2$ \TO $A.length$}
+			\IF{$A[i] < min$}
+				\STATE $min = A[i]$
+			\ENDIF
+			\IF{$A[i] > max$}
+				\STATE $max = A[i]$
+			\ENDIF
+		\ENDFOR
+		\RETURN $min,max$
+	\end{algorithmic}
+\end{algorithm}
+
+Algoritma \ref{algo:minmaxnaif} memiliki jumlah komparasi sebanyak $2n-2$. Akan tetapi dengan menggunakan strategi \textit{divide and conquer} jumlah komparasi yang dilakukan bisa dikecilkan menjadi $(3n/2)-2$. Ini mungkin tidak signifikan, walaupun demikian untuk kasus lain strategi \textit{divide and conguer} bisa mengurangi jumlah instruksi secara drastis. 
+
+Algoritma \ref{algo:minmaxdac} menggunakan strategi \textit{divide and conquer} untuk mencari nilai minimum dan maksimum dari rangkaian angka. Prinsipnya adalah dengan membagi rangkaian angka tersebut menjadi dua bagian yaitu $A[1..n/2]$ dan $A[(n/2)+2..n]$, mencari minimum dan maksimum di kedua bagian tersebut, dan terakhir mengambil minimum terkecil dari maksimum terbesar dari kedua bagian tersebut.
+
+\begin{algorithm}[H]
+	\caption{MIN-MAX-DAC($A$,$low$,$high$)}
+	\label{algo:minmaxdac}
+	\begin{algorithmic}[1]
+		\IF{$high - low = 1$}
+			\IF{$A[low] < A[high]$}
+				\RETURN ($A[low]$,$A[high]$)
+			\ELSE
+				\RETURN ($A[high]$,$A[low]$)
+			\ENDIF
+		\ELSE
+			\STATE $mid = \left\lfloor (low+high)/2\right\rfloor$
+			\STATE $x_1,y_1$ = MIN-MAX-DAC($A$,$low$,$mid$)
+			\STATE $x_2,y_2$ = MIN-MAX-DAC($A$,$mid+1$,$high$)
+			\IF{$x_1 < x_2$}
+				\STATE $x = x_1$
+			\ELSE
+				\STATE $x = x_2$
+			\ENDIF
+			\IF{$y_1 < y_2$}
+				\STATE $y = y_1$
+			\ELSE
+				\STATE $y = y_2$
+			\ENDIF  
+			\RETURN $(x,y)$
+		\ENDIF
+	\end{algorithmic}
+\end{algorithm}
+
+
+
+\section{\textit{Binary Search}}
+
+\textit{Binary Search} merupakan metode pencarian elemen di suatu rangkaian tertentu dengan menggunakan strategi \textit{divide and conquer}. Worst case \textit{binary search} adalah $O(log n)$ dimana jumlah komparasi terbanyak yang dilakukan adalah sebanyak $\left\lfloor log n \right\rfloor + 1$ untuk $n$ input.
+
+\begin{algorithm}[H]
+	\caption{BINARY-SEARCH($A,low,high,x$)}
+	\begin{algorithmic}[1]
+		\IF{$low > high$}
+			\RETURN 0
+		\ELSE
+			\STATE $mid = \left\lfloor(low+high)/2)\right\rfloor$
+			\IF{$x==A[mid]$}
+				\RETURN $mid$
+			\ELSIF{$x<A[mid]$}
+				\RETURN BINARY-SEARCH($A,low,mid-1,x$) 
+			\ELSE
+				\RETURN BINARY-SEARCH($A,mid+1,high,x$)
+			\ENDIF
+		\ENDIF
+	\end{algorithmic}
+\end{algorithm}

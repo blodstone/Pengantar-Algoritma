@@ -1,0 +1,140 @@
+\documentclass[a4paper,11pt]{report}
+\newcounter{ccounter}
+\newcounter{clatihan}
+\newcounter{clisting}
+\newcounter{cpanduan}
+\newcounter{cIDLE}
+\newcounter{cIDE}
+\newcounter{cpermasalahan}
+\renewcommand\theccounter{\arabic{section}.\arabic{ccounter}}
+\renewcommand\theccounter{\arabic{cpanduan}}
+\renewcommand\theclatihan{\arabic{clatihan}}
+\renewcommand\theclisting{\arabic{clisting}}
+\renewcommand\thecIDLE{\arabic{cIDLE}}
+\renewcommand\thecIDE{\arabic{cIDE}}
+\usepackage{soul,color}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{placeins}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{amsmath}
+%\usepackage{appendix}
+
+\lstset{
+	keywordstyle=\bfseries\ttfamily\color[rgb]{0,0,1},
+	identifierstyle=\ttfamily,
+	commentstyle=\color[rgb]{0.133,0.545,0.133},
+	stringstyle=\ttfamily\color[rgb]{0.627,0.126,0.941},
+	showstringspaces=false,
+	basicstyle=\small,
+	numberstyle=\footnotesize,
+	numbers=left,
+	stepnumber=1,
+	numbersep=10pt,
+	tabsize=1,
+	breaklines=true,
+	prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+	breakatwhitespace=false,
+	aboveskip={1.5\baselineskip},
+  columns=fixed,
+  extendedchars=true,
+	frame=single,
+% backgroundcolor=\color{lbcolor},
+}
+\author{Hardy Huang}
+\title{Workshop Python}
+\newenvironment{myindentpar}[1]%
+{
+	\begin{list}{}%
+  {
+  	\setlength{\leftmargin}{#1}}%
+    \item[]%
+	}
+{\end{list}}
+
+\newenvironment{panduan}[1]{
+	\refstepcounter{cpanduan}
+	\begin{myindentpar}{0cm}
+	\textbf{\underline{Panduan \arabic{cpanduan}: {#1}}}
+}{	
+	\end{myindentpar}
+}
+
+\newenvironment{permasalahan}[1]{
+	\refstepcounter{cpermasalahan}
+	\begin{myindentpar}{0cm}
+	\textbf{\underline{Permasalahan \arabic{cpermasalahan}: {#1}}}
+}{	
+	\end{myindentpar}
+}
+
+\newenvironment{IDLE}{
+	\refstepcounter{cIDLE}
+	\begin{myindentpar}{0cm}
+	\textbf{\underline{IDLE \arabic{cIDLE}}}
+}{	
+	\end{myindentpar}
+}
+
+\newenvironment{IDE}{
+	\refstepcounter{cIDE}
+	\begin{myindentpar}{0cm}
+	\textbf{\underline{PyScripter \arabic{ccounter}}}
+}{	
+	\end{myindentpar}
+}
+
+\newenvironment{latihan}{
+	\refstepcounter{clatihan}
+	\begin{myindentpar}{0cm}
+	\textbf{\underline{Latihan \arabic{clatihan}}}	
+}{	
+	\end{myindentpar}
+}
+
+\newenvironment{latihan-mudah}{
+	\begin{latihan}
+	\small\textbf{(Individu)}
+}{
+	\end{latihan}
+}
+
+\newenvironment{latihan-susah}{
+	\begin{latihan}
+	\small\textbf{(Kelompok)}
+}{
+	\end{latihan}
+}
+
+\newenvironment{listprog}[1]{
+	\refstepcounter{clisting}
+	\begin{myindentpar}{1cm}
+	\textbf{\underline{Listing \arabic{clisting}} {#1}}
+	
+}{
+	\end{myindentpar}
+}
+
+\begin{document}
+%\maketitle
+\renewcommand\contentsname{Daftar Isi}
+\tableofcontents \clearpage
+%\listofplates \clearpage
+
+\renewcommand{\chaptername}{Modul}
+\renewcommand{\figurename}{Gambar}
+\floatname{algorithm}{Algoritma}
+\include{ch_modul1}
+\include{ch_modul2}
+\include{ch_modul3}
+\include{ch_modul4}
+\include{ch_modul5}
+\include{ch_modul6}
+\include{ch_modul7}
+\include{ch_modul8}
+\include{ch_modul9}
+%\appendix
+%\include{ch_app1}
+\end{document}

@@ -40,7 +40,7 @@ Sebelum kita membahas lebih lanjut mengenai algoritma, alangkah baiknya kita men
 	\item Anda diminta untuk menyusun voucher-voucher berikut ini menjadi terurut, sehingga pihak panitia akan mudah melakukan tracking terhadap voucher yang sudah masuk.  
 	
 	
-\begin{center} \Large
+\begin{center} \large
   \begin{tabular}[h!]{| c | c | c | c | c | c | c | c | c | c | }
 	\hline
     10 & 3 & 8 & 5 & 9 & 2 & 1 &  7 & 4 & 6 \\
@@ -50,7 +50,7 @@ Sebelum kita membahas lebih lanjut mengenai algoritma, alangkah baiknya kita men
 
 
 	\item Anda diminta untuk mencari apakah NIM 141112020 merupakan peserta ujian ? 
-		\newpage \Large
+		\large
 			\begin{center}
 				\begin{tabular}[h!]{| c | c |}
 				\hline
@@ -69,8 +69,6 @@ Sebelum kita membahas lebih lanjut mengenai algoritma, alangkah baiknya kita men
 		\end{center}
 		
 	\item Anda diminta melakukan output pejabat dengan kekayaan tertinggi !
-	
-		\Large
 			\begin{center}
 				\begin{tabular}[h!]{| c | r |}
 				\hline
@@ -81,7 +79,7 @@ Sebelum kita membahas lebih lanjut mengenai algoritma, alangkah baiknya kita men
 				KJ & 19,549,185,718 \\ \hline
 				WKJ & 19,527,418,194 \\ \hline
 				SP & 19,553,481,751 \\ \hline
-				RH & 19,248,572,728 \\ \hline
+				RH & 19,248,572,728 \\ 
 				\hline
 				\end{tabular}
 		\end{center}
@@ -161,7 +159,39 @@ Terdapat banyak bahasa pemrograman dalam Teknik Informatika, kita dapat memilih 
 Pada mata kuliah ini, kita akan menggunakan bahasa pemrogrman Python. Perlu diingat bahwa, kita bukan mempelajari bahasa pemrograman Python, namun menggunakan Python sebagai alat untuk membantu kita mempelajari penyelesaian masalah melalui pembuatan algoritma dalam bahasa pemrograman.
 Tentunya sebagai bahasa pemrograman pertama yang dipelajari, kita perlu tahu bagaimana menginstalasi Python, menggunakan Python dan menjalankan algoritma pertama kita dengan menggunakan Python. Latihan pada bab ini dapat dikerjakan untuk membantu pemahaman penggunaan Python sebelum masuk ke pemahaman algoritma lebih lanjut. 
 
-\chapter{Pengenalan II : Konsep dasar algoritma dan pemrograman}\label{ch:pengantarAlgoritma}
+\newpage
+\section{Latihan : Pengenalan I}
+
+\begin{pemrograman}
+Lakukan langkah-langkah berikut :
+\begin{enumerate}
+	\item Unduh Python di \url{http://python.org/download/} atau pada E-learning Mikroskil.
+	\item Pilihlah python versi 2.7.x yang sesuai dengan OS yang dipakai (Windows 32-bit---Python 3.3.0 Windows Installer, dan Windows 64-bit---Python 3.3.0 Windows Installer). Untuk Linux, python sudah secara \textit{default} terinstall (versi python tergantung dari distro linux yang digunakan).
+	\item Install Python Installer yang sudah diunduh.
+	\item Buka IDE IDLE Python yang terinstall bersama Python	%\item Unduh IDE \textit{Integrated Development Environment} Python yang bernama PyScripter di \url{http://code.google.com/p/pyscripter}.
+	%\item Install PyScripter.	
+	\item Verifikasi Instalasi Python dengan mengetikkan print(``Hello World``) dan jalankan melalui IDE.
+	\item Verifikasi Instalasi Python dengan mengetikkan print(``Hello World``) dan jalankan melalui Command Prompt.
+	\item Verifikasi Instalasi Python dengan mengetikkan Listing \ref{lst:swapSimple} dan jalankan melalui IDE \& Command Prompt.
+		\begin{listprog}{swap.py}
+		\label{lst:swapSimple}
+		\begin{lstlisting}[language=Python]
+			A = 5
+			B = 4
+			A = A + B
+			B = A - B
+			A = A - B
+			print(A)
+			print(B)
+		\end{lstlisting}
+\end{listprog}
+\end{enumerate}
+\end{pemrograman}
+
+
+
+\newpage
+\chapter{Pengenalan II : Konsep dasar algoritma dan pemrograman}\label{ch:pengantarAlgoritma2}
 
 %\section{Konsep dasar algoritma dan pemrograman}
 
@@ -274,49 +304,60 @@ Pada algoritma, operator berfungsi untuk menghubungkan satu atau lebih variabel 
 \begin{itemize}
 
 	\item \textbf{Operator Aritmatika}
-			\newpage \Large
+			\large
 			\begin{center}
-				\begin{tabular}[h!]{| c | c |}
+				\begin{tabular}[h!]{| c | c | c |}
 				\hline
-				\multicolumn{2}{|c|}{\textit{Operator Aritmatika}} \\
+				\multicolumn{3}{|c|}{\textit{Operator Aritmatika}} \\
 				\hline	
 				\textit{Operasi} & \textit{Simbol} & \textit{Python} \\ \hline
-				Penambahan & \+ & \\ \hline
-				Pengurangan & \- & \\ \hline
-				Perkalian & \* & \\ \hline
-				Pembagian & \: & \\ \hline
-				Perpangkatan & \^ & \\ \hline
-				Hasil Sisa Bagi & \% & \\ \hline
+				Penambahan & + & + \\ \hline
+				Pengurangan & - & - \\ \hline
+				Perkalian & x & * \\ \hline
+				Pembagian & / & / dan // \\ \hline
+				Perpangkatan & \^{}  & ** \\ \hline
+				Hasil Sisa Bagi & \% & \% \\
 				\hline
 				\end{tabular}
 		\end{center}
-		
-	
-	
-	\begin{figure}[h!]
-	\centering
-	\includegraphics[scale=0.5]{fig/1/Gambar18.png}	
-	\end{figure}	
+			
 
 	\item \textbf{Operator Logika}
-	\begin{figure}[h!]
-	\centering
-	\includegraphics[scale=0.5]{fig/1/Gambar19.png}	
-	\end{figure}	
+			\large
+			\begin{center}
+				\begin{tabular}[h!]{| c | c | c |}
+				\hline
+				\multicolumn{3}{|c|}{\textit{Operator Aritmatika}} \\
+				\hline	
+				\textit{Operasi} & \textit{Simbol} & \textit{Python} \\ \hline
+				Dan & $\&\&$ & AND \\ \hline
+				Atau & $\|$ & OR \\ \hline
+				Bukan & $!$ & NOT \\ 
+				\hline
+				\end{tabular}
+		\end{center}
+
 	
-
 	\item \textbf{Operator Perbandingan}
-	\begin{figure}[h!]
-	\centering
-	\includegraphics[scale=0.5]{fig/1/Gambar20.png}	
-	\end{figure}		
+			\large
+			\begin{center}
+				\begin{tabular}[h!]{| c | c | c |}
+				\hline
+				\multicolumn{3}{|c|}{\textit{Operator Aritmatika}} \\
+				\hline	
+				\textit{Operasi} & \textit{Simbol} & \textit{Python} \\ \hline
+				Sama Dengan & $=$ & == \\ \hline
+				Tidak Sama Dengan & $\neq$ & != \\ \hline
+				Lebih Besar & $\geq,>$ & $>=,>$ \\ \hline
+				Lebih Kecil & $\leq,<$ & $<=,<$ \\
+				\hline
+				\end{tabular}
+		\end{center}
 \end{itemize}
-
 
  Sama seperti pada matematika dimana pada sebuah perhitungan, operator kali akan dijalankan terlebih dahulu dibanding penambahan dan pengurangan karena memiliki kekuatan operator yang lebih tinggi. 
 	\begin{figure}[h!]
-	\centering
-	\includegraphics[scale=0.5]{fig/1/Gambar21.png}	
+	\includegraphics[scale=0.45]{fig/1/Gambar21.png}	
 	\end{figure}	
 Anda boleh mengabaikan operator-operator yang belum diketahui diatas, cukup mengetahui urutan kekuatan operator-operator dasar terlebih dahulu.	
 
@@ -450,17 +491,6 @@ Contoh implementasi Algoritma \ref{algo:bubble} ke bahasa pemrograman (Python) b
 	%$A.length \rightarrow$ Menandakan besar/panjang dari array $A$.
 %\end{contoh}
 
-\begin{pemrograman}
-Lakukan langkah-langkah berikut di rumah:
-\begin{enumerate}
-	\item Unduh Python di \url{http://python.org/download/}.
-	\item Pilihlah python versi 2.7.x yang sesuai dengan OS yang dipakai (Windows 32-bit---Python 2.7.3 Windows Installer, dan Windows 64-bit---Python 2.7.3 Windows Installer). Untuk Linux, python sudah secara \textit{default} terinstall (versi python tergantung dari distro linux yang digunakan).
-	\item Install Python Installer yang sudah diunduh.
-	\item Unduh IDE \textit{Integrated Development Environment} Python yang bernama PyScripter di \url{http://code.google.com/p/pyscripter}.
-	\item Install PyScripter.
-	\item Ketikkan Listing \ref{lst:bubbleSortSimple} dan jalankan.
-\end{enumerate}
-\end{pemrograman}
 
 \begin{pemrograman}
 Untuk melakukan latihan pemrograman algoritma dan Python di rumah, SPOJ merupakan website yang sangat berguna. SPOJ merupakan sebuah website \textit{Online Judge} dimana kita bisa melihat permasalahan-permasalahan yang menarik, menyelesaikan permasalahan tersebut dan meng-\textit{submit} solusinya ke SPOJ untuk di-\textit{judge}. SPOJ akan menentukan apakah solusi kita tepat atau salah. Diharapakan agar mahasiswa bisa menyelesaikan permasalahan SPOJ sebanyak mungkin untuk meningkatkan kemampuan pemrograman. Berikut langkah-langkah yang harus dilakukan di rumah.

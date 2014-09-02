@@ -3,17 +3,25 @@
 %
 - Pengantar
 - Permasalahan
-
+- Algoritma
+- Peran Pemrograman Pada ALgoritma
+- Konsep Algorima dan Pemrograman Dasar
 /// PENGAYAAN
 - Kontes
 %
 
 \section{Pengantar}
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.3]{fig/1/Gambar1.png}	
+\end{figure}
+
 Teknologi Informasi semakin berkembang pesat setiap saat, hal tersebut bisa dilihat dari munculnya perangkat-perangkat keras seperti \textit{smart phone}, PC, \textit{notebook} dan gadget lainnya. Perangkat-perangkat tersebut tidak berguna tanpa adanya berbagai perangkat lunak (aplikasi) yang berjalan di dalamnya. Perangkat-perangkat lunak tersebut terdiri dari berbagai jenis, antara lain: Sistem Operasi yang merupakan fondasi dari aplikasi-aplikasi lain yang berjalan di atasnya serta perangkat lunak perkantoran seperti \textit{text processor} atau \textit{spreadsheet}, kalender, reminder, penghemat baterai, penghapus berkas tidak berguna dan lain-lain. 
  
 Kita sebagai pengguna terkadang hanya mengunduh aplikasi tersebut dari Internet dan menggunakannya tanpa berpikir, bagaimana sebenarnya aplikasi itu dibangun oleh pengembangnya. Sebagai mahasiswa Teknik Informatika, tentunya kita harus tahu lebih banyak daripada seorang pengguna awam. 
 
-Jika dilihat dari sudut pandang tertentu, sebuah aplikasi pada dasarnya dibuat untuk menyelesaikan masalah. Kita ambil sebuah contoh misalnya, sebuah program \textit{spreadsheet} yang sudah sering kita gunakan yaitu Microsoft Excel. Program ini dapat menyelesaikan banyak masalah mulai dari masalah perhitungan sederhana, logika, statistik, sampai pada pembuatan laporan keuangan yang kompleks. Contoh lain adalah aplikasi permainan yaitu: Poker. Apakah ada masalah yang diselesaikan oleh aplikasi Poker? Ternyata, walaupun aplikasi Poker hanya merupakan aplikasi permainan, akan tetapi dibalik aplikasi tersebut banyak masalah-masalah yang harus diselesaikan agar dapat dinikmati seperti misalnya: proses pengacakan kartu, pembagian kartu, pengecekan kemenangan kartu, serta bagaimana agar pihak komputer (AI) lebih mahir bermain daripada \textit{player}. Poker tentu tidak akan menyenangkan jika ternyata pada pembagian kartu, terdapat kartu yang berulang, proses pembagian kartu yang tidak acak/berulang-ulang, dan pembayaran hadiah kemenangan yang salah. Kesimpulannya, untuk mengembangkan sebuah aplikasi yang bagus diperlukan banyak proses pemecahan masalah didalam aplikasi tersebut.
+Jika dilihat dari sudut pandang tertentu, sebuah aplikasi pada dasarnya dibuat untuk menyelesaikan masalah. Kita ambil sebuah contoh misalnya, sebuah aplikasi \textit{spreadsheet} yang sudah sering kita gunakan yaitu \textit{Microsoft Excel}. Aplikasi ini dapat menyelesaikan banyak masalah mulai dari masalah perhitungan sederhana, logika, statistik, sampai pada pembuatan laporan keuangan yang kompleks. Contoh lain adalah aplikasi permainan yaitu: Poker. Apakah ada masalah yang diselesaikan oleh aplikasi permainan Poker? Ternyata, walaupun aplikasi Poker hanya merupakan aplikasi permainan, akan tetapi dibalik aplikasi tersebut banyak masalah-masalah yang harus diselesaikan agar dapat dinikmati seperti misalnya: proses pengacakan kartu, pembagian kartu, pengecekan kemenangan kartu, serta bagaimana agar pihak komputer (AI) lebih mahir bermain daripada \textit{player}. Poker tentu tidak akan menyenangkan jika ternyata pada pembagian kartu, terdapat kartu yang berulang, proses pembagian kartu yang tidak acak/berulang-ulang, dan pembayaran hadiah kemenangan yang salah. Kesimpulannya, untuk mengembangkan sebuah aplikasi yang bagus diperlukan banyak proses pemecahan masalah didalam aplikasi tersebut.
 
 Dari narasi di atas, muncul pertanyaan seperti:
 \begin{enumerate}
@@ -21,14 +29,57 @@ Dari narasi di atas, muncul pertanyaan seperti:
 	\item Apakah ada sebuah entitas cerdas di dalamnya yang menyelesaikan masalah dan beradaptasi pada setiap permintaan-permintaan pengguna?
 \end{enumerate}
   
-Jawaban dari pertanyaan tersebut berkaitan dengan bagian dari perangkat lunak yaitu algoritma. Kita ambil contoh, misalnya pada program Microsoft Excel, proses penggunaan rumus-rumus memiliki algoritmanya sendiri, proses membuatan laporan memiliki algoritmanya sendiri dan seterusnya. Demikian juga pada aplikasi permainan Poker, proses pengacakan memiliki algoritmanya sendiri, proses pengecekan kemenangan memiliki algoritmanya sendiri dan seterusnya. Sampai disini kita tahu bahwa, sebuah perangkat lunak selain menyelesaikan banyak masalah juga terdiri dari banyak algoritma (jika masalah yang diselesaikan semakin banyak) dan algoritma adalah sesuatu yang digunakan untuk menyelesaikan masalah.
+Jawaban dari pertanyaan tersebut berkaitan dengan bagian dari perangkat lunak yaitu algoritma. Kita ambil contoh, misalnya pada program \textit{Microsoft Excel}, proses penggunaan rumus-rumus memiliki algoritmanya sendiri, proses membuatan laporan memiliki algoritmanya sendiri dan seterusnya. Demikian juga pada aplikasi permainan Poker, proses pengacakan memiliki algoritmanya sendiri, proses pengecekan kemenangan memiliki algoritmanya sendiri dan seterusnya. Sampai disini kita tahu bahwa, sebuah perangkat lunak selain menyelesaikan banyak masalah juga terdiri dari banyak algoritma (jika masalah yang diselesaikan semakin banyak) dan algoritma adalah sesuatu yang digunakan untuk menyelesaikan masalah.
 
-\section{Apa itu algoritma?}
-\newthought{Algoritma} merupakan sebuah rangkaian proses komputasional yang mengkonversi satu atau beberapa masukan (\textit{input}) menjadi satu set keluaran (\textit{output}) jika memungkinkan. \marginnote[-1cm]{Sebuah algoritma juga bisa dilihat sebagai sebuah \textbf{alat} (\textit{tool}) untuk menyelesaikan sebuah \textbf{permasalahan komputasional} tertentu}
+
+
+\section{Masalah}
+Sebelum kita membahas lebih lanjut mengenai algoritma, alangkah baiknya kita menelaah mengenai masalah terlebih dahulu. Jika sebelumnya diceritakan mengenai masalah dari sisi perangkat lunak, pada bab ini kita akan melihat masalah pada kehidupan sehari -hari. Coba perhatikan berbagai masalah kehidupan sehari-hari  berikut ini  :
+\begin{enumerate}
+	\item Anda diminta untuk menyusun voucher-voucher berikut ini menjadi terurut, sehingga pihak panitia akan mudah melakukan tracking terhadap voucher yang sudah masuk.  
+	\begin{figure}
+	\centering
+	\includegraphics[scale=0.3]{fig/1/Gambar2.png}	
+	\end{figure}
+	%%%%%%
+\newpage
+	\item Anda diminta untuk mencari apakah NIM 141112020 merupakan peserta ujian ? 
+	\begin{figure}
+	\centering
+	\includegraphics[scale=0.4]{fig/1/Gambar3.png}	
+	\end{figure}
+	%%%%%%
+	\item Anda diminta melakukan output pejabat dengan kekayaan tertinggi !
+	\begin{figure}
+	\centering
+	\includegraphics[scale=0.4]{fig/1/Gambar4.png}	
+	\end{figure}	
+\end{enumerate}
+Dapatkah Anda memberikan solusi untuk masalah - masalah diatas ?  
+
+\section{Algoritma}	
+Sepintas melihat pada masalah-masalah diatas, secara manusiawi kita dapat dengan mudah atau bahkan luar kepala menemukan solusi untuk masalah-masalah diatas.  Tetapi jika jumlah masalah lebih besar atau rumit, kita akan merasakan bahwa sebenarnya kita berpikir keras dan tampak melakukan langkah-langkah dalam menyelesaikan masalah tersebut disadari atau tidak. Pada akhirnya, kita akan  proses berpikir atau langkah-langkah yang kita lakukan akan berhenti ketika kita sudah menemukan solusi. Proses berpikir atau langkah-langkah kita dalam menyelesaikan masalah inilah yang disebut dengan \textbf{ALGORITMA}. 
 
 Kata algoritma sendiri berasal dari nama seorang matematikawan Persia (sekarang Iraq) yaitu Abu Ja`far Mohammed ibn Musa al-Khowarizmi. Al-Khowarizmi sendiri sekarang merupakan sebuah kota Rusia yang bernama Khiva. Dari Al-Khowarizmi diturunkan namanya menjadi Algoritma. 
 
-\section{Kenapa harus belajar Algoritma?}
+Dari sisi ilmu komputer, Algoritma merupakan sebuah rangkaian proses komputasional yang mengkonversi satu atau beberapa masukan (\textit{input}) menjadi satu set keluaran (\textit{output}) jika memungkinkan. \marginnote[-1cm]{Sebuah algoritma juga bisa dilihat sebagai sebuah \textbf{alat} (\textit{tool}) untuk menyelesaikan sebuah \textbf{permasalahan komputasional} tertentu}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.5]{fig/1/Gambar8.png}	
+\end{figure}
+
+Salah satu contoh lain yang mewakili algoritma adalah masalah Rubik Cube, jika sebuah Rubik Cube yang belum terselesaikan adalah sebuah masalah dan sebuah Rubik Cube yang sudah selesai adalah solusinya. Maka langkah-langkah penyelesaian yang dilakukan dari masalah menjadi solusi adalah algoritmanya. 
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.5]{fig/1/Gambar9.png}	
+\end{figure}
+
+Perlu diingat, algoritma yang baik adalah algoritma yang terurut dan efektif.  Perhatikan kasus  dimana kita akan memindahkan isi dari gelas A ke gelas B dengan bantuan gelas kosong C, dapatkah Anda menentukan masalah awal, solusi, dan algoritmanya yang efektif ? Bagaimana jika Anda tidak menjalankan algoritmanya tanpa terurut ? 
+
+
+\subsection{Kenapa harus belajar Algoritma?}
 Secara singkat, kita mempelajari algoritma supaya kita bisa menyelesaikan permasalahan-permasalahan komputasional secara \textbf{effisien}\sidenote{Effisien berarti algoritma tersebut memakan waktu dan sumber daya komputasional (mis: memori komputer) yang sedikit}.  
 
 Secara lebih spesifik, tujuan mempelajari algoritma adalah sebagai berikut.
@@ -39,6 +90,12 @@ Secara lebih spesifik, tujuan mempelajari algoritma adalah sebagai berikut.
 
 Sebagai contoh betapa pentingnya algoritma, kita anggap saja ada dua jenis komputer yang berbeda: A dan B. Komputer A adalah komputer yang sangat cepat dan mampu memproses data sebanyak 10 milyar instruksi dalam 1 detik sedangkan komputer B adalah komputer biasa yang hanya mampu memproses data sebanyak 10 juta instruksi dalam 1 detik. Dengan kata lain, komputer A lebih cepat 1000 kali dari komputer B.
 
+\marginnote{Tidak semua permasalahan komputasional bisa diselesaikan secara efisien. Permasalahan yang susah (\textit{Hard Problem}) atau disebut juga permasalahan \textit{NP-complete} masih belum ditemukan algoritma penyelesaian yang effisien.}
+Dari contoh sederhana di atas kita bisa menarik kesimpulan bahwa algoritma yang baik bisa mengalahkan algoritma yang buruk sekalipun dijalankan di kondisi yang sangat jelek seandainya masukkannya sangat besar sekali. 
+\marginnote{\begin{konsep}
+Seandainya ada dua jenis algoritma pengurutan, yaitu: \textit{Insertion Sort} dan \textit{Merge Sort}. \textit{Insertion Sort} memerlukan $8n^2$ langkah sedangkan \textit{Merge Sort} memerlukan $64n \lg n$ untuk masukan $n$. Berapakah nilai $n$ dimana \textit{Insertion Sort} mengalahkan \textit{Merge Sort}?
+\end{konsep}
+}
 Sekarang kita misalkan masing-masing komputer tersebut akan mengurut 10 juta bilangan. Komputer A akan menggunakan algoritma pengurutan X sedangkan komputer B akan menggunakan algoritma pengurutan Y. Algoritma X secara teori tingkat effisiensinya adalah $c_1n^2$ (berarti misalnya untuk setiap 5 bilangan yang diurut, algoritma tersebut memakan waktu $c_15^2 = c_125$ detik, $c_1$ adalah sebuah konstanta yang tergantung pada penerapannya) sedangkan algoritma Y tingkat effisiensinya adalah $c_2n\lg n$. 
 
 Untuk mendramatisir lagi, kita anggap saja algoritma X ditulis oleh programmer yang sangat handal dengan menggunakan bahasa mesin yang sangat effisien sehingga penerapannnya mempunyai tingkat effisiensi $2n^2$ sedangkan algoritma Y ditulis oleh programmer biasa-biasa saja dengan menggunakan bahasa pemrograman yang tidak effisien sehingga penerapannya mempunyai tingkat effisiensi $50n\lg n$.
@@ -54,16 +111,141 @@ Sedangkan komputer B akan memakan waktu:
 $\frac{50\cdot10^7lg10^7\ instruksi}{10^{7}\ instruksi/detik} \approx 1163\ detik\ (kurang\ dari\ 20\ menit)$
 \hspace*{\fill}\\\hspace*{\fill}\\
 
-\marginnote{Tidak semua permasalahan komputasional bisa diselesaikan secara effisien. Permasalahan yang susah (\textit{Hard Problem}) atau disebut juga permasalahan \textit{NP-complete} masih belum ditemukan algoritma penyelesaian yang effisien.}
-Dari contoh sederhana di atas kita bisa menarik kesimpulan bahwa algoritma yang baik bisa mengalahkan algoritma yang buruk sekalipun dijalankan di kondisi yang sangat jelek seandainya masukkannya sangat besar sekali. 
-\marginnote{\begin{konsep}
-Seandainya ada dua jenis algoritma pengurutan, yaitu: \textit{Insertion Sort} dan \textit{Merge Sort}. \textit{Insertion Sort} memerlukan $8n^2$ langkah sedangkan \textit{Merge Sort} memerlukan $64n \lg n$ untuk masukan $n$. Berapakah nilai $n$ dimana \textit{Insertion Sort} mengalahkan \textit{Merge Sort}?
-\end{konsep}
-}
+\section{Peran Pemrograman pada Algoritma}
+
+Perhatikan salah satu masalah pengurutan voucher yang sudah kita selesaikan sebelumnya. Anggaplah S merupakan himpunan masalah yang akan kita selesaikan dan n merupakan besar / ruang masalah yang akan diselesaikan. Dengan S dan n yang kecil, masalah akan cukup mudah diselesaikan oleh manusia dan dengan cepat. Voucher memiliki $S = \left\langle1,2,3,4,5,6,7,8,9,10\right\rangle$ acak dimana n = 10.
+
+Tetapi bagaimana dengan S yang merupakan himpunan angka acak dari 1 sampai 10.000 $S = \left\langle1,2, ..., 10000\right\rangle$, tentunya dimana n = 10.000 angka. Masalah ini juga bisa diselesaikan oleh manusia, tetapi akan membutuhkan waktu. Dengan perkembangan teknologi saat ini, masalah dengan ruang yang besar dapat diselesaikan oleh kekuatan komputasional (Komputer). Algoritma dapat diterjemahkan menjadi bahasa komputer untuk membantu menyelesaikan masalah. Algoritma dapat diterjemahkan menjadi bahasa komputer melalui pemrograman oleh seorang programmer.  Disinilah hubungannya antara pemrograman dengan algoritma. 
+
+
+\subsection{Bahasa Pemrograman}
+Terdapat banyak bahasa pemrograman dalam Teknik Informatika, kita dapat memilih salah satu yang paling kita sukai dan sesuai dengan tujuan untuk mengakomodasi kita dalam menyelesaikan masalah. Bedasarkan “kemanusiawian”, bahasa pemrograman dikategorikan menjadi dua jenis : 
+\begin{enumerate}
+	\item \textbf{Low-Level Programming Language}, merupakan bahasa pemrograman yang lebih dekat dengan bahasa mesin. Bahasa pemrograman ini masih berupa instruksi-instruksi yang terkadang tidak memiliki arti dengan bahasa manusia normalnya.Contoh Low-Level Programming Language misalnya : Assembly, OPCODE
+	\item \textbf{High-Level Programming Language}, merupakan bahasa-bahasa pemrograman yang dibangun diatas Low-Level Programming Language, namun memiliki bahasa yang lebih masuk akal dan lebih bisa dimengerti karena mengikuti kaidah-kaidah bahasa yang ada. Contoh High-Level Programming Language misalnya	Pascal, Ada, Cobol, Basic, Fortran, C, C++, Python
+	\end{enumerate}
+
+Pada mata kuliah ini, kita akan menggunakan bahasa pemrogrman Python. Perlu diingat bahwa, kita bukan mempelajari bahasa pemrograman Python, namun menggunakan Python sebagai alat untuk membantu kita mempelajari penyelesaian masalah melalui pembuatan algoritma dalam bahasa pemrograman.
+Tentunya sebagai bahasa pemrograman pertama yang dipelajari, kita perlu tahu bagaimana menginstalasi Python, menggunakan Python dan menjalankan algoritma pertama kita dengan menggunakan Python. Latihan pada bab ini dapat dikerjakan untuk membantu pemahaman penggunaan Python sebelum masuk ke pemahaman algoritma lebih lanjut. 
+
+\section{Konsep dasar algoritma dan pemrograman}
+
+\subsection{Struktur Dasar Algoritma}
+Pada bab sebelumnya, kita mengetahui bahwa Program merupakan kumpulan dari algoritma-algoritma. Algoritma sendiri di dalamnya juga merupakan kumpulan dari struktur-struktur dasar pembangun algoritma. Terdapat tiga jenis utama struktur algoritma yaitu : 
+
+\begin{enumerate}
+	\item \textbf{Sequence  (Runtunan)},merupakan struktur algoritma paling dasar yang berisi rangkaian instruksi yang diproses secara sekuensial, satu per satu, mulai dari instruksi pertama sampai instruksi terakhir. Salah satu contoh Sequence(runtunan) ada pada contoh bab sebelumnya yaitu algoritma memindahkan isi dari kedua gelas. 
+	\begin{figure}
+	\centering
+	\includegraphics[scale=0.4]{fig/1/Gambar13.png}	
+	\end{figure}
+	
+	\item \textbf{Selection / Branching (Pemilihan / Percabangan)},) merupakan struktur algoritma yang akan digunakan dimana jika terdapat alternatif/pilihan beberapa sequence(runtunan) yang akan dijalankan jika memenuhi syarat tertentu. Percabangan dapat diibaratkan sebagai persimpangan jalan yang harus dipilih, jika kita memilih sebuah jalan dari persimpangan tersebut sudah pasti kita tidak akan menjalani yang lainnya. Salah satu contoh percabangan dapat dilihat pada contoh “Algoritma Memilih Tempat Pembuangan” berikut ini :  
+		\begin{figure}
+		\centering
+		\includegraphics[scale=0.4]{fig/1/Gambar14.png}	
+		\end{figure}
+		
+	\item \textbf{Repetition / Looping (Pengulangan)}, merupakan struktur algoritma yang akan digunakan dimana jika terdapat pengulangan terhadap satu pernyataan atau sequence (runtunan) tertentu. Beberapa contoh nyata penggunaan pengulangan misalnya pada saat harus melakukan penelusuran angka-angka voucher dari awal sampai akhir. Contoh lain yang lebih dekat dengan dunia nyata misalnya adalah algoritma “pembagian permen” berikut ini :
+		\begin{figure}
+		\centering
+		\includegraphics[scale=0.4]{fig/1/Gambar15.png}	
+		\end{figure}
+\end{enumerate}
+
+Percabangan dan Perulangan akan dibahas lebih lanjut pada pertemuan 3 ke atas. Perlu diperhatikan bahwa masing-masing dari struktur dasar ini tidak berdiri sendiri dan terpisah. Pada kasus pembuatan algoritma sebenarnya, struktur dasar ini akan saling dipasangkan satu sama lain. Beberapa kasus dari penggabungan struktur dasar ini adalah sebagai berikut : 
+\begin{itemize}
+	\item Perulangan bersarang
+	\item	Percabangan bersarang
+	\item	Percabangan dalam Percabangan 
+	\item	Repetition dalam Percabangan 
+	\item	Percabangan dalam Perulangan 
+	\item	Perulangan dalam Selection
+	\item	Perulangan dalam Perulangan dengan Selection
+	\item	Berbagai kombinasi lainnya
+\end{itemize}
+
+
+\subsection{Tipe Data}
+	Dalam mengubah masalah sehari-hari menjadi algoritma, kemudian dari algoritma menjadi bahasa program, kita harus melakukan proses penyederhanaan informasi-informasi dari masalah tersebut. Misalnya, ada masalah menukar isi dalam gelas, kita memerlukan sesuatu yang dapat merepresentasikan / mewakili informasi isi dari gelas seperti sirup atau air  ke dalam algoritma atau bahasa program. Dari sini kita memiliki beberapa alternatif, apakah kita akan mewakilinya dengan kata atau dengan nilai. Dari sinilah muncul konsep tipe-data dalam algoritma. Pada pengenalan akan dikenalkan dahulu beberapa tipe data dasar, kemudian seiring dengan perkembangan mata kuliah, tipe data baru dan yang lebih muktahir akan diperkenalkan. 
+Beberapa tipe data dasar yang umum pada algoritma adalah sebagai berikut : 
+\begin{itemize}
+	\item Bilangan Bulat: Integer, Long
+	\item	Bilangan Riil: Float
+	\item	Logika : Boolean
+	\item	Karakter  : Char
+	\item	Kumpulan Karakter : String 
+\end{itemize}
+Secara umum, tipe data-tipe data inilah yang digunakan untuk mewakiliki kasus-kasus dunia nyata yang akan diterjemahkan menjadi algoritma kemudian menjadi bahasa program. 	
+
+
+\subsection{Variabel}
+
+Variabel merupakan tempat penyimpanan data. 
+
+Sebagai wadah untuk merepresentasikan dunia nyata pada algoritma, tipe data sendiri tidak cukup. Dengan adanya tipe data saja, maka dalam merepresentasikan masalah kita hanya terbatas pada pembentukan KONSTANTA saja. Misal : “Sirup”, “86.6”, “151”.  Padahal pada kasusnya, informasi-informasi pada masalah sehari-sehari memiliki nilai yang mungkin berubah-ubah. Maka, algoritma juga harus menyediakan wadah untuk menangani hal ini,  disinilah peran VARIABEL dibutuhkan. 
+	VARIABEL pada algoritma digunakan untuk menampung nilai dengan tipe data tertentu. Variabel dimaksudkan untuk menyimpan informasi berupa nilai yang dapat secara dinamis berubah, diberi nilainya ataupun dibaca kembali pada saat dibutuhkan. Jika “Sirup” merupakan sebuah nilai dengan tipe data String, dan kita dapat menampungnya dalam sebuah variabel yang bernama GelasA. Yang kita tahu pada kasusnya nanti GelasA akan berubah nilainya ketika ditukar dengan isi dari GelasB.
+\begin{contoh}
+	\textbf{Penggunaan variabel}\\
+	$a = 5 \rightarrow$ Memasukkan nilai 5 ke variabel `$a$'.\\
+	$b = 7 \rightarrow$ Memasukkan nilai 7 ke variabel `$b$'.\\
+	$a = b \rightarrow$ Memasukkan nilai variabel `$b$' ke variabel `$a$'. Kedua variabel sekarang bernilai 7.\\
+	$a = b = 9 \rightarrow$ Memasukkan nilai 9 ke variabel `$a$' dan `$b$'.\\
+\end{contoh}
+
+Beberapa peraturan dalam penggunaan variabel adalah sebagai berikut : 
+\begin{itemize}
+	\item Penamaan variabel sebaiknya eksplisit sesuai dengan tujuan dari pembuatan variabel tersebut. 			  Misalnya : \textit{GelasA} daripada \textit{A}, \textit{GelasB} daripada \textit{B}
+	\item	Penamaan variabel tidak boleh melibatkan spasi !  Misalnya : \textit{Gelas A} dan \textit{Gelas B} adalah salah, sedangkan \textit{GelasA} dan \textit{Gelas\underline{ }B} benar
+	\item	Penamaan variabel sebaiknya dimulai dengan huruf. Misalnya : \textit{123Panjang} adalah salah. \textit{Panjang123} adalah benar. 
+	\item	Pada bahasa pemrograman tertentu, penamaan variabel biasanya case-sensitive. Misalnya : \textit{nama} berbeda dengan \textit{Nama} berbeda dengan \textit{NAMA} berbeda dengan \textit{namA}
+	\item	Penamaan variabel jangan bertabrakan dengan reserved-word pada bahasa pemrograman tertentu !
+\end{itemize}
+Beberapa hal yang akan sering kita lakukan pada pembuatan variabel di algoritma adalah deklarasi dan assignment. Proses inisialisasi awal variabel yang melibatkan pemberian tipe data disebut deklarasi. Proses pemberian nilai pada variabel disebut assigment 
+
+\marginnote[-4cm]{
+\begin{konsep}
+Jika terdapat 4 variabel, yaitu: a, b, c, dan d dengan nilai a = 1, b = 2, c = 3, dan d =  4. Tuliskan sebuah algoritma untuk menukarkan isi variabel tersebut sehingga nilainya menjadi b = 1, c = 2, d = 3, dan a = 4. Usahakan agar pertukarannya minimum.
+\end{konsep}}
+
+\subsection{Variabel dan Tipe Data Pada Python}
+Khusus pada bahasa pemrograman Python, tidak ada deklarasi variabel yang dilibatkan. Pembuatan variabel pada python pada umumnya langsung dibuat melalui proses assignment. Setelah proses assignment, Python akan langsung menyesuaikan tipe data   pada variabel tersebut. Hal ini disebabkan karena Python adalah \textit{dynamically-typed language}. (Istilah optional : Perlu diingat kita bukan mempelajari Python, tetapi Pengantar Algoritma !)
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.5]{fig/1/Gambar16.png}	
+		\end{figure}
+
+\begin{figure}
+		\centering
+		\includegraphics[scale=0.5]{fig/1/Gambar16a.png}	
+		\end{figure}
+
+Perlu diingat juga, peraturan penggunaan variabel sama seperti sub-bab sebelumnya.  Dengan tambahan daftar reserved-words adalah sebagai berikut : 
+		\begin{figure}
+		\centering
+		\includegraphics[scale=0.4]{fig/1/Gambar17.png}	
+		\end{figure}
+
+
+\newpage	
+\subsection{Operator}
+Pada algoritma, operator berfungsi untuk menghubungkan satu atau lebih variabel sehingga menghasilkan nilai baru. Operator memiliki prioritas eksekusi. 
+
+	\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.35]{fig/1/Gambar21.png}	
+	\end{figure}	
+Sama seperti pada matematika dimana pada sebuah perhitungan, operator kali akan dijalankan terlebih dahulu dibanding penambahan dan pengurangan karena memiliki kekuatan operator yang lebih tinggi. 
 
 \section{Mendefinisikan Permasalahan}
 Untuk setiap permasalahan komputasional, ada cara untuk mendefinisikannya. Definisi dibutuhkan untuk menyelesaikan permasalahan tersebut. Definisi dari sebuah permasalahan komputasional bisa dari sangat sederhana seperti di Contoh \ref{cth:pengurutan} sampai ke definisi yang sangat kompleks seperti contohnya permasalahan identifikasi DNA manusia di \textit{Human Genome Project} yang memerlukan algoritma yang sangat kompleks.
 
+Sampai bab ini, kita sudah memiliki pengetahuan yang cukup untuk membuat salah struktur algoritma dasar yaitu sequence(runtunan).  Kembali lagi perlu diingatkan bahwa algoritma dibuat untuk menyelesaikan masalah. Ketika bertemu masalah, agar cara berpikir kita rapi dan efektif, maka alangkah baiknya mengikuti “rule of thumb” berikut ini : 
+\begin{enumerate}
+	\item Apa masukkan dari masalah ini ? Ini berhubungan dengan bentuk awal dari  masalah. Pertanyaan-pertanyaan ini selanjutnya boleh diperluas dengan memikirkan, berapa variabel yang dibutuhkan di awal? tipe variabel apa saja yang dibutuhkan  di awal ?
+	\item Apa keluaran dari masalah ini ? Kapan algoritma akan berhenti ? Apakah algoritma cukup berhenti jika semua proses sudah dijalankan ?  Jika sudah berhenti variabel apa yang akan saya tampilkan kepada pengguna ? Atau bentuk output apa yang akan saya tampilkan kepada pengguna ?  Apakah 
+	\item Terakhir, apa proses(algoritma inti) dari masalah ini ? Apakah saya cukup menggunakan runtunan ? Apakah perlu struktur dasar lainnya (Pertemuan berikut !) ? Operator-operator apa saja yang perlu saya gunakan. Perlukah ada variabel-variabel pembantu lainnya ?
+\end{enumerate}
 Berikut adalah definisi dari permasalahan pengurutan.
 \begin{contoh}
 \label{cth:pengurutan}
@@ -77,7 +259,7 @@ Misalnya $A = \left\langle 31,41,59,26,41,58 \right\rangle$
 Permutasi dari \textit{array} angka A $\left\langle a_{1},a_{2},\ldots,a_{n}\right\rangle$ dengan kondisi $\acute{a_{1}} \leq\ \acute{a_{2}} \leq \acute{a_{3}} \ldots \leq \acute{a_{n}}$ \\
 Misalnya $A = \left\langle 26,31,41,41,58,59 \right\rangle$
 \end{contoh}
-
+Berikut adalah definisi dari permasalahan Pencarian Bilangan Prima.
 \begin{contoh}
 \label{cth:prima}
 \textbf{Permasalahan Pencarian Bilangan Prima}\\
@@ -89,7 +271,7 @@ Misalnya $n = 10$\\
 Satu set (himpunan elemen yang tidak memiliki duplikat) bilangan $A$ yang terdiri dari bilangan $2$ sampai bilangan $n$ dimana setiap bilangan hanya memiliki dua pembagi saja yaitu $1$ dan bilangan itu sendiri.\\
 Misalnya $A = \left\langle 2,3,5,7 \right\rangle$\\
 \end{contoh}
-
+Berikut adalah definisi dari permasalahan Penyebrangan Jembatan.
 \begin{contoh}
 \textbf{Permasalahan Penyebrangan Jembatan}\\
 Ada empat orang yang berusaha menyebrangi sebuah jembatan di malam hari. Karena gelap, mereka membutuhkan sebuah obor untuk menyebrangi jembatan tersebut. Masalahnya adalah obor hanya ada satu dan jembatan tersebut hanya bisa disebrangi oleh dua orang dalam satu waktu yang bersamaan. Setiap orang memiliki waktu yang berbeda ketika menyebrangi jembatan tersebut. Orang pertama memakan waktu 1 menit, orang kedua 2 menit, orang ketiga 5 menit, dan orang keempat 10 menit. 
@@ -102,7 +284,7 @@ Sebuah bilangan $z$ dimana bilangan tersebut merupakan waktu minimal yang diperl
 Misalnya $z = 17$\\
 \end{contoh}
 
-\subsection{Pseudocode}
+\subsection{Pseudocode sebagai Notasi Algoritma}
 Untuk setiap soal dari contoh-contoh sebelumnya bisa tersedia berbagai macam algoritma yang berbeda untuk menyelesaikannya. Salah satu contoh sederhana dari Contoh \ref{cth:pengurutan} adalah Algoritma \ref{algo:bubble} yang disebut juga dengan nama \textit{Bubble Sort}. 
 
 Algoritma \ref{algo:bubble} ditulis dengan menggunakan pseudocode\sidenote{Pseudocode merupakan sebuah \textit{tool} untuk menuliskan algoritma. Pseudocode bukan merupakan bahasa pemrograman dan tidak bisa dieksekusi.}. Tujuan penggunaan pseudocode adalah agar tidak terikat terhadap bahasa pemrograman tertentu dan bisa lebih fokus ke algoritma saja.
@@ -135,8 +317,8 @@ Asumsikan sebuah algoritma menyelesaikan sebuah permasalahan X yang memerlukan $
 \end{figure}
 \end{konsep}
 
-\subsection{Flow Chart}
-Selain dengan menggunakan pseudocode, bisa juga menggunakan \textit{flow chart} untuk mengvisualisasikan sebuah algoritma. Bentuk dari \textit{flow chart} untuk algoritma \ref{algo:bubble} bisa dilihat di gambar \ref{fig:flowchart}.
+\subsection{Flow Chart sebagai Notasi Algoritma}
+Selain dengan menggunakan pseudocode, bisa juga menggunakan \textit{flow chart} untuk memvisualisasikan sebuah algoritma. Bentuk dari \textit{flow chart} untuk algoritma \ref{algo:bubble} bisa dilihat di gambar \ref{fig:flowchart}.
 
 \begin{marginfigure}%
 \includegraphics[scale=0.6]{fig/flowchart.eps}%
@@ -163,43 +345,26 @@ Contoh implementasi Algoritma \ref{algo:bubble} ke bahasa pemrograman (Python) b
 	\end{lstlisting}
 \end{listprog}
 
-\section{Konsep dasar algoritma dan pemrograman}
-
-\subsection{Variabel}
-
-Variabel merupakan tempat penyimpanan data. 
-\begin{contoh}
-	\textbf{Penggunaan variabel}\\
-	$a = 5 \rightarrow$ Memasukkan nilai 5 ke variabel `$a$'.\\
-	$b = 7 \rightarrow$ Memasukkan nilai 7 ke variabel `$b$'.\\
-	$a = b \rightarrow$ Memasukkan nilai variabel `$b$' ke variabel `$a$'. Kedua variabel sekarang bernilai 7.\\
-	$a = b = 9 \rightarrow$ Memasukkan nilai 9 ke variabel `$a$' dan `$b$'.\\
-\end{contoh}
-\marginnote[-4cm]{
-\begin{konsep}
-Jika terdapat 4 variabel, yaitu: a, b, c, dan d dengan nilai a = 1, b = 2, c = 3, dan d =  4. Tuliskan sebuah algoritma untuk menukarkan isi variabel tersebut sehingga nilainya menjadi b = 1, c = 2, d = 3, dan a = 4. Usahakan agar pertukarannya minimum.
-\end{konsep}}
-
-
-\FloatBarrier
-\subsection{Array}
-Array\sidenote{Di bahasa pemrograman Python, implementasi dari Array disebut sebagai List.} merupakan kumpulan dari variabel. Satu array bisa menampung beberapa data. Gambar \ref{fig:illustrasiArray} menunjukkan illustrasi dari sebuah array yang berkapasitas $j$.
-\begin{center}
-	\begin{figure}[htbp]%
-		\includegraphics[scale=0.4]{fig/Array.eps}%
-		\caption{Illustrasi Array}%
-		\label{fig:illustrasiArray}%
-	\end{figure}
-\end{center}
-\begin{contoh}
-	\textbf{Penggunaan array}\\
-	$A[i] \rightarrow$ Mengakses lokasi ke $i$ dari array yang bernama $A$.\\
-	$A[4] \rightarrow$ Mengakses lokasi ke $4$ dari array yang bernama $A$.\\
-	$A[i..j] \rightarrow$ Menandakan kumpulan isi array $A$ yang terdiri dari elemen $A[1],\ A[2],\ A[3],\ \ldots,\ A[j]$.\\
-	$A[4] = 5 \rightarrow$ Memasukkan nilai 5 ke lokasi ke 4 dari array $A$.\\
-	$b = A[4] \rightarrow$ Memasukkan nilai lokasi ke 4 dari array $A$ ke variabel $b$. 
-	$A.length \rightarrow$ Menandakan besar/panjang dari array $A$.
-\end{contoh}
+		
+%\FloatBarrier
+%\subsection{Array}
+%Array\sidenote{Di bahasa pemrograman Python, implementasi dari Array disebut sebagai List.} merupakan kumpulan dari variabel. Satu array bisa menampung beberapa data. Gambar \ref{fig:illustrasiArray} menunjukkan illustrasi dari sebuah array yang berkapasitas $j$.
+%\begin{center}
+	%\begin{figure}[htbp]%
+		%\includegraphics[scale=0.4]{fig/Array.eps}%
+		%\caption{Illustrasi Array}%
+		%\label{fig:illustrasiArray}%
+	%\end{figure}
+%\end{center}
+%\begin{contoh}
+	%\textbf{Penggunaan array}\\
+	%$A[i] \rightarrow$ Mengakses lokasi ke $i$ dari array yang bernama $A$.\\
+	%$A[4] \rightarrow$ Mengakses lokasi ke $4$ dari array yang bernama $A$.\\
+	%$A[i..j] \rightarrow$ Menandakan kumpulan isi array $A$ yang terdiri dari elemen $A[1],\ A[2],\ A[3],\ \ldots,\ A[j]$.\\
+	%$A[4] = 5 \rightarrow$ Memasukkan nilai 5 ke lokasi ke 4 dari array $A$.\\
+	%$b = A[4] \rightarrow$ Memasukkan nilai lokasi ke 4 dari array $A$ ke variabel $b$. 
+	%$A.length \rightarrow$ Menandakan besar/panjang dari array $A$.
+%\end{contoh}
 
 \begin{pemrograman}
 Lakukan langkah-langkah berikut di rumah:

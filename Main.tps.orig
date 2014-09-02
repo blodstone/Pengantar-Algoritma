@@ -11,14 +11,26 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
+<<<<<<< HEAD
 NormalPos.right=1120
 NormalPos.bottom=455
+=======
+NormalPos.right=1077
+NormalPos.bottom=411
+>>>>>>> d5829ee7750ede837dc798391b5f36c6d356c90a
 Class=LaTeXView
 Document=ch_pengantarAlgoritma.tex
 
 [Frame0_View0,0]
+<<<<<<< HEAD
 TopLine=78
 Cursor=166
+
+[SessionInfo]
+FrameCount=1
+=======
+TopLine=466
+Cursor=27561
 
 [Frame1]
 Flags=0
@@ -40,6 +52,7 @@ Cursor=2682
 
 [SessionInfo]
 FrameCount=2
+>>>>>>> d5829ee7750ede837dc798391b5f36c6d356c90a
 ActiveFrame=0
 
 [Bookmarks]

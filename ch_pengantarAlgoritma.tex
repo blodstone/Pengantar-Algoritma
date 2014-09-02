@@ -1,4 +1,4 @@
-\chapter{Pengenalan}\label{ch:pengantarAlgoritma}
+\chapter{Pengenalan I : Algoritma}\label{ch:pengantarAlgoritma}
 
 %
 - Pengantar
@@ -34,27 +34,60 @@ Jawaban dari pertanyaan tersebut berkaitan dengan bagian dari perangkat lunak ya
 
 
 \section{Masalah}
-Sebelum kita membahas lebih lanjut mengenai algoritma, alangkah baiknya kita menelaah mengenai masalah terlebih dahulu. Jika sebelumnya diceritakan mengenai masalah dari sisi perangkat lunak, pada bab ini kita akan melihat masalah pada kehidupan sehari -hari. Coba perhatikan berbagai masalah kehidupan sehari-hari  berikut ini  :
+Sebelum kita membahas lebih lanjut mengenai algoritma, alangkah baiknya kita menelaah mengenai masalah terlebih dahulu. Jika sebelumnya diceritakan mengenai masalah dari sisi perangkat lunak, pada bab ini kita akan melihat masalah pada kehidupan sehari -hari. Coba perhatikan berbagai masalah kehidupan sehari-hari berikut ini:
+
 \begin{enumerate}
 	\item Anda diminta untuk menyusun voucher-voucher berikut ini menjadi terurut, sehingga pihak panitia akan mudah melakukan tracking terhadap voucher yang sudah masuk.  
-	\begin{figure}
-	\centering
-	\includegraphics[scale=0.3]{fig/1/Gambar2.png}	
-	\end{figure}
-	%%%%%%
-\newpage
+	
+	
+\begin{center} \Large
+  \begin{tabular}[h!]{| c | c | c | c | c | c | c | c | c | c | }
+	\hline
+    10 & 3 & 8 & 5 & 9 & 2 & 1 &  7 & 4 & 6 \\
+	\hline
+  \end{tabular}
+\end{center}
+
+
 	\item Anda diminta untuk mencari apakah NIM 141112020 merupakan peserta ujian ? 
-	\begin{figure}
-	\centering
-	\includegraphics[scale=0.4]{fig/1/Gambar3.png}	
-	\end{figure}
-	%%%%%%
+		\newpage \Large
+			\begin{center}
+				\begin{tabular}[h!]{| c | c |}
+				\hline
+				\multicolumn{2}{|c|}{\textit{PESERTA UJIAN}} \\
+				\hline	
+				\textit{NIM} & \textit{Nama} \\ \hline
+				141110001 & Amir \\ \hline
+				141110003 & Budi \\ \hline
+				141111111 & Charlie \\ \hline
+				141112130 & Dodi \\ \hline
+				141113020 & Elsa \\ \hline
+				141119191 & Fanny \\ \hline
+				141113121 & Gloria \\ 
+				\hline
+				\end{tabular}
+		\end{center}
+		
 	\item Anda diminta melakukan output pejabat dengan kekayaan tertinggi !
-	\begin{figure}
-	\centering
-	\includegraphics[scale=0.4]{fig/1/Gambar4.png}	
-	\end{figure}	
+	
+		\Large
+			\begin{center}
+				\begin{tabular}[h!]{| c | r |}
+				\hline
+				\multicolumn{2}{|c|}{\textit{HARTA PEJABAT}} \\
+				\hline	
+				\textit{Nama Pejabat } & \textit{Jumlah Kekayaan} \\ \hline
+				YBS & 19,582,918,419 \\ \hline
+				KJ & 19,549,185,718 \\ \hline
+				WKJ & 19,527,418,194 \\ \hline
+				SP & 19,553,481,751 \\ \hline
+				RH & 19,248,572,728 \\ \hline
+				\hline
+				\end{tabular}
+		\end{center}
+		
 \end{enumerate}
+
 Dapatkah Anda memberikan solusi untuk masalah - masalah diatas ?  
 
 \section{Algoritma}	
@@ -128,9 +161,11 @@ Terdapat banyak bahasa pemrograman dalam Teknik Informatika, kita dapat memilih 
 Pada mata kuliah ini, kita akan menggunakan bahasa pemrogrman Python. Perlu diingat bahwa, kita bukan mempelajari bahasa pemrograman Python, namun menggunakan Python sebagai alat untuk membantu kita mempelajari penyelesaian masalah melalui pembuatan algoritma dalam bahasa pemrograman.
 Tentunya sebagai bahasa pemrograman pertama yang dipelajari, kita perlu tahu bagaimana menginstalasi Python, menggunakan Python dan menjalankan algoritma pertama kita dengan menggunakan Python. Latihan pada bab ini dapat dikerjakan untuk membantu pemahaman penggunaan Python sebelum masuk ke pemahaman algoritma lebih lanjut. 
 
-\section{Konsep dasar algoritma dan pemrograman}
+\chapter{Pengenalan II : Konsep dasar algoritma dan pemrograman}\label{ch:pengantarAlgoritma}
 
-\subsection{Struktur Dasar Algoritma}
+%\section{Konsep dasar algoritma dan pemrograman}
+
+\section{Struktur Dasar Algoritma}
 Pada bab sebelumnya, kita mengetahui bahwa Program merupakan kumpulan dari algoritma-algoritma. Algoritma sendiri di dalamnya juga merupakan kumpulan dari struktur-struktur dasar pembangun algoritma. Terdapat tiga jenis utama struktur algoritma yaitu : 
 
 \begin{enumerate}
@@ -166,7 +201,8 @@ Percabangan dan Perulangan akan dibahas lebih lanjut pada pertemuan 3 ke atas. P
 \end{itemize}
 
 
-\subsection{Tipe Data}
+%\subsection{Tipe Data}
+\section{Tipe Data}
 	Dalam mengubah masalah sehari-hari menjadi algoritma, kemudian dari algoritma menjadi bahasa program, kita harus melakukan proses penyederhanaan informasi-informasi dari masalah tersebut. Misalnya, ada masalah menukar isi dalam gelas, kita memerlukan sesuatu yang dapat merepresentasikan / mewakili informasi isi dari gelas seperti sirup atau air  ke dalam algoritma atau bahasa program. Dari sini kita memiliki beberapa alternatif, apakah kita akan mewakilinya dengan kata atau dengan nilai. Dari sinilah muncul konsep tipe-data dalam algoritma. Pada pengenalan akan dikenalkan dahulu beberapa tipe data dasar, kemudian seiring dengan perkembangan mata kuliah, tipe data baru dan yang lebih muktahir akan diperkenalkan. 
 Beberapa tipe data dasar yang umum pada algoritma adalah sebagai berikut : 
 \begin{itemize}
@@ -179,8 +215,8 @@ Beberapa tipe data dasar yang umum pada algoritma adalah sebagai berikut :
 Secara umum, tipe data-tipe data inilah yang digunakan untuk mewakiliki kasus-kasus dunia nyata yang akan diterjemahkan menjadi algoritma kemudian menjadi bahasa program. 	
 
 
-\subsection{Variabel}
-
+%\subsection{Variabel}
+\section{Variabel}
 Variabel merupakan tempat penyimpanan data. 
 
 Sebagai wadah untuk merepresentasikan dunia nyata pada algoritma, tipe data sendiri tidak cukup. Dengan adanya tipe data saja, maka dalam merepresentasikan masalah kita hanya terbatas pada pembentukan KONSTANTA saja. Misal : “Sirup”, “86.6”, “151”.  Padahal pada kasusnya, informasi-informasi pada masalah sehari-sehari memiliki nilai yang mungkin berubah-ubah. Maka, algoritma juga harus menyediakan wadah untuk menangani hal ini,  disinilah peran VARIABEL dibutuhkan. 
@@ -208,7 +244,8 @@ Beberapa hal yang akan sering kita lakukan pada pembuatan variabel di algoritma 
 Jika terdapat 4 variabel, yaitu: a, b, c, dan d dengan nilai a = 1, b = 2, c = 3, dan d =  4. Tuliskan sebuah algoritma untuk menukarkan isi variabel tersebut sehingga nilainya menjadi b = 1, c = 2, d = 3, dan a = 4. Usahakan agar pertukarannya minimum.
 \end{konsep}}
 
-\subsection{Variabel dan Tipe Data Pada Python}
+%\subsection{Variabel dan Tipe Data Pada Python}
+\section{Variabel dan Tipe Data Pada Python}
 Khusus pada bahasa pemrograman Python, tidak ada deklarasi variabel yang dilibatkan. Pembuatan variabel pada python pada umumnya langsung dibuat melalui proses assignment. Setelah proses assignment, Python akan langsung menyesuaikan tipe data   pada variabel tersebut. Hal ini disebabkan karena Python adalah \textit{dynamically-typed language}. (Istilah optional : Perlu diingat kita bukan mempelajari Python, tetapi Pengantar Algoritma !)
 	\begin{figure}
 		\centering
@@ -227,16 +264,43 @@ Perlu diingat juga, peraturan penggunaan variabel sama seperti sub-bab sebelumny
 		\end{figure}
 
 
-\newpage	
-\subsection{Operator}
-Pada algoritma, operator berfungsi untuk menghubungkan satu atau lebih variabel sehingga menghasilkan nilai baru. Operator memiliki prioritas eksekusi. 
 
-	\begin{figure}[h]
+%\subsection{Operator}
+
+\section{Operator}
+Pada algoritma, operator berfungsi untuk menghubungkan satu atau lebih variabel sehingga menghasilkan nilai baru. Beberapa operator dasar misalnya adalah sebagai berikut : 
+
+\begin{itemize}
+
+	\item \textbf{Operator Aritmatika}
+	\begin{figure}[h!]
 	\centering
-	\includegraphics[scale=0.35]{fig/1/Gambar21.png}	
+	\includegraphics[scale=0.5]{fig/1/Gambar18.png}	
 	\end{figure}	
-Sama seperti pada matematika dimana pada sebuah perhitungan, operator kali akan dijalankan terlebih dahulu dibanding penambahan dan pengurangan karena memiliki kekuatan operator yang lebih tinggi. 
 
+	\item \textbf{Operator Logika}
+	\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.5]{fig/1/Gambar19.png}	
+	\end{figure}	
+	
+
+	\item \textbf{Operator Perbandingan}
+	\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.5]{fig/1/Gambar20.png}	
+	\end{figure}		
+\end{itemize}
+
+
+ Sama seperti pada matematika dimana pada sebuah perhitungan, operator kali akan dijalankan terlebih dahulu dibanding penambahan dan pengurangan karena memiliki kekuatan operator yang lebih tinggi. 
+	\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.5]{fig/1/Gambar21.png}	
+	\end{figure}	
+Anda boleh mengabaikan operator-operator yang belum diketahui diatas, cukup mengetahui urutan kekuatan operator-operator dasar terlebih dahulu.	
+
+\newpage
 \section{Mendefinisikan Permasalahan}
 Untuk setiap permasalahan komputasional, ada cara untuk mendefinisikannya. Definisi dibutuhkan untuk menyelesaikan permasalahan tersebut. Definisi dari sebuah permasalahan komputasional bisa dari sangat sederhana seperti di Contoh \ref{cth:pengurutan} sampai ke definisi yang sangat kompleks seperti contohnya permasalahan identifikasi DNA manusia di \textit{Human Genome Project} yang memerlukan algoritma yang sangat kompleks.
 

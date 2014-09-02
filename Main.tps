@@ -11,14 +11,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=926
-NormalPos.bottom=411
+NormalPos.right=1061
+NormalPos.bottom=391
 Class=LaTeXView
 Document=ch_pengantarAlgoritma.tex
 
 [Frame0_View0,0]
-TopLine=0
-Cursor=333
+TopLine=632
+Cursor=34971
 
 [Frame1]
 Flags=0
@@ -29,18 +29,18 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=926
-NormalPos.bottom=411
+NormalPos.right=1061
+NormalPos.bottom=391
 Class=LaTeXView
 Document=Main.tex
 
 [Frame1_View0,0]
-TopLine=96
-Cursor=2569
+TopLine=30
+Cursor=1275
 
 [SessionInfo]
 FrameCount=2
-ActiveFrame=1
+ActiveFrame=0
 
 [Bookmarks]
 ch_kompleksitas.tex=55 

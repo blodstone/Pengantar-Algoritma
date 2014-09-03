@@ -20,7 +20,7 @@
 \usepackage{hyperref}
 \usepackage{graphicx}
 \usepackage{amsmath}
-%\usepackage{appendix}
+\usepackage{appendix}
 
 \lstset{
 	keywordstyle=\bfseries\ttfamily\color[rgb]{0,0,1},
@@ -43,8 +43,8 @@
 	frame=single,
 % backgroundcolor=\color{lbcolor},
 }
-\author{Hardy Huang}
-\title{Workshop Python}
+\author{Hardy Huang, Andrew Jauhari, Budiman}
+\title{Praktek Pengantar Algoritma}
 \newenvironment{myindentpar}[1]%
 {
 	\begin{list}{}%
@@ -125,16 +125,19 @@
 
 \renewcommand{\chaptername}{Modul}
 \renewcommand{\figurename}{Gambar}
+\renewcommand{\appendixname}{Lampiran}
 \floatname{algorithm}{Algoritma}
 \include{ch_modul1}
 \include{ch_modul2}
-\include{ch_modul3}
-\include{ch_modul4}
-\include{ch_modul5}
-\include{ch_modul6}
-\include{ch_modul7}
-\include{ch_modul8}
-\include{ch_modul9}
-%\appendix
-%\include{ch_app1}
+%\include{ch_modul3}
+%\include{ch_modul4}
+%\include{ch_modul5}
+%\include{ch_modul6}
+%\include{ch_modul7}
+%\include{ch_modul8}
+%\include{ch_modul9}
+\appendix
+\include{ch1_app}
+%\include{ch2_app}
+
 \end{document}

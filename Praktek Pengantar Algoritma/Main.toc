@@ -1,13 +1,10 @@
-\contentsline {chapter}{\numberline {1}Dasar Python}{2}{chapter.1}
-\contentsline {section}{\numberline {1.1}Tipe Data Python}{2}{section.1.1}
-\contentsline {section}{\numberline {1.2}Pengenalan IDLE dan IDE (PyScripter)}{2}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}IDLE}{2}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}IDE}{6}{subsection.1.2.2}
-\contentsline {chapter}{\numberline {2}Percabangan dan Perulangan}{8}{chapter.2}
-\contentsline {chapter}{\numberline {3}Pengurutan}{14}{chapter.3}
-\contentsline {chapter}{\numberline {4}Fungsi}{16}{chapter.4}
-\contentsline {chapter}{\numberline {5}Rekursif}{19}{chapter.5}
-\contentsline {chapter}{\numberline {6}Permasalahan Matematis (Quiz)}{21}{chapter.6}
-\contentsline {chapter}{\numberline {7}Ad Hoc 1}{25}{chapter.7}
-\contentsline {chapter}{\numberline {8}Ad Hoc 2}{28}{chapter.8}
-\contentsline {chapter}{\numberline {9}Divide and Conguer}{33}{chapter.9}
+\contentsline {chapter}{\numberline {1}Pengenalan Algoritma \& Pemrograman dengan Python}{2}{chapter.1}
+\contentsline {section}{\numberline {1.1}Petunjuk}{2}{section.1.1}
+\contentsline {section}{\numberline {1.2}Latihan}{2}{section.1.2}
+\contentsline {section}{\numberline {1.3}Permasalahan}{3}{section.1.3}
+\contentsline {chapter}{\numberline {2}Percabangan dan Perulangan}{6}{chapter.2}
+\contentsline {chapter}{\numberline {A}Lampiran: Bahasa Pemrograman Python}{12}{appendix.A}
+\contentsline {section}{\numberline {A.1}Tipe Data Python}{12}{section.A.1}
+\contentsline {section}{\numberline {A.2}Pengenalan IDLE dan IDE (PyScripter)}{13}{section.A.2}
+\contentsline {subsection}{\numberline {A.2.1}IDLE}{13}{subsection.A.2.1}
+\contentsline {subsection}{\numberline {A.2.2}IDE}{16}{subsection.A.2.2}

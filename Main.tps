@@ -12,12 +12,12 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1061
-NormalPos.bottom=492
+NormalPos.bottom=614
 Class=LaTeXView
 Document=ch_pengantarAlgoritma.tex
 
 [Frame0_View0,0]
-TopLine=732
+TopLine=726
 Cursor=37743
 
 [Frame1]
@@ -30,7 +30,7 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1061
-NormalPos.bottom=492
+NormalPos.bottom=614
 Class=LaTeXView
 Document=Main.tex
 
@@ -48,13 +48,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
 NormalPos.right=1061
-NormalPos.bottom=492
+NormalPos.bottom=614
 Class=LaTeXView
 Document=ch_perulangan.tex
 
 [Frame2_View0,0]
-TopLine=188
-Cursor=8073
+TopLine=0
+Cursor=10583
 
 [SessionInfo]
 FrameCount=3

@@ -1,4 +1,4 @@
-\chapter{Pengenalan}\label{ch:pengantarAlgoritma}
+\chapter{Pengenalan I : Algoritma}\label{ch:pengantarAlgoritma}
 
 %
 - Pengantar
@@ -34,27 +34,58 @@ Jawaban dari pertanyaan tersebut berkaitan dengan bagian dari perangkat lunak ya
 
 
 \section{Masalah}
-Sebelum kita membahas lebih lanjut mengenai algoritma, alangkah baiknya kita menelaah mengenai masalah terlebih dahulu. Jika sebelumnya diceritakan mengenai masalah dari sisi perangkat lunak, pada bab ini kita akan melihat masalah pada kehidupan sehari -hari. Coba perhatikan berbagai masalah kehidupan sehari-hari  berikut ini  :
+Sebelum kita membahas lebih lanjut mengenai algoritma, alangkah baiknya kita menelaah mengenai masalah terlebih dahulu. Jika sebelumnya diceritakan mengenai masalah dari sisi perangkat lunak, pada bab ini kita akan melihat masalah pada kehidupan sehari -hari. Coba perhatikan berbagai masalah kehidupan sehari-hari berikut ini:
+
 \begin{enumerate}
 	\item Anda diminta untuk menyusun voucher-voucher berikut ini menjadi terurut, sehingga pihak panitia akan mudah melakukan tracking terhadap voucher yang sudah masuk.  
-	\begin{figure}
-	\centering
-	\includegraphics[scale=0.3]{fig/1/Gambar2.png}	
-	\end{figure}
-	%%%%%%
-\newpage
+	
+	
+\begin{center} \large
+  \begin{tabular}[h!]{| c | c | c | c | c | c | c | c | c | c | }
+	\hline
+    10 & 3 & 8 & 5 & 9 & 2 & 1 &  7 & 4 & 6 \\
+	\hline
+  \end{tabular}
+\end{center}
+
+
 	\item Anda diminta untuk mencari apakah NIM 141112020 merupakan peserta ujian ? 
-	\begin{figure}
-	\centering
-	\includegraphics[scale=0.4]{fig/1/Gambar3.png}	
-	\end{figure}
-	%%%%%%
+		\large
+			\begin{center}
+				\begin{tabular}[h!]{| c | c |}
+				\hline
+				\multicolumn{2}{|c|}{\textit{PESERTA UJIAN}} \\
+				\hline	
+				\textit{NIM} & \textit{Nama} \\ \hline
+				141110001 & Amir \\ \hline
+				141110003 & Budi \\ \hline
+				141111111 & Charlie \\ \hline
+				141112130 & Dodi \\ \hline
+				141113020 & Elsa \\ \hline
+				141119191 & Fanny \\ \hline
+				141113121 & Gloria \\ 
+				\hline
+				\end{tabular}
+		\end{center}
+		
 	\item Anda diminta melakukan output pejabat dengan kekayaan tertinggi !
-	\begin{figure}
-	\centering
-	\includegraphics[scale=0.4]{fig/1/Gambar4.png}	
-	\end{figure}	
+			\begin{center}
+				\begin{tabular}[h!]{| c | r |}
+				\hline
+				\multicolumn{2}{|c|}{\textit{HARTA PEJABAT}} \\
+				\hline	
+				\textit{Nama Pejabat } & \textit{Jumlah Kekayaan} \\ \hline
+				YBS & 19,582,918,419 \\ \hline
+				KJ & 19,549,185,718 \\ \hline
+				WKJ & 19,527,418,194 \\ \hline
+				SP & 19,553,481,751 \\ \hline
+				RH & 19,248,572,728 \\ 
+				\hline
+				\end{tabular}
+		\end{center}
+		
 \end{enumerate}
+
 Dapatkah Anda memberikan solusi untuk masalah - masalah diatas ?  
 
 \section{Algoritma}	
@@ -128,9 +159,43 @@ Terdapat banyak bahasa pemrograman dalam Teknik Informatika, kita dapat memilih 
 Pada mata kuliah ini, kita akan menggunakan bahasa pemrogrman Python. Perlu diingat bahwa, kita bukan mempelajari bahasa pemrograman Python, namun menggunakan Python sebagai alat untuk membantu kita mempelajari penyelesaian masalah melalui pembuatan algoritma dalam bahasa pemrograman.
 Tentunya sebagai bahasa pemrograman pertama yang dipelajari, kita perlu tahu bagaimana menginstalasi Python, menggunakan Python dan menjalankan algoritma pertama kita dengan menggunakan Python. Latihan pada bab ini dapat dikerjakan untuk membantu pemahaman penggunaan Python sebelum masuk ke pemahaman algoritma lebih lanjut. 
 
-\section{Konsep dasar algoritma dan pemrograman}
+\newpage
+\section{Latihan : Pengenalan I}
 
-\subsection{Struktur Dasar Algoritma}
+\begin{pemrograman}
+Lakukan langkah-langkah berikut :
+\begin{enumerate}
+	\item Unduh Python di \url{http://python.org/download/} atau pada E-learning Mikroskil.
+	\item Pilihlah python versi 3.3.x yang sesuai dengan OS yang dipakai (Windows 32-bit---Python 3.3.0 Windows Installer, dan Windows 64-bit---Python 3.3.0 Windows Installer). Untuk Linux, python sudah secara \textit{default} terinstall (versi python tergantung dari distro linux yang digunakan).
+	\item Install Python Installer yang sudah diunduh.
+	\item Buka IDE IDLE Python yang terinstall bersama Python	%\item Unduh IDE \textit{Integrated Development Environment} Python yang bernama PyScripter di \url{http://code.google.com/p/pyscripter}.
+	%\item Install PyScripter.	
+	\item Verifikasi Instalasi Python dengan mengetikkan print(``Hello World``) dan jalankan melalui IDE.
+	\item Verifikasi Instalasi Python dengan mengetikkan print(``Hello World``) dan jalankan melalui Command Prompt.
+	\item Verifikasi Instalasi Python dengan mengetikkan Listing \ref{lst:swapSimple} dan jalankan melalui IDE \& Command Prompt.
+		\begin{listprog}{swap.py}
+		\label{lst:swapSimple}
+		\begin{lstlisting}[language=Python]
+			A = 5
+			B = 4
+			A = A + B
+			B = A - B
+			A = A - B
+			print(A)
+			print(B)
+		\end{lstlisting}
+\end{listprog}
+\end{enumerate}
+\end{pemrograman}
+
+
+
+\newpage
+\chapter{Pengenalan II : Konsep dasar algoritma dan pemrograman}\label{ch:pengantarAlgoritma2}
+
+%\section{Konsep dasar algoritma dan pemrograman}
+
+\section{Struktur Dasar Algoritma}
 Pada bab sebelumnya, kita mengetahui bahwa Program merupakan kumpulan dari algoritma-algoritma. Algoritma sendiri di dalamnya juga merupakan kumpulan dari struktur-struktur dasar pembangun algoritma. Terdapat tiga jenis utama struktur algoritma yaitu : 
 
 \begin{enumerate}
@@ -166,6 +231,9 @@ Percabangan dan Perulangan akan dibahas lebih lanjut pada pertemuan 3 ke atas. P
 \end{itemize}
 
 
+%\subsection{Tipe Data}
+\section{Tipe Data dan Variabel}
+
 \subsection{Tipe Data}
 	Dalam mengubah masalah sehari-hari menjadi algoritma, kemudian dari algoritma menjadi bahasa program, kita harus melakukan proses penyederhanaan informasi-informasi dari masalah tersebut. Misalnya, ada masalah menukar isi dalam gelas, kita memerlukan sesuatu yang dapat merepresentasikan / mewakili informasi isi dari gelas seperti sirup atau air  ke dalam algoritma atau bahasa program. Dari sini kita memiliki beberapa alternatif, apakah kita akan mewakilinya dengan kata atau dengan nilai. Dari sinilah muncul konsep tipe-data dalam algoritma. Pada pengenalan akan dikenalkan dahulu beberapa tipe data dasar, kemudian seiring dengan perkembangan mata kuliah, tipe data baru dan yang lebih muktahir akan diperkenalkan. 
 Beberapa tipe data dasar yang umum pada algoritma adalah sebagai berikut : 
@@ -179,8 +247,8 @@ Beberapa tipe data dasar yang umum pada algoritma adalah sebagai berikut :
 Secara umum, tipe data-tipe data inilah yang digunakan untuk mewakiliki kasus-kasus dunia nyata yang akan diterjemahkan menjadi algoritma kemudian menjadi bahasa program. 	
 
 
+%\subsection{Variabel}
 \subsection{Variabel}
-
 Variabel merupakan tempat penyimpanan data. 
 
 Sebagai wadah untuk merepresentasikan dunia nyata pada algoritma, tipe data sendiri tidak cukup. Dengan adanya tipe data saja, maka dalam merepresentasikan masalah kita hanya terbatas pada pembentukan KONSTANTA saja. Misal : “Sirup”, “86.6”, “151”.  Padahal pada kasusnya, informasi-informasi pada masalah sehari-sehari memiliki nilai yang mungkin berubah-ubah. Maka, algoritma juga harus menyediakan wadah untuk menangani hal ini,  disinilah peran VARIABEL dibutuhkan. 
@@ -208,6 +276,7 @@ Beberapa hal yang akan sering kita lakukan pada pembuatan variabel di algoritma 
 Jika terdapat 4 variabel, yaitu: a, b, c, dan d dengan nilai a = 1, b = 2, c = 3, dan d =  4. Tuliskan sebuah algoritma untuk menukarkan isi variabel tersebut sehingga nilainya menjadi b = 1, c = 2, d = 3, dan a = 4. Usahakan agar pertukarannya minimum.
 \end{konsep}}
 
+%\subsection{Variabel dan Tipe Data Pada Python}
 \subsection{Variabel dan Tipe Data Pada Python}
 Khusus pada bahasa pemrograman Python, tidak ada deklarasi variabel yang dilibatkan. Pembuatan variabel pada python pada umumnya langsung dibuat melalui proses assignment. Setelah proses assignment, Python akan langsung menyesuaikan tipe data   pada variabel tersebut. Hal ini disebabkan karena Python adalah \textit{dynamically-typed language}. (Istilah optional : Perlu diingat kita bukan mempelajari Python, tetapi Pengantar Algoritma !)
 	\begin{figure}
@@ -227,16 +296,72 @@ Perlu diingat juga, peraturan penggunaan variabel sama seperti sub-bab sebelumny
 		\end{figure}
 
 
-\newpage	
-\subsection{Operator}
-Pada algoritma, operator berfungsi untuk menghubungkan satu atau lebih variabel sehingga menghasilkan nilai baru. Operator memiliki prioritas eksekusi. 
 
-	\begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.35]{fig/1/Gambar21.png}	
+%\subsection{Operator}
+\section{Operator}
+Pada algoritma, operator berfungsi untuk menghubungkan satu atau lebih variabel sehingga menghasilkan nilai baru. Beberapa operator dasar misalnya adalah sebagai berikut : 
+
+\begin{itemize}
+
+	\item \textbf{Operator Aritmatika}
+			\large
+			\begin{center}
+				\begin{tabular}[h!]{| c | c | c |}
+				\hline
+				\multicolumn{3}{|c|}{\textit{Operator Aritmatika}} \\
+				\hline	
+				\textit{Operasi} & \textit{Simbol} & \textit{Python} \\ \hline
+				Penambahan & + & + \\ \hline
+				Pengurangan & - & - \\ \hline
+				Perkalian & x & * \\ \hline
+				Pembagian & / & / dan // \\ \hline
+				Perpangkatan & \^{}  & ** \\ \hline
+				Hasil Sisa Bagi & \% & \% \\
+				\hline
+				\end{tabular}
+		\end{center}
+			
+
+	\item \textbf{Operator Logika}
+			\large
+			\begin{center}
+				\begin{tabular}[h!]{| c | c | c |}
+				\hline
+				\multicolumn{3}{|c|}{\textit{Operator Aritmatika}} \\
+				\hline	
+				\textit{Operasi} & \textit{Simbol} & \textit{Python} \\ \hline
+				Dan & $\&\&$ & AND \\ \hline
+				Atau & $\|$ & OR \\ \hline
+				Bukan & $!$ & NOT \\ 
+				\hline
+				\end{tabular}
+		\end{center}
+
+	
+	\item \textbf{Operator Perbandingan}
+			\large
+			\begin{center}
+				\begin{tabular}[h!]{| c | c | c |}
+				\hline
+				\multicolumn{3}{|c|}{\textit{Operator Aritmatika}} \\
+				\hline	
+				\textit{Operasi} & \textit{Simbol} & \textit{Python} \\ \hline
+				Sama Dengan & $=$ & == \\ \hline
+				Tidak Sama Dengan & $\neq$ & != \\ \hline
+				Lebih Besar & $\geq,>$ & $>=,>$ \\ \hline
+				Lebih Kecil & $\leq,<$ & $<=,<$ \\
+				\hline
+				\end{tabular}
+		\end{center}
+\end{itemize}
+
+ Sama seperti pada matematika dimana pada sebuah perhitungan, operator kali akan dijalankan terlebih dahulu dibanding penambahan dan pengurangan karena memiliki kekuatan operator yang lebih tinggi. 
+	\begin{figure}[h!]
+	\includegraphics[scale=0.45]{fig/1/Gambar21.png}	
 	\end{figure}	
-Sama seperti pada matematika dimana pada sebuah perhitungan, operator kali akan dijalankan terlebih dahulu dibanding penambahan dan pengurangan karena memiliki kekuatan operator yang lebih tinggi. 
+Anda boleh mengabaikan operator-operator yang belum diketahui diatas, cukup mengetahui urutan kekuatan operator-operator dasar terlebih dahulu.	
 
+\newpage
 \section{Mendefinisikan Permasalahan}
 Untuk setiap permasalahan komputasional, ada cara untuk mendefinisikannya. Definisi dibutuhkan untuk menyelesaikan permasalahan tersebut. Definisi dari sebuah permasalahan komputasional bisa dari sangat sederhana seperti di Contoh \ref{cth:pengurutan} sampai ke definisi yang sangat kompleks seperti contohnya permasalahan identifikasi DNA manusia di \textit{Human Genome Project} yang memerlukan algoritma yang sangat kompleks.
 
@@ -316,7 +441,7 @@ Asumsikan sebuah algoritma menyelesaikan sebuah permasalahan X yang memerlukan $
 \includegraphics[scale=0.5]{fig/tableEksekusi.eps}%
 \end{figure}
 \end{konsep}
-
+\newpage
 \subsection{Flow Chart sebagai Notasi Algoritma}
 Selain dengan menggunakan pseudocode, bisa juga menggunakan \textit{flow chart} untuk memvisualisasikan sebuah algoritma. Bentuk dari \textit{flow chart} untuk algoritma \ref{algo:bubble} bisa dilihat di gambar \ref{fig:flowchart}.
 
@@ -345,7 +470,47 @@ Contoh implementasi Algoritma \ref{algo:bubble} ke bahasa pemrograman (Python) b
 	\end{lstlisting}
 \end{listprog}
 
-		
+\newpage
+\section{Latihan : Pengenalan II}
+
+\begin{pemrograman}
+Buatlah sebuah algoritma dan program dengan spesifikasi sebagai berikut  : 
+\begin{enumerate}
+	\item Menampilkan tulisan ``Halo, Siapa nama Anda ? ``, 
+	\item Pengguna dapat menginput Nama setelah tulisan diatas, 
+	\item Menampilkan tulisan ``Halo, Siapa nama Dosen Anda ? ``, 
+	\item Pengguna dapat menginput Nama Dosen setelah tulisan diatas, 
+	\item menuliskan pesan ``Selamat Menikmati Pengantar Algoritma, NAMAANDA dengan Dosen Pengampu Bapak / Ibu Dosen NAMADOSEN``
+\end{enumerate}
+\end{pemrograman}
+
+\begin{pemrograman}
+Lakukan perumusan masalah, pembuatan algoritma \& program untuk kasus ``Menukarkan Isi Gelas`` jika variabel pada masing - masing gelas memiliki tipe data String !
+\end{pemrograman}
+
+\begin{pemrograman}
+Lakukan perumusan masalah, pembuatan algoritma \& program untuk kasus ``Menghitung Luas Persegi Panjang, Segitiga dan Lingkaran`` !
+\end{pemrograman}
+
+\begin{pemrograman}
+Lakukan perumusan masalah, pembuatan algoritma \& program untuk kasus ``Konversi Suhu dari Celcius ke Reaumur, Farenheit, dan Kelvin`` !
+\end{pemrograman}
+
+\begin{pemrograman}
+Lakukan perumusan masalah, pembuatan algoritma \& program untuk kasus ``Perhitungan panjang sisi miring untuk Segitiga`` !
+\end{pemrograman}
+
+\begin{pemrograman}
+Seekor semut menempuh perjalanan sejauh x cm. Buat algoritma \& program untuk mengkonversi jarak x dalam km-m-cm. Misal X = 261341
+maka semut menempuh 2 km, 63 m, 141 cm
+\end{pemrograman}
+
+\begin{pemrograman}
+Buat algoritma \& program yang dapat menghitung selisih waktu dari dua informasi waktu yang berbeda dengan format HH:MM:SS:mmm
+\end{pemrograman}
+
+
+
 %\FloatBarrier
 %\subsection{Array}
 %Array\sidenote{Di bahasa pemrograman Python, implementasi dari Array disebut sebagai List.} merupakan kumpulan dari variabel. Satu array bisa menampung beberapa data. Gambar \ref{fig:illustrasiArray} menunjukkan illustrasi dari sebuah array yang berkapasitas $j$.
@@ -366,38 +531,26 @@ Contoh implementasi Algoritma \ref{algo:bubble} ke bahasa pemrograman (Python) b
 	%$A.length \rightarrow$ Menandakan besar/panjang dari array $A$.
 %\end{contoh}
 
-\begin{pemrograman}
-Lakukan langkah-langkah berikut di rumah:
-\begin{enumerate}
-	\item Unduh Python di \url{http://python.org/download/}.
-	\item Pilihlah python versi 2.7.x yang sesuai dengan OS yang dipakai (Windows 32-bit---Python 2.7.3 Windows Installer, dan Windows 64-bit---Python 2.7.3 Windows Installer). Untuk Linux, python sudah secara \textit{default} terinstall (versi python tergantung dari distro linux yang digunakan).
-	\item Install Python Installer yang sudah diunduh.
-	\item Unduh IDE \textit{Integrated Development Environment} Python yang bernama PyScripter di \url{http://code.google.com/p/pyscripter}.
-	\item Install PyScripter.
-	\item Ketikkan Listing \ref{lst:bubbleSortSimple} dan jalankan.
-\end{enumerate}
-\end{pemrograman}
-
-\begin{pemrograman}
-Untuk melakukan latihan pemrograman algoritma dan Python di rumah, SPOJ merupakan website yang sangat berguna. SPOJ merupakan sebuah website \textit{Online Judge} dimana kita bisa melihat permasalahan-permasalahan yang menarik, menyelesaikan permasalahan tersebut dan meng-\textit{submit} solusinya ke SPOJ untuk di-\textit{judge}. SPOJ akan menentukan apakah solusi kita tepat atau salah. Diharapakan agar mahasiswa bisa menyelesaikan permasalahan SPOJ sebanyak mungkin untuk meningkatkan kemampuan pemrograman. Berikut langkah-langkah yang harus dilakukan di rumah.
-\begin{enumerate}
-	\item Buka website SPOJ (\url{www.spoj.pl})
-	\item Register di website SPOJ tersebut.
-	\item Baca tutorial di website SPOJ untuk memahami lebih lanjut di \url{http://www.spoj.pl/tutorials/}
-	\item Lihat daftar permasalahan (\textit{problems}) di website SPOJ di \url{http://www.spoj.pl/problems/classical}
-	\item Lihat permasalahan yang paling sederhana, yaitu permasalahan nomor 1 dengan CODE ``TEST'', atau dengan nama ``Life, the Universe, and Everything'' (\url{http://www.spoj.pl/problems/TEST/}).
-	\item Baca dan coba pahami soalnya.
-	\item Untuk percobaan akan dikasihkan solusinya sebagai berikut dalam bentuk \textit{source code} Python. 
-	\begin{listprog}{TEST.py}
-	\label{lst:TEST}
-	\begin{lstlisting}[language=Python]
-		k=input()
-		while k!=42:
-			print k
-		k=input()
-	\end{lstlisting}
-	\end{listprog}
-	\item Submit solusi tersebut di \url{http://www.spoj.pl/submit/}, pastikan pilihan \textbf{Language} adalah Python (python 2.7) dan Problem code adalah TEST.
-	\item Lihat hasilnya di \url{http://www.spoj.pl/status/} dan cari username anda di kolom USER. Jika ada tulisan ``accepted'' berarti anda telah berhasil menyelesaikan permasalahan tersebut. Jika tidak cek kembali apakah ada yang salah di langkah sebelumnya.
-\end{enumerate}
-\end{pemrograman}
+%\begin{pemrograman}
+%Untuk melakukan latihan pemrograman algoritma dan Python di rumah, SPOJ merupakan website yang sangat berguna. SPOJ merupakan sebuah website \textit{Online Judge} dimana kita bisa melihat permasalahan-permasalahan yang menarik, menyelesaikan permasalahan tersebut dan meng-\textit{submit} solusinya ke SPOJ untuk di-\textit{judge}. SPOJ akan menentukan apakah solusi kita tepat atau salah. Diharapakan agar mahasiswa bisa menyelesaikan permasalahan SPOJ sebanyak mungkin untuk meningkatkan kemampuan pemrograman. Berikut langkah-langkah yang harus dilakukan di rumah.
+%\begin{enumerate}
+	%\item Buka website SPOJ (\url{www.spoj.pl})
+	%\item Register di website SPOJ tersebut.
+	%\item Baca tutorial di website SPOJ untuk memahami lebih lanjut di \url{http://www.spoj.pl/tutorials/}
+	%\item Lihat daftar permasalahan (\textit{problems}) di website SPOJ di \url{http://www.spoj.pl/problems/classical}
+	%\item Lihat permasalahan yang paling sederhana, yaitu permasalahan nomor 1 dengan CODE ``TEST'', atau dengan nama ``Life, the Universe, and Everything'' (\url{http://www.spoj.pl/problems/TEST/}).
+	%\item Baca dan coba pahami soalnya.
+	%\item Untuk percobaan akan dikasihkan solusinya sebagai berikut dalam bentuk \textit{source code} Python. 
+	%\begin{listprog}{TEST.py}
+	%\label{lst:TEST}
+	%\begin{lstlisting}[language=Python]
+		%k=input()
+		%while k!=42:
+			%print k
+		%k=input()
+	%\end{lstlisting}
+	%\end{listprog}
+	%\item Submit solusi tersebut di \url{http://www.spoj.pl/submit/}, pastikan pilihan \textbf{Language} adalah Python (python 2.7) dan Problem code adalah TEST.
+	%\item Lihat hasilnya di \url{http://www.spoj.pl/status/} dan cari username anda di kolom USER. Jika ada tulisan ``accepted'' berarti anda telah berhasil menyelesaikan permasalahan tersebut. Jika tidak cek kembali apakah ada yang salah di langkah sebelumnya.
+%\end{enumerate}
+%\end{pemrograman}

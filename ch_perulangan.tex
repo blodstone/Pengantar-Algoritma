@@ -1,10 +1,177 @@
 \chapter{Perulangan (\textit{Looping})}
 
 \section{Perulangan}
-Perulangan dibutuhkan bilamana kita ingin mengeksekusi perintah yang sama berkali-kali dengan nilai yang berbeda maupun sama. Perulangan sering digunakan pada pemrosesan terhadap sekumpulan data, misalnya \textit{array}, \textit{list}, \textit{string} dan sebagainya.
+Seperti sudah dijelaskan Bab Pengenalan Algoritma, perulangan(looping) merupakan salah satu stuktur dasar algoritma. Pada algoritma, perulangan dipanggil dengan menggunakan pernyataan (\textit{for}) dan (\textit{while}). Masing - masing dari pernyataan ini memiliki cara kerjanya masing - masing yang akan dijelaskan pada beberapa sub-bab berikut. Namun, bermodalkan kedua pernyataan ini, mari kita telusuri terlebih dahulu Kapan sebenarnya struktur dasar algoritma perulangan digunakan.  \\
+Berikut ini adalah skenario - skenario dimana Perulangan dibutuhkan : 
+\begin{enumerate}
+	\item Perulangan dibutuhkan bilamana kita ingin mengeksekusi perintah yang sama berkali-kali. Bayangkan pada keadaan dimana kita memerlukan pencetakan sebuah string sebanyak 10(Sepuluh) kali. Melakukan perintah sebanyak 10(Sepuluh) kali masih dapat di-manage dengan sequence(runtunan), tetapi bagaimana jika diminta 100.000(Seratus Ribu) kali. Tentunya ukuran kode sumber untuk algoritma akan membengkak seiring dengan jumlah perintah yang dilakukan. Perhatikan dua contoh berikut (Pada contoh ini digunakan statement perulangan \textit{FOR} yang akan dijelaskan lebih lanjut pada sub-bab berikut) :
+	
+\begin{contoh}
+	\label{cth:sequenceCetak}
+	\textbf{Cetak Hello World Sepuluh Kali}
+	\begin{algorithm}
+	\caption{SepuluhHelloWorldSequence()}
+		\begin{algorithmic}[1]
+			\STATE print ``HELLO WORLD``
+			\STATE print ``HELLO WORLD``
+			\STATE print ``HELLO WORLD``
+			\STATE print ``HELLO WORLD``
+			\STATE print ``HELLO WORLD``
+			\STATE print ``HELLO WORLD``
+			\STATE print ``HELLO WORLD``
+			\STATE print ``HELLO WORLD``
+			\STATE print ``HELLO WORLD``
+			\STATE print ``HELLO WORLD``
+		\end{algorithmic}
+	\end{algorithm}
+\end{contoh}
+
+\begin{contoh}
+	\label{cth:PengulanganCetak}
+	\textbf{Perulangan Hello World}
+	\begin{algorithm}
+	\caption{SepuluhHelloWorldLooping()}
+		\begin{algorithmic}[1]
+		\FOR{$i=1$ \TO $10$}
+			\STATE print ``HELLO WORLD``
+		\ENDFOR
+		\end{algorithmic}
+	\end{algorithm}
+\end{contoh}
+
+Dari contoh \ref{cth:sequenceCetak} dan \ref{cth:PengulanganCetak} diatas, Anda dapat mengevaluasi sendiri jika \textit{Hello World} akan dicetak sebanyak 100.000 kali. Manakah yang lebih efisien menurut Anda ? \\
+Pada kasus pembuatan algoritma pada dunia nyata, perulangan tidak hanya dipakai untuk melakukan eksekusi satu perintah saja namun lebih dari satu perintah yang sama berulang - ulang. Perhatikan contoh berikut (Pada contoh ini digunakan statement perulangan \textit{WHILE} yang akan dijelaskan lebih lanjut pada sub-bab berikut) : 
+
+\begin{contoh}
+	\label{cth:PengulanganPerintahWhile}
+	\textbf{Perulangan perintah jamak (\textit{while})}
+	\begin{algorithm}
+	\caption{DeretDenganNegasiWhile()}
+		\begin{algorithmic}[1]
+	  \STATE $i$ = 1
+		\STATE $negasi$ = -1
+		\STATE $jumlah$ = 0 
+		\WHILE{$i<=5$}						
+			\STATE $negasi$ = - $negasi$
+			\STATE $nilai$ = $negasi$ * $i$
+			\STATE $jumlah$ = $jumlah$ + $nilai$
+			\STATE print $i$
+		\ENDWHILE
+		\STATE print $jumlah$
+		\end{algorithmic}
+	\end{algorithm}
+\end{contoh}
+
+Perhatikan bahwa ada kondisi-kondisi yang mempengaruhi kapan statement perulangan  \textit{while} atau \textit{for} digunakan. Namun,  Perulangan \textit{while} atau \textit{for} dapat dikonversi menjadi struktur yang berbeda satu sama lain. Kita dapat melakukan konversi atas Contoh \ref{cth:PengulanganPerintahWhile} menjadi dalam bentuk perulangan  \textit{for} berikut : 
+
+\begin{contoh}
+	\label{cth:PengulanganPerintahFor}
+	\textbf{Pengulangan perintah jamak (\textit{for})}
+	\begin{algorithm}
+	\caption{DeretDenganNegasiFor()}
+		\begin{algorithmic}[1]	
+		\STATE $negasi$ = -1
+		\STATE $jumlah$ = 0 
+		 \FOR{$i=1$ \TO $5$}
+			\STATE $negasi$ = - $negasi$
+			\STATE $nilai$ = $negasi$ * $i$
+			\STATE $jumlah$ = $jumlah$ + $nilai$
+			\STATE print $i$
+		\ENDFOR
+		\STATE print $jumlah$
+		\end{algorithmic}
+	\end{algorithm}
+\end{contoh}
+
+	\item Perulangan sering digunakan pada pemrosesan terhadap tipe-data jamak, misalnya \textit{array}, \textit{list}, \textit{string} dan bentuk tipe-data jamak lainnya yang membutuhkan penelusuran terhadap isi data yang lebih dari satu. Seluruh tipe-data jamak pada algoritma memiliki cara pemrosesan(baca/tulis) yang sama. Baik array, list, string atau tipe-data jamak lain semuanya memiliki properti indeks untuk mengakses data mana yang akan diproses.   
+	
+\FloatBarrier
+\subsection{Array}
+Array\sidenote{Di bahasa pemrograman Python, implementasi dari Array disebut sebagai List.} merupakan kumpulan dari variabel. Satu array bisa menampung beberapa data. Gambar \ref{fig:illustrasiArray} menunjukkan illustrasi dari sebuah array yang berkapasitas $j$. 
+\begin{center}
+	\begin{figure}[h!]%
+		\includegraphics[scale=0.4]{fig/Array.eps}%
+		\caption{Illustrasi Array}%
+		\label{fig:illustrasiArray}%
+	\end{figure}
+\end{center}
+\begin{contoh}
+\label{cth:Array}
+	\textbf{Penggunaan array}\\
+	$A[i] \rightarrow$ Mengakses lokasi ke $i$ dari array yang bernama $A$.\\
+	$A[4] \rightarrow$ Mengakses lokasi ke $4$ dari array yang bernama $A$.\\
+	$A[i..j] \rightarrow$ Menandakan kumpulan isi array $A$ yang terdiri dari elemen $A[1],\ A[2],\ A[3],\ \ldots,\ A[j]$.\\
+	$A[4] = 5 \rightarrow$ Memasukkan nilai 5 ke lokasi ke 4 dari array $A$.\\
+	$b = A[4] \rightarrow$ Memasukkan nilai lokasi ke 4 dari array $A$ ke variabel $b$. 
+	$A.length \rightarrow$ Menandakan besar/panjang dari array $A$.
+\end{contoh}
+	
+
+Contoh \ref{cth:Array} diatas, beberapa kali menyebutkan istilah \textbf{lokasi}. Pada algoritma ataupun pemrograman, ini lebih dikenal dengan dengan indeks. Walaupun pada gambar \ref{fig:illustrasiArray}, indeks dimulai dari 1(satu), perlu diketahui bahwa pada kebanyakan bahasa pemrograman, termasuk python, indeks pada array selalu dimulai dari 0 dan berakhir pada (panjang data-1). \\
+
+Perhatikan bahwa contoh \ref{cth:Array} diatas, sebuah pernyataan tunggal hanya mewakili satu nilai dari sekian banyak data yang ada di dalam array. $A[4]$ misalnya, hanya mengakses indeks ke-4 dari data A. Pertanyaannya adalah bagaimana jika kita memerlukan perhitungan jumlah total dari untuk seluruh data pada array yang berisi bilangan bulat ? Disinilah peran dari struktur perulangan(looping). Perhatikan contoh berikut : 
+
+ \begin{contoh}
+	\textbf{Menghitung Jumlah Total}
+	\begin{algorithm}
+	\caption{JumlahTotalArray()}
+		\begin{algorithmic}[1]
+		\STATE $bilangan[10]$ = (10,20,30,40,50,60,70,80,90,100)
+		\STATE $jumlah$ = 0
+		\FOR{$i=0$ \TO len($bilangan$)- 1}
+		  \STATE $jumlah$ = $jumlah$ + $bilangan[i]$
+		\ENDFOR
+			\STATE $jumlah$
+		%\STATE\COMMENT{Maka yang dicetak adalah 1 2 3 4 5}
+		%\STATE\COMMENT{Nilai $i$ terakhir yang tidak dicetak adalah 6}
+		\end{algorithmic}
+	\end{algorithm}
+\end{contoh}
+
+Sama seperti array bertipe data-lain, Sebuah \textit{String} sebenarnya sudah merupakan array dari karakter. Secara algoritma, Anda dapat mengakses karakter-karakter dari \textit{String}. Perhatikan proses akses array karakter berikut pada algoritma membalikkan kata : 
+
+\begin{contoh}
+	\textbf{Membalikkan Kata (\textit{for})}
+	\begin{algorithm}
+	\caption{MembalikkanKata()}
+		\begin{algorithmic}[1]
+		\STATE $kata$ = ``Mahasiswa``
+		\FOR{$i=len(kata)$-1 \TO 0}
+		  \STATE print $kata[i]$
+		\ENDFOR
+		%\STATE\COMMENT{Maka yang dicetak adalah 1 2 3 4 5}
+		%\STATE\COMMENT{Nilai $i$ terakhir yang tidak dicetak adalah 6}
+		\end{algorithmic}
+	\end{algorithm}
+\end{contoh}
+
+
+\begin{contoh}
+	\textbf{Membalikkan Kata (\textit{while})}
+	\begin{algorithm}
+	\caption{MembalikkanKata()}
+		\begin{algorithmic}[1]
+		\STATE $kata$ = ``Mahasiswa``
+		\STATE $panjangKata$ = len($kata$)
+		\WHILE{$panjangKata>0$}
+		  \STATE print $kata[panjangKata]$
+			\STATE $panjangKata$ = $panjangKata$ - 1
+		\ENDWHILE
+		%\STATE\COMMENT{Maka yang dicetak adalah 1 2 3 4 5}
+		%\STATE\COMMENT{Nilai $i$ terakhir yang tidak dicetak adalah 6}
+		\end{algorithmic}
+	\end{algorithm}
+\end{contoh}
+
+
+\end{enumerate}
 
 \subsection{Struktur Perulangan}
-Perulangan biasanya menggunakan pernyataan (\textit{for}) atau (\textit{while}). Pernyataan \textit{for} digunakan untuk mengiterasi sebuah \textit{array}, \textit{list} ataupun kumpulan variabel/objek lainnya sedangkan pernyataan \textit{while} digunakan untuk perulangan yang berdasarkan kondisi tertentu.
+Pada sub-bab sebelumnya kita melihat sudah melihat bagaimana skenario - skenario penggunaan struktur pengulangan pada algoritma. Namun hal tersebut hanya sebagian kecil dari penggunaan struktur pengulangan dan juga merupakan penggunaan yang masih sangat dasar. Untuk mahir dalam pengulangan diperlukan banyak latihan dalam berbagai kasus yang melibatkan struktur perulangan. //
+
+Sebelum kita lebih jauh lagi masuk ke struktur perulangan, maka alangkah baiknya kita mengenali dulu 
+
+ Pernyataan \textit{for} digunakan untuk mengiterasi sebuah \textit{array}, \textit{list} ataupun kumpulan variabel/objek lainnya sedangkan pernyataan \textit{while} digunakan untuk perulangan yang berdasarkan kondisi tertentu.
 
 Struktur dari \textit{for} dalam pseudocode adalah sebagai berikut.
 \begin{tabbing}
@@ -126,130 +293,10 @@ Sebuah perulangan dapat memiliki perulangan di dalamnya dan perulangan yang di d
 \textbf{end for}
 \end{tabbing}
 
+
+
+
+
+
 	
  
-\section{Gabungan Percabangan dan Perulangan}
-Dalam kondisi tertentu, suatu perulangan dapat memiliki percabangan di dalamnya. Biasanya percabangan di dalam perulangan digunakan untuk mengkhususkan perintah berbeda yang akan dikerjakan ketika variabel mencapai nilai tertentu. Pada perulangan yang memiliki percabangan di dalamnya, mungkin saja terdapat perintah :
-\begin{enumerate}
-	\item \textit{break}, yang akan menghentikan perulangan walaupun nilai varibelnya belum melampaui batas.
-	\item \textit{continue}, yang akan melanjutkan perulangan ke tahapan perulangan berikutnya dan tidak akan menjalankan perintah di bawahnya.
-\end{enumerate}
-Dua contoh berikut akan menunjukkannya.
-
-\begin{contoh}
-	\textbf{Penggunaan BREAK}
-	\begin{algorithm}
-	\caption{PERULANGAN-CETAK-ANGKA-DENGAN-BREAK()}
-		\begin{algorithmic}[1]
-		\FOR{$i=1$ \TO $5$}
-			\IF {$i == 4$}
-				\STATE \textbf{break}
-			\ENDIF
-			\STATE print $i$
-		\ENDFOR
-		\STATE\COMMENT{Maka yang dicetak adalah 1 2 3.}
-		\STATE\COMMENT{Pada saat $i$ mencapai nilai 4, perulangan langsung berhenti sebelum sempat mencetak.}
-		\end{algorithmic}
-	\end{algorithm}
-\end{contoh}
-
-\FloatBarrier
-\begin{contoh}
-	\textbf{Penggunaan CONTINUE}
-	\begin{algorithm}
-	\caption{PERULANGAN-CETAK-ANGKA-DENGAN-CONTINUE()}
-		\begin{algorithmic}[1]
-		\FOR{$i=1$ \TO $5$}
-			\IF {$i == 4$}
-				\STATE \textbf{continue}
-			\ENDIF
-			\STATE print $i$
-		\ENDFOR
-		\STATE\COMMENT{Maka yang dicetak adalah 1 2 3 5.}
-		\STATE\COMMENT{Perulangan tetap akan dilanjutkan hingga i = 5, tanpa mencetak nilai 4.}
-		\end{algorithmic}
-	\end{algorithm}
-\end{contoh}
-
-\FloatBarrier
-\begin{konsep}
-\label{lat:pencetakanMatriks}
-\textbf{Permasalahan pencetakan matriks}
-Hasilkan sebuah algoritma dan \textit{flowchart} untuk mencetak matriks dengan ketentuan:
-\begin{enumerate}
-	\item Baris ganjil dari 1 sampai n
-	\item Baris genap dari n turun sampai 1
-\end{enumerate}
-\textbf{Masukan}\\
-Sebuah bilangan bulat $n$.\\ 
-\textbf{Keluaran}\\
-Keluarannya berupa matriks $n$x$n$ dengan baris ganjil merupakan rangkaian angka menaik dari 1 sampai n dan baris genap merupakan rangkaian angka menurun dari n sampai 1.\\
-\begin{center}
-\textbf{Test Case 1}\\
-\end{center}
-\textbf{Masukan}\\
-5\\
-\textbf{Keluaran}\\
-1 2 3 4 5 \\
-5 4 3 2 1 \\
-1 2 3 4 5 \\
-5 4 3 2 1 \\
-1 2 3 4 5 \\
-\begin{center}
-\textbf{Test Case 2}\\
-\end{center}
-\textbf{Masukan}\\
-3\\
-\textbf{Keluaran}\\
-1 2 3 \\
-3 2 1 \\
-1 2 3 \\
-\end{konsep}
-
-\begin{pemrograman}
-Buatkan program python dari Latihan \ref{lat:pencetakanMatriks}.
-\end{pemrograman}
-
-\begin{konsep}
-\label{lat:pencetakanBintang}
-\textbf{Permasalahan pencetakkan bintang dari NIM}\\
-Hasilkan algoritma dan \textit{flowchart} untuk mencetak bintang dan angka berikut dengan menggunakan NIM sebagai dasarnya.\\
-\textbf{Masukan}\\
-Sebuah \textit{String} 9 karakter dimana merupakan NIM dari mahasiswa STMIK Mikroskil.\\
-\textbf{Keluaran}\\
-9 baris dimana di baris i terdapat karakter i, satu spasi dan diikuti bintang sejumlah karakter i tersebut.\\
-\begin{center}
-\textbf{Test Case 1}\\
-\end{center}
-\textbf{Masukan}\\
-121114567\\
-\textbf{Keluaran}\\
-1 * \\
-2 ** \\
-1 * \\
-1 * \\
-1 * \\
-0 \\
-5 ***** \\
-6 ****** \\
-7 ******* \\
-\begin{center}
-\textbf{Test Case 2}\\
-\end{center}
-\textbf{Masukan}\\
-031110023\\
-\textbf{Keluaran}\\
-0  \\
-3 *** \\
-1 * \\
-1 * \\
-1 * \\
-0 \\
-0 \\
-2 ** \\
-3 *** \\
-\end{konsep}
-
-\begin{pemrograman}
-Buatkan program python dari Latihan \ref{lat:pencetakanBintang}.
-\end{pemrograman}

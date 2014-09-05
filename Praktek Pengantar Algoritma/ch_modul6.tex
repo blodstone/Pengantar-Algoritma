@@ -1,0 +1,105 @@
+\chapter{Permasalahan Matematis (Quiz)}
+
+\begin{permasalahan}{Bilangan Kombinasi}\\
+	 Kombinasi merupakan sebuah metode dalam matematika untuk memilih beberapa elemen dari satu grup dimana urutan tidak penting (berbeda dengan permutasi). Tugas anda adalah diberikan nilai $n$ dan nilai $k$, berikan kemungkinan kombinasi yang ada untuk nilai k$\leq$n dengan rumus berikut. \\
+	 \begin{math}
+	 \binom{n}{k}= \frac{(n)!}{n!(n-k)!}	
+	\end{math}\\
+	Untuk nilai k$>$n maka keluarannya adalah 0.
+	\\
+	\textbf{Masukan}\\
+	Dua buah bilangan bulat $n$ dan $k$. Bilangan $n$ di baris pertama sedangkan $k$ di baris kedua\\
+	\textbf{Keluaran}\\
+	Sebuah bilangan yang merupakan kombinasi untuk $n$ dan $k$.\\
+	\begin{center}
+	\textbf{Test Case 1}\\
+	\end{center}
+	\textbf{Masukan}\\
+	52\\
+	5\\
+	\textbf{Keluaran}\\
+	2598960\\
+	\begin{center}
+	\textbf{Test Case 2}\\
+	\end{center}
+	\textbf{Masukan}\\
+	5\\
+	10\\
+	\textbf{Keluaran}\\
+	0\\
+	\begin{center}
+	\textbf{Test Case 3}\\
+	\end{center}
+	\textbf{Masukan}\\
+	20\\
+	5\\
+	\textbf{Keluaran}\\
+	15504\\
+\end{permasalahan}
+
+\newpage
+
+\begin{permasalahan}{Bilangan Catalan}\\
+	 Bilangan Catalan merupakan sejenis rangkaian bilangan yang sering digunakan dalam permasalahan matematika. Bilangan Catalan dinamakan berdasarkan penciptanya yaitu Eugene Charles Catalan. Tugas anda adalah menghasilkan serangkaian $n$ bilangan Catalan.\\
+	 Rumus untuk menghasilkan bilangan Catalan adalah sebagai berikut.\\
+	 \begin{math}
+	C(i) = \frac{(2i)!}{(i+1)!i!}	
+	\end{math}
+	\\
+	\textbf{Masukan}\\
+	Sebuah bilangan  bulat $n$ yang merupakan jumlah bilangan dalam rangkaian Catalan.\\
+	\textbf{Keluaran}\\
+	Serangkaian angka dimana merupakan rangkaian bilangan Catalan untuk index $i$ dari 0 sampai $n$.\\
+	\begin{center}
+	\textbf{Test Case 1}\\
+	\end{center}
+	\textbf{Masukan}\\
+	10\\
+	\textbf{Keluaran}\\
+	1 1 2 5 14 42 132 429 1430 4862 16796\\
+	\begin{center}
+	\textbf{Test Case 2}\\
+	\end{center}
+	\textbf{Masukan}\\
+	20\\
+	\textbf{Keluaran}\\
+	1 1 2 5 14 42 132 429 1430 4862 16796 58786 208012 742900 2674440 9694845 35357670 129644790 477638700 1767263190 6564120420\\
+	\begin{center}
+	\textbf{Test Case 3}\\
+	\end{center}
+	\textbf{Masukan}\\
+	25\\
+	\textbf{Keluaran}\\
+	1 1 2 5 14 42 132 429 1430 4862 16796 58786 208012 742900 2674440 9694845 35357670 129644790 477638700 1767263190 6564120420 24466267020 91482563640 343059613650 1289904147324 4861946401452\\
+\end{permasalahan}
+
+\newpage
+\begin{permasalahan}{Penjumlahan Rangkaian Bilangan Dengan Operasi Berbeda}\\
+	 Diberikan operasi-operasi yang berbeda (``+'', ``-'', ``*'', ``/''), lakukan operasi tersebut dengan pola sebagai berikut untuk $1$ sampai dengan $n$: $i$+$(i+1)$*$(i+2)$-$(i+3)$/$(i+4)$...$n$\\
+	\textbf{Masukan}\\
+	Sebuah bilangan  bulat $n$ yang merupakan jumlah bilangan dalam rangkaian.\\
+	\textbf{Keluaran}\\
+	Sebuah angka dimana merupakan hasil operasi dengan pola $i$+$(i+1)$*$(i+2)$-$(i+3)$/$(i+4)$...$n$.\\
+	\begin{center}
+	\textbf{Test Case 1}\\
+	\end{center}
+	\textbf{Masukan}\\
+	5\\
+	\textbf{Keluaran}\\
+	1.0\\
+	\textit{Penjelasan: 1 + 2 * 3 - 4 / 5 = 1.0}\\
+	\begin{center}
+	\textbf{Test Case 2}\\
+	\end{center}
+	\textbf{Masukan}\\
+	20\\
+	\textbf{Keluaran}\\
+	729.826546003\\
+	\begin{center}
+	\textbf{Test Case 3}\\
+	\end{center}
+	\textbf{Masukan}\\
+	50\\
+	\textbf{Keluaran}\\
+	267.545585367\\
+\end{permasalahan}

@@ -17,7 +17,7 @@ Class=LaTeXView
 Document=ch_pengantarAlgoritma.tex
 
 [Frame0_View0,0]
-TopLine=0
+TopLine=707
 Cursor=31149
 
 [Frame1]
@@ -35,7 +35,7 @@ Class=LaTeXView
 Document=ch_perulangan.tex
 
 [Frame1_View0,0]
-TopLine=309
+TopLine=401
 Cursor=14383
 
 [Frame2]
@@ -53,7 +53,7 @@ Class=LaTeXView
 Document=Main.tex
 
 [Frame2_View0,0]
-TopLine=0
+TopLine=95
 Cursor=2261
 
 [SessionInfo]

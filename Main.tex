@@ -1,9 +1,11 @@
 \documentclass{tufte-book}
 
 \newcounter{ccounter}
+\newcounter{cPetunjuk}
 \newcounter{clatihan}
 \newcounter{clisting}
 \renewcommand\theccounter{\arabic{ccounter}}
+\renewcommand\thecPetunjuk{\arabic{cPetunjuk}}
 \renewcommand\theclatihan{\arabic{clatihan}}
 \renewcommand\theclisting{\arabic{clisting}}
 \usepackage{soul,color}
@@ -68,6 +70,16 @@
 }{	
 	\end{myindentpar}
 }
+
+\newenvironment{Petunjuk}{
+	\refstepcounter{cPetunjuk}
+	\begin{myindentpar}{1cm}
+	\textbf{\underline{Petunjuk \arabic{cPetunjuk}}}
+}{	
+	\end{myindentpar}
+}
+
+
 
 \newenvironment{latihan}{
 	\refstepcounter{clatihan}

@@ -12,12 +12,13 @@ Pada bab sebelumnya, kita mempelajari bahwa program merupakan kumpulan dari algo
 		\label{fig:illustrasiSequence}
 	\end{marginfigure}
 	
-	\item \textbf{\textit{Selection/Branching} (Pemilihan / Percabangan)},) merupakan struktur algoritma yang akan digunakan dimana jika terdapat alternatif/pilihan beberapa \textit{sequence} yang akan dijalankan jika memenuhi syarat tertentu. Percabangan dapat diibaratkan sebagai persimpangan jalan yang harus dipilih, jika kita memilih sebuah jalan dari persimpangan tersebut sudah pasti kita tidak akan menjalani yang lainnya. Salah satu contoh percabangan dapat dilihat pada contoh ``Algoritma Memilih Tempat Pembuangan'' (Gambar \ref{fig:illustrasiBranching}).
+	\item \textbf{\textit{Selection/Branching} (Pemilihan / Percabangan)},) merupakan struktur algoritma yang akan digunakan dimana jika terdapat alternatif/pilihan beberapa \textit{sequence} yang akan dijalankan jika memenuhi syarat tertentu. Percabangan dapat diibaratkan sebagai persimpangan jalan yang harus dipilih, jika kita memilih sebuah jalan dari persimpangan tersebut sudah pasti kita tidak akan menjalani yang lainnya. Salah satu contoh percabangan dapat dilihat pada contoh ``Algoritma Memilih Tempat Pembuangan`` pada 
+Gambar \ref{fig:illustrasiBranching}
 		\begin{figure}
 		\centering
 		\includegraphics[scale=0.4]{fig/1/Gambar14.png}	
 		\caption{Illustrasi \textit{Selection/Branching}. Di sini salah satu dari keempat tong harus dipilih ketika membuang sampah.}
-		\ref{fig:illustrasiBranching}
+		\label{fig:illustrasiBranching}
 		\end{figure}
 		
 	\item \textbf{\textit{Repetition/Looping} (Pengulangan)}, merupakan struktur algoritma yang akan digunakan dimana jika terdapat pengulangan terhadap satu pernyataan atau \textit{sequence} tertentu. Beberapa contoh nyata penggunaan pengulangan misalnya pada saat harus melakukan penelusuran angka-angka voucher dari awal sampai akhir. Contoh lain yang lebih dekat dengan dunia nyata misalnya adalah algoritma ``pembagian permen'' (Gambar \ref{fig:illustrasiLooping}).
@@ -66,7 +67,7 @@ Untuk bahasa pemrograman sendiri, masing-masing memiliki tipe data yang berbeda.
 Variabel merupakan tempat penyimpanan data. 
 
 Sebagai wadah untuk merepresentasikan dunia nyata pada algoritma, tipe data sendiri tidak cukup. Dengan adanya tipe data saja, maka dalam merepresentasikan masalah kita hanya terbatas pada pembentukan KONSTANTA saja. Misal : ``Sirup'', ``86.6'', ``151''.  Padahal pada kasusnya, informasi-informasi pada masalah sehari-sehari memiliki nilai yang mungkin berubah-ubah. Maka, algoritma juga harus menyediakan wadah untuk menangani hal ini,  disinilah peran VARIABEL dibutuhkan. 
-	VARIABEL pada algoritma digunakan untuk menampung nilai dengan tipe data tertentu. Variabel dimaksudkan untuk menyimpan informasi berupa nilai yang dapat secara dinamis berubah, diberi nilainya ataupun dibaca kembali pada saat dibutuhkan. Jika ``Sirup'' merupakan sebuah nilai dengan tipe data String, dan kita dapat menampungnya dalam sebuah variabel yang bernama GelasA. Yang kita tahu pada kasusnya nanti GelasA akan berubah nilainya ketika ditukar dengan isi dari GelasB.
+	VARIABEL pada algoritma digunakan untuk menampung nilai dengan tipe data tertentu. Variabel dimaksudkan untuk menyimpan informasi berupa nilai yang dapat secara dinamis berubah, diberi nilainya ataupun dibaca kembali pada saat dibutuhkan. Jika ``Sirup'' merupakan sebuah nilai dengan tipe data String, dan kita dapat menampungnya dalam sebuah variabel yang bernama $GelasA$. Yang kita tahu pada kasusnya nanti $GelasA$ akan berubah nilainya ketika ditukar dengan isi dari $GelasB$.
 \begin{contoh}
 	\textbf{Penggunaan variabel}\\
 	$a = 5 \rightarrow$ Memasukkan nilai 5 ke variabel `$a$'.\\
@@ -77,22 +78,22 @@ Sebagai wadah untuk merepresentasikan dunia nyata pada algoritma, tipe data send
 
 Beberapa peraturan dalam penggunaan variabel adalah sebagai berikut : 
 \begin{itemize}
-	\item Penamaan variabel sebaiknya eksplisit sesuai dengan tujuan dari pembuatan variabel tersebut. 			  Misalnya : \textit{GelasA} daripada \textit{A}, \textit{GelasB} daripada \textit{B}
-	\item	Penamaan variabel tidak boleh melibatkan spasi !  Misalnya : \textit{Gelas A} dan \textit{Gelas B} adalah salah, sedangkan \textit{GelasA} dan \textit{Gelas\underline{ }B} benar
-	\item	Penamaan variabel sebaiknya dimulai dengan huruf. Misalnya : \textit{123Panjang} adalah salah. \textit{Panjang123} adalah benar. 
-	\item	Pada bahasa pemrograman tertentu, penamaan variabel biasanya case-sensitive. Misalnya : \textit{nama} berbeda dengan \textit{Nama} berbeda dengan \textit{NAMA} berbeda dengan \textit{namA}
+	\item Penamaan variabel sebaiknya eksplisit sesuai dengan tujuan dari pembuatan variabel tersebut. 			  Misalnya : $GelasA$ daripada $A$, $GelasB$ daripada $B$
+	\item	Penamaan variabel tidak boleh melibatkan spasi !  Misalnya : $Gelas A$ dan $Gelas B$ adalah salah, sedangkan $GelasA$ dan $Gelas$\underline{ }$B$ benar
+	\item	Penamaan variabel sebaiknya dimulai dengan huruf. Misalnya : $123Panjang$ adalah salah. $Panjang123$ adalah benar. 
+	\item	Pada bahasa pemrograman tertentu, penamaan variabel biasanya case-sensitive. Misalnya : $nama$ berbeda dengan $Nama$ berbeda dengan $NAMA$ berbeda dengan $namA$
 	\item	Penamaan variabel jangan bertabrakan dengan reserved-word pada bahasa pemrograman tertentu !
 \end{itemize}
-Beberapa hal yang akan sering kita lakukan pada pembuatan variabel di algoritma adalah deklarasi dan assignment. Proses inisialisasi awal variabel yang melibatkan pemberian tipe data disebut deklarasi. Proses pemberian nilai pada variabel disebut assigment 
+Beberapa hal yang akan sering kita lakukan pada pembuatan variabel di algoritma adalah deklarasi dan definisi. Proses inisialisasi awal variabel yang melibatkan pemberian tipe data disebut deklarasi. Proses pemberian nilai pada variabel disebut definisi. 
 
 \marginnote[-4cm]{
 \begin{konsep}
-Jika terdapat 4 variabel, yaitu: a, b, c, dan d dengan nilai a = 1, b = 2, c = 3, dan d =  4. Tuliskan sebuah algoritma untuk menukarkan isi variabel tersebut sehingga nilainya menjadi b = 1, c = 2, d = 3, dan a = 4. Usahakan agar pertukarannya minimum.
+Jika terdapat 4 variabel, yaitu: $a$, $b$, $c$, dan $d$ dengan nilai $a$ = 1, $b$ = 2, $c$ = 3, dan $d$ =  4. Tuliskan sebuah algoritma untuk menukarkan isi variabel tersebut sehingga nilainya menjadi $b$ = 1, $c$ = 2, $d$ = 3, dan $a$ = 4. Usahakan agar pertukarannya minimum.
 \end{konsep}}
 
 %\subsection{Variabel dan Tipe Data Pada Python}
 \subsection{Variabel dan Tipe Data Pada Python}
-Khusus pada bahasa pemrograman Python, tidak ada deklarasi variabel yang dilibatkan. Pembuatan variabel pada python pada umumnya langsung dibuat melalui proses assignment. Setelah proses assignment, Python akan langsung menyesuaikan tipe data   pada variabel tersebut. Hal ini disebabkan karena Python adalah \textit{dynamically-typed language}. (Istilah optional : Perlu diingat kita bukan mempelajari Python, tetapi Pengantar Algoritma !)
+Khusus pada bahasa pemrograman Python, tidak ada deklarasi variabel yang dilibatkan. Pembuatan variabel pada python pada umumnya langsung dibuat melalui proses definisi. Setelah proses definisi, Python akan langsung menyesuaikan tipe data   pada variabel tersebut. Hal ini disebabkan karena Python adalah \textit{dynamically-typed language}. (Istilah optional : Perlu diingat kita bukan mempelajari Python, tetapi Pengantar Algoritma !)
 	\begin{figure}
 		\centering
 		\includegraphics[scale=0.5]{fig/1/Gambar16.png}	
@@ -314,7 +315,7 @@ Lakukan perumusan masalah, pembuatan algoritma \& program untuk kasus ``Perhitun
 \end{pemrograman}
 
 \begin{pemrograman}
-Seekor semut menempuh perjalanan sejauh x cm. Buat algoritma \& program untuk mengkonversi jarak x dalam km-m-cm. Misal X = 261341
+Seekor semut menempuh perjalanan sejauh $x$ cm. Buat algoritma \& program untuk mengkonversi jarak $x$ dalam km-m-cm. Misal $x$ = 261341
 maka semut menempuh 2 km, 63 m, 141 cm
 \end{pemrograman}
 

@@ -12,6 +12,7 @@
 \renewcommand\theclisting{\arabic{clisting}}
 \renewcommand\thecIDLE{\arabic{cIDLE}}
 \renewcommand\thecIDE{\arabic{cIDE}}
+
 \usepackage{soul,color}
 \usepackage{algorithmic}
 \usepackage{algorithm}
@@ -21,6 +22,10 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{appendix}
+
+\everymath{\displaystyle}
+\DeclareMathSizes{15}{23}{17}{13}     % For size 12 text
+
 
 \lstset{
 	keywordstyle=\bfseries\ttfamily\color[rgb]{0,0,1},
@@ -61,6 +66,7 @@
 }{	
 	\end{myindentpar}
 }
+
 
 \newenvironment{permasalahan}[1]{
 	\refstepcounter{cpermasalahan}
@@ -128,7 +134,7 @@
 \renewcommand{\appendixname}{Lampiran}
 \floatname{algorithm}{Algoritma}
 \include{ch_modul1}
-\include{ch_modul2}
+%\include{ch_modul2}
 %\include{ch_modul3}
 %\include{ch_modul4}
 %\include{ch_modul5}
@@ -137,7 +143,7 @@
 %\include{ch_modul8}
 %\include{ch_modul9}
 \appendix
-\include{ch1_app}
+%\include{ch1_app}
 %\include{ch2_app}
 
 \end{document}

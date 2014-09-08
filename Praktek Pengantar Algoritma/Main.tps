@@ -11,14 +11,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1061
+NormalPos.right=1069
 NormalPos.bottom=492
 Class=LaTeXView
 Document=Main.tex
 
 [Frame0_View0,0]
-TopLine=24
-Cursor=3021
+TopLine=123
+Cursor=777
 
 [Frame1]
 Flags=0
@@ -29,14 +29,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1061
+NormalPos.right=1069
 NormalPos.bottom=492
 Class=LaTeXView
 Document=ch_modul1.tex
 
 [Frame1_View0,0]
-TopLine=112
-Cursor=3901
+TopLine=144
+Cursor=5424
 
 [Frame2]
 Flags=0
@@ -47,14 +47,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1061
+NormalPos.right=1069
 NormalPos.bottom=492
 Class=LaTeXView
 Document=ch_modul2.tex
 
 [Frame2_View0,0]
-TopLine=146
-Cursor=4117
+TopLine=169
+Cursor=2424
 
 [Frame3]
 Flags=0
@@ -65,7 +65,7 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1061
+NormalPos.right=1069
 NormalPos.bottom=492
 Class=LaTeXView
 Document=ch1_app.tex
@@ -83,7 +83,7 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1061
+NormalPos.right=1069
 NormalPos.bottom=492
 Class=LaTeXView
 Document=ch2_app.tex

@@ -1,4 +1,4 @@
-\documentclass[a4paper]{tufte-book}
+\documentclass{tufte-book}
 
 \newcounter{ccounter}
 \newcounter{clatihan}
@@ -15,6 +15,7 @@
 \usepackage{makeidx}
 \usepackage{mathtools}
 \usepackage{bookmark}
+\usepackage{mathpazo}
 %\usepackage{letterspace}
 %\renewcommand\allcapsspacing[1]{{\addfontfeature{LetterSpace=15}#1}}
 %\renewcommand\smallcapsspacing[1]{{\addfontfeature{LetterSpace=10}#1}}
@@ -51,6 +52,14 @@
     \item[]%
 	}
 {\end{list}}
+
+\newenvironment{IDLE}{
+	\refstepcounter{ccounter}
+	\begin{myindentpar}{1cm}
+	\textbf{\underline{Ketikkan (IDLE) \arabic{ccounter}}}
+}{	
+	\end{myindentpar}
+}
 
 \newenvironment{contoh}{
 	\refstepcounter{ccounter}
@@ -106,10 +115,10 @@
 \renewcommand{\figurename}{Gambar}
 \floatname{algorithm}{Algoritma}
 %\include{test}
-%\include{ch_pengantarAlgoritma}
-%\include{ch_pengantarAlgoritma2}
+\include{ch_pengantarAlgoritma}
+\include{ch_konsepDasarAlgoritma}
 %\include{ch_percabangan}
-\include{ch_perulangan}
+%\include{ch_perulangan}
 %\include{ch_perulanganDanPercabangan}
 %\include{ch_permasalahanMatematis}
 %\include{ch_fungsi}

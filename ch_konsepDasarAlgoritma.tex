@@ -2,30 +2,31 @@
 
 \section{Struktur Dasar Algoritma}
 
-Pada bab sebelumnya, kita mempelajari bahwa program merupakan kumpulan dari algoritma-algoritma. Algoritma sendiri di dalamnya juga merupakan kumpulan dari struktur-struktur dasar pembangun algoritma. Terdapat tiga jenis utama struktur algoritma yaitu : 
+\newthought{Pada bab sebelumnya, kita mempelajari bahwa program merupakan kumpulan dari algoritma-algoritma}. Algoritma sendiri di dalamnya juga merupakan kumpulan dari struktur-struktur dasar pembangun algoritma. Terdapat tiga jenis utama struktur algoritma yaitu : 
 
 \begin{enumerate}
-	\item \textbf{\textit{Sequence} (Runtunan)}, merupakan struktur algoritma paling dasar yang berisi rangkaian instruksi yang diproses secara sekuensial, satu per satu, mulai dari instruksi pertama sampai instruksi terakhir. Salah satu contoh \textit{Sequence} ada pada contoh bab sebelumnya yaitu algoritma memindahkan isi dari kedua gelas (Gambar \ref{fig:illustrasiSequence}). 
-	\begin{marginfigure}
-		\includegraphics[scale=0.4]{fig/1/Gambar13.png}	
-		\caption{Illustrasi \textit{sequence}. Ada 3 \textit{sequence} di dalam algoritma memindahkan isi dari kedua gelas.}
-		\label{fig:illustrasiSequence}
-	\end{marginfigure}
-	
-	\item \textbf{\textit{Selection/Branching} (Pemilihan / Percabangan)},) merupakan struktur algoritma yang akan digunakan dimana jika terdapat alternatif/pilihan beberapa \textit{sequence} yang akan dijalankan jika memenuhi syarat tertentu. Percabangan dapat diibaratkan sebagai persimpangan jalan yang harus dipilih, jika kita memilih sebuah jalan dari persimpangan tersebut sudah pasti kita tidak akan menjalani yang lainnya. Salah satu contoh percabangan dapat dilihat pada contoh ``Algoritma Memilih Tempat Pembuangan'' (Gambar \ref{fig:illustrasiBranching}).
-		\begin{figure}
+	\item \textbf{\textit{Sequence} (Runtunan)}, merupakan struktur algoritma paling dasar yang berisi rangkaian instruksi/pernyataan(\textit{statement}) yang diproses secara sekuensial, satu per satu, mulai dari instruksi pertama sampai instruksi terakhir. Salah satu contoh \textit{Sequence} ada pada contoh bab sebelumnya yaitu algoritma memindahkan isi dari kedua gelas (Gambar \ref{fig:illustrasiSequence}). 
+	\begin{figure}
 		\centering
-		\includegraphics[scale=0.4]{fig/1/Gambar14.png}	
-		\caption{Illustrasi \textit{Selection/Branching}. Di sini salah satu dari keempat tong harus dipilih ketika membuang sampah.}
-		\ref{fig:illustrasiBranching}
+		\includegraphics[scale=0.4]{fig/1/Gambar13.png}	
+		\caption{Illustrasi \textit{sequence}. Ada 3 \textit{statement} di dalam  1 \textit{sequence}untuk memindahkan isi dari kedua gelas.}
+		\label{fig:illustrasiSequence}
+	\end{figure}
+	\FloatBarrier
+	\item \textbf{\textit{Selection/Branching} (Pemilihan / Percabangan)},) merupakan struktur algoritma yang akan digunakan dimana jika terdapat alternatif/pilihan beberapa pernyataan yang akan dijalankan jika memenuhi syarat tertentu. Percabangan dapat diibaratkan sebagai persimpangan jalan yang harus dipilih, jika kita memilih sebuah jalan dari persimpangan tersebut sudah pasti kita tidak akan menjalani yang lainnya. Salah satu contoh percabangan dapat dilihat pada contoh ``Algoritma Memilih Tempat Pembuangan'' (Gambar \ref{fig:illustrasiBranching}).
+		\begin{figure}
+			\centering
+			\includegraphics[scale=0.4]{fig/1/Gambar14.png}	
+			\caption{Illustrasi \textit{Selection/Branching}. Di sini salah satu dari keempat tong harus dipilih ketika membuang sampah.}
+			\label{fig:illustrasiBranching}
 		\end{figure}
-		
-	\item \textbf{\textit{Repetition/Looping} (Pengulangan)}, merupakan struktur algoritma yang akan digunakan dimana jika terdapat pengulangan terhadap satu pernyataan atau \textit{sequence} tertentu. Beberapa contoh nyata penggunaan pengulangan misalnya pada saat harus melakukan penelusuran angka-angka voucher dari awal sampai akhir. Contoh lain yang lebih dekat dengan dunia nyata misalnya adalah algoritma ``pembagian permen'' (Gambar \ref{fig:illustrasiLooping}).
+	\FloatBarrier
+	\item \textbf{\textit{Repetition/Looping} (Pengulangan)}, merupakan struktur algoritma yang akan digunakan dimana jika terdapat pengulangan terhadap satu pernyataan tertentu. Beberapa contoh nyata penggunaan pengulangan misalnya pada saat harus melakukan penelusuran angka-angka voucher dari awal sampai akhir. Contoh lain yang lebih dekat dengan dunia nyata misalnya adalah algoritma ``pembagian permen'' (Gambar \ref{fig:illustrasiLoop}).
 		\begin{figure}
 		\centering
 		\includegraphics[scale=0.4]{fig/1/Gambar15.png}	
+		\label{fig:illustrasiLoop}
 		\caption{Illustrasi \textit{Repetition/Looping}. Di sini pemberian permen kepada ketiga anak harus dilakukan terus menerus sampai jumlah permen habis.}
-		\label{fig:illustrasiLooping}
 		\end{figure}
 \end{enumerate}
 
@@ -44,11 +45,10 @@ Percabangan dan Perulangan akan dibahas lebih lanjut pada pertemuan selanjutnya.
 
 %\subsection{Tipe Data}
 \section{Tipe Data dan Variabel}
+Dalam mengubah masalah sehari-hari menjadi algoritma, kemudian dari algoritma menjadi bahasa program, kita harus melakukan proses penyederhanaan informasi-informasi dari masalah tersebut. Misalnya, ada masalah menukar isi dalam gelas, kita memerlukan sesuatu yang dapat merepresentasikan/mewakili informasi isi dari gelas seperti sirup atau air  ke dalam algoritma atau bahasa program. Untuk penyelesaian, kita memiliki beberapa alternatif seperti apakah kita akan mewakilinya dengan kata atau dengan nilai. Dari sinilah muncul konsep tipe data dan variabel dalam algoritma. Pada pengenalan akan dikenalkan dahulu beberapa tipe data dasar, kemudian seiring dengan perkembangan mata kuliah, tipe data baru dan yang lebih muktahir akan diperkenalkan.
 
-\subsection{Tipe Data}
-	Dalam mengubah masalah sehari-hari menjadi algoritma, kemudian dari algoritma menjadi bahasa program, kita harus melakukan proses penyederhanaan informasi-informasi dari masalah tersebut. Misalnya, ada masalah menukar isi dalam gelas, kita memerlukan sesuatu yang dapat merepresentasikan/mewakili informasi isi dari gelas seperti sirup atau air  ke dalam algoritma atau bahasa program. Untuk penyelesaian, kita memiliki beberapa alternatif seperti apakah kita akan mewakilinya dengan kata atau dengan nilai. Dari sinilah muncul konsep tipe data dalam algoritma. Pada pengenalan akan dikenalkan dahulu beberapa tipe data dasar, kemudian seiring dengan perkembangan mata kuliah, tipe data baru dan yang lebih muktahir akan diperkenalkan. 
-	
-Beberapa tipe data dasar yang umum adalah sebagai berikut : 
+\subsection{Tipe Data}	
+Beberapa tipe data dasar yang umum\footnote{Tipe data ini disebut juga sebagai tipe data primitif} adalah sebagai berikut: 
 \begin{itemize}
 	\item Bilangan Bulat: Integer, Long
 	\item	Bilangan Riil: Float
@@ -57,71 +57,67 @@ Beberapa tipe data dasar yang umum adalah sebagai berikut :
 	\item	Kumpulan Karakter: String 
 \end{itemize}
 
-Secara umum, tipe data-tipe data inilah yang digunakan untuk mewakiliki kasus-kasus dunia nyata yang akan diterjemahkan menjadi algoritma kemudian menjadi bahasa program. 
+Secara umum, tipe data inilah yang digunakan untuk mewakili kasus-kasus dunia nyata yang akan diterjemahkan menjadi algoritma kemudian menjadi bahasa program. 
 
-Untuk bahasa pemrograman sendiri, masing-masing memiliki tipe data yang berbeda.
+Untuk bahasa pemrograman sendiri, masing-masing memiliki tipe data yang berbeda. Python \footnote{\url{https://docs.python.org/3/library/stdtypes.html}}, C++ \footnote{\url{http://www.cplusplus.com/doc/tutorial/variables/}}, C\# \footnote{\url{http://msdn.microsoft.com/en-us/library/cs7y5x0x(v=vs.90).aspx}}, Javascript \footnote{\url{http://www.w3schools.com/js/js_datatypes.asp}} dan sebagainya semua memiliki tipe data tersendiri yang harus dipahami apabila ingin menggunakan bahasa pemrograman tersebut. 
 
 %\subsection{Variabel}
 \subsection{Variabel}
-Variabel merupakan tempat penyimpanan data. 
-
-Sebagai wadah untuk merepresentasikan dunia nyata pada algoritma, tipe data sendiri tidak cukup. Dengan adanya tipe data saja, maka dalam merepresentasikan masalah kita hanya terbatas pada pembentukan KONSTANTA saja. Misal : ``Sirup'', ``86.6'', ``151''.  Padahal pada kasusnya, informasi-informasi pada masalah sehari-sehari memiliki nilai yang mungkin berubah-ubah. Maka, algoritma juga harus menyediakan wadah untuk menangani hal ini,  disinilah peran VARIABEL dibutuhkan. 
-	VARIABEL pada algoritma digunakan untuk menampung nilai dengan tipe data tertentu. Variabel dimaksudkan untuk menyimpan informasi berupa nilai yang dapat secara dinamis berubah, diberi nilainya ataupun dibaca kembali pada saat dibutuhkan. Jika ``Sirup'' merupakan sebuah nilai dengan tipe data String, dan kita dapat menampungnya dalam sebuah variabel yang bernama GelasA. Yang kita tahu pada kasusnya nanti GelasA akan berubah nilainya ketika ditukar dengan isi dari GelasB.
+VARIABEL pada algoritma digunakan untuk menampung nilai dengan tipe data tertentu. Variabel dimaksudkan untuk menyimpan informasi berupa nilai yang dapat secara dinamis berubah, diberi nilainya ataupun dibaca kembali pada saat dibutuhkan. Jika ``Sirup'' merupakan sebuah nilai dengan tipe data String, maka kita dapat menampungnya dalam sebuah variabel yang bernama $GelasA$. Setelah itu nanti $GelasA$ akan berubah nilainya ketika ditukar dengan isi dari $GelasB$ dan seterusnya.
 \begin{contoh}
 	\textbf{Penggunaan variabel}\\
-	$a = 5 \rightarrow$ Memasukkan nilai 5 ke variabel `$a$'.\\
-	$b = 7 \rightarrow$ Memasukkan nilai 7 ke variabel `$b$'.\\
-	$a = b \rightarrow$ Memasukkan nilai variabel `$b$' ke variabel `$a$'. Kedua variabel sekarang bernilai 7.\\
-	$a = b = 9 \rightarrow$ Memasukkan nilai 9 ke variabel `$a$' dan `$b$'.\\
+	$a$ = 5 $\rightarrow$ Memasukkan nilai 5 ke variabel `$a$'.\\
+	$b$ = 7 $\rightarrow$ Memasukkan nilai 7 ke variabel `$b$'.\\
+	$a$ = $b$ $\rightarrow$ Memasukkan nilai variabel `$b$' ke variabel `$a$'. Kedua variabel sekarang bernilai 7.\\
+	$a$ = $b$ = 9 $\rightarrow$ Memasukkan nilai 9 ke variabel `$a$' dan `$b$'.\\
 \end{contoh}
 
 Beberapa peraturan dalam penggunaan variabel adalah sebagai berikut : 
 \begin{itemize}
-	\item Penamaan variabel sebaiknya eksplisit sesuai dengan tujuan dari pembuatan variabel tersebut. 			  Misalnya : \textit{GelasA} daripada \textit{A}, \textit{GelasB} daripada \textit{B}
-	\item	Penamaan variabel tidak boleh melibatkan spasi !  Misalnya : \textit{Gelas A} dan \textit{Gelas B} adalah salah, sedangkan \textit{GelasA} dan \textit{Gelas\underline{ }B} benar
-	\item	Penamaan variabel sebaiknya dimulai dengan huruf. Misalnya : \textit{123Panjang} adalah salah. \textit{Panjang123} adalah benar. 
-	\item	Pada bahasa pemrograman tertentu, penamaan variabel biasanya case-sensitive. Misalnya : \textit{nama} berbeda dengan \textit{Nama} berbeda dengan \textit{NAMA} berbeda dengan \textit{namA}
-	\item	Penamaan variabel jangan bertabrakan dengan reserved-word pada bahasa pemrograman tertentu !
+	\item Penamaan variabel sebaiknya eksplisit sesuai dengan tujuan dari pembuatan variabel tersebut. Misalnya : $GelasA$ daripada $A$, $GelasB$ daripada $B$. Tetapi juga tidak usah terlalu panjang dan detil seperti misalnya $GelasAWarnaPutihdanBaru$. Cukup sampai bisa dipahami saja.
+	\item	Penamaan variabel tidak boleh melibatkan spasi!  Misalnya : $Gelas\,A$ dan $Gelas\,B$ adalah salah, sedangkan $GelasA$ dan $Gelas\_B$ benar
+	\item	Penamaan variabel sebaiknya dimulai dengan huruf. Misalnya : $123Panjang$ adalah salah. $Panjang123$ adalah benar. 
+	\item	Pada bahasa pemrograman tertentu, penamaan variabel biasanya \textit{case-sensitive}. Misalnya : $nama$ berbeda dengan $Nama$ berbeda dengan $NAMA$ berbeda dengan $namA$.
+	\item	Penamaan variabel jangan bertabrakan dengan \textit{reserved-word} pada bahasa pemrograman tertentu!
 \end{itemize}
-Beberapa hal yang akan sering kita lakukan pada pembuatan variabel di algoritma adalah deklarasi dan assignment. Proses inisialisasi awal variabel yang melibatkan pemberian tipe data disebut deklarasi. Proses pemberian nilai pada variabel disebut assigment 
+
+Beberapa hal yang akan sering kita lakukan pada pembuatan variabel di algoritma adalah deklarasi dan definisi. Proses inisialisasi awal variabel yang melibatkan pemberian tipe data disebut deklarasi. Proses pemberian nilai pada variabel disebut definisi.
 
 \marginnote[-4cm]{
 \begin{konsep}
 Jika terdapat 4 variabel, yaitu: a, b, c, dan d dengan nilai a = 1, b = 2, c = 3, dan d =  4. Tuliskan sebuah algoritma untuk menukarkan isi variabel tersebut sehingga nilainya menjadi b = 1, c = 2, d = 3, dan a = 4. Usahakan agar pertukarannya minimum.
 \end{konsep}}
 
-%\subsection{Variabel dan Tipe Data Pada Python}
 \subsection{Variabel dan Tipe Data Pada Python}
-Khusus pada bahasa pemrograman Python, tidak ada deklarasi variabel yang dilibatkan. Pembuatan variabel pada python pada umumnya langsung dibuat melalui proses assignment. Setelah proses assignment, Python akan langsung menyesuaikan tipe data   pada variabel tersebut. Hal ini disebabkan karena Python adalah \textit{dynamically-typed language}. (Istilah optional : Perlu diingat kita bukan mempelajari Python, tetapi Pengantar Algoritma !)
+Khusus pada bahasa pemrograman Python, tidak ada deklarasi variabel yang dilibatkan \footnote{Bahasa pemrograman yang perlu deklarasi disebut \textit{statically typed programming language} contohnya: C++, Java, C\# dan sebagainya. Sedangkan yang tidak perlu deklarasi disebut \textit{dynamically type programming language} contohnya Python, Ruby, Javascript dan sebagainya}. Pembuatan variabel pada Python pada umumnya langsung dibuat melalui proses definisi. Setelah proses definisi, Python akan langsung menyesuaikan tipe data pada variabel tersebut. Lihat Gambar \ref{fig:definisiVar} untuk lebih jelas. 
 	\begin{figure}
 		\centering
-		\includegraphics[scale=0.5]{fig/1/Gambar16.png}	
-		\end{figure}
+		\includegraphics[scale=0.75]{fig/1/definisiVar.png}
+		\caption{Definisi variabel di Python}
+		\label{fig:definisiVar}
+	\end{figure}
 
-\begin{figure}
-		\centering
-		\includegraphics[scale=0.5]{fig/1/Gambar16a.png}	
-		\end{figure}
-
-Perlu diingat juga, peraturan penggunaan variabel sama seperti sub-bab sebelumnya.  Dengan tambahan daftar reserved-words adalah sebagai berikut : 
+Perlu diingat juga, peraturan penggunaan variabel sama seperti sebelumnya \footnote{Untuk lebih jelas silakan dibaca di \url{http://legacy.python.org/dev/peps/pep-0008/\#naming-conventions}}. Dengan tambahan daftar \textit{reserved-words} ada di Gambar \ref{fig:reservedWords}.
 		\begin{figure}
 		\centering
-		\includegraphics[scale=0.4]{fig/1/Gambar17.png}	
+		\includegraphics[scale=0.4]{fig/1/Gambar17.png}
+		\caption{Daftar \textit{reserved-words} di Python. Nama variabel tidak boleh menggunakan nama di daftar ini}
+		\label{fig:reservedWords}
 		\end{figure}
 
 
 %\subsection{Operator}
 \section{Operator}
-Pada algoritma, operator berfungsi untuk menghubungkan satu atau lebih variabel sehingga menghasilkan nilai baru. Beberapa operator dasar misalnya adalah sebagai berikut : 
+Pada algoritma, operator berfungsi untuk menghubungkan satu atau lebih variabel sehingga menghasilkan nilai baru. Beberapa operator dasar ditampilkan di Tabel \ref{tbl:OperatorAritmatika}, \ref{tbl:operatorLogika}, dan \ref{tbl:operatorPerbandingan}.
 
+\FloatBarrier
 \begin{itemize}
 
 	\item \textbf{Operator Aritmatika}
 			\large
-			\begin{center}
+			\begin{table}
+				\centering
 				\begin{tabular}[h!]{| c | c | c |}
-				\hline
-				\multicolumn{3}{|c|}{\textit{Operator Aritmatika}} \\
 				\hline	
 				\textit{Operasi} & \textit{Simbol} & \textit{Python} \\ \hline
 				Penambahan & + & + \\ \hline
@@ -132,15 +128,15 @@ Pada algoritma, operator berfungsi untuk menghubungkan satu atau lebih variabel 
 				Hasil Sisa Bagi & \% & \% \\
 				\hline
 				\end{tabular}
-		\end{center}
-			
-
+				\caption{Operator Aritmatika}
+				\label{tbl:operatorAritmatika}
+		\end{table}
+	\FloatBarrier
 	\item \textbf{Operator Logika}
 			\large
-			\begin{center}
+			\begin{table}
+				\centering
 				\begin{tabular}[h!]{| c | c | c |}
-				\hline
-				\multicolumn{3}{|c|}{\textit{Operator Aritmatika}} \\
 				\hline	
 				\textit{Operasi} & \textit{Simbol} & \textit{Python} \\ \hline
 				Dan & $\&\&$ & AND \\ \hline
@@ -148,15 +144,16 @@ Pada algoritma, operator berfungsi untuk menghubungkan satu atau lebih variabel 
 				Bukan & $!$ & NOT \\ 
 				\hline
 				\end{tabular}
-		\end{center}
+				\caption{Operator Logika}
+				\label{tbl:operatorLogika}
+		\end{table}
 
-	
+\FloatBarrier	
 	\item \textbf{Operator Perbandingan}
 			\large
-			\begin{center}
+			\begin{table}
+				\centering
 				\begin{tabular}[h!]{| c | c | c |}
-				\hline
-				\multicolumn{3}{|c|}{\textit{Operator Aritmatika}} \\
 				\hline	
 				\textit{Operasi} & \textit{Simbol} & \textit{Python} \\ \hline
 				Sama Dengan & $=$ & == \\ \hline
@@ -165,20 +162,26 @@ Pada algoritma, operator berfungsi untuk menghubungkan satu atau lebih variabel 
 				Lebih Kecil & $\leq,<$ & $<=,<$ \\
 				\hline
 				\end{tabular}
-		\end{center}
+				\caption{Operator Perbandingan}
+				\label{tbl:operatorPerbandingan}
+		\end{table}
 \end{itemize}
 
- Sama seperti pada matematika dimana pada sebuah perhitungan, operator kali akan dijalankan terlebih dahulu dibanding penambahan dan pengurangan karena memiliki kekuatan operator yang lebih tinggi. 
-	\begin{figure}[h!]
-	\includegraphics[scale=0.45]{fig/1/Gambar21.png}	
+\FloatBarrier
+
+Sama seperti pada matematika dimana pada sebuah perhitungan, operator kali akan dijalankan terlebih dahulu dibanding penambahan dan pengurangan karena memiliki kekuatan operator yang lebih tinggi. 
+	\begin{figure}
+	\includegraphics[scale=0.55]{fig/1/Gambar21.png}
+	\caption{Operator Precedence}
+	\label{fig:operatorPrecedence}
 	\end{figure}	
 Anda boleh mengabaikan operator-operator yang belum diketahui diatas, cukup mengetahui urutan kekuatan operator-operator dasar terlebih dahulu.	
 
-\newpage
 \section{Mendefinisikan Permasalahan}
+
 Untuk setiap permasalahan komputasional, ada cara untuk mendefinisikannya. Definisi dibutuhkan untuk menyelesaikan permasalahan tersebut. Definisi dari sebuah permasalahan komputasional bisa dari sangat sederhana seperti di Contoh \ref{cth:pengurutan} sampai ke definisi yang sangat kompleks seperti contohnya permasalahan identifikasi DNA manusia di \textit{Human Genome Project} yang memerlukan algoritma yang sangat kompleks.
 
-Sampai bab ini, kita sudah memiliki pengetahuan yang cukup untuk membuat salah struktur algoritma dasar yaitu sequence(runtunan).  Kembali lagi perlu diingatkan bahwa algoritma dibuat untuk menyelesaikan masalah. Ketika bertemu masalah, agar cara berpikir kita rapi dan efektif, maka alangkah baiknya mengikuti “rule of thumb” berikut ini : 
+Sampai bab ini, kita sudah memiliki pengetahuan yang cukup untuk membuat salah struktur algoritma dasar yaitu sequence(runtunan).  Kembali lagi perlu diingatkan bahwa algoritma dibuat untuk menyelesaikan masalah. Ketika bertemu masalah, agar cara berpikir kita rapi dan efektif, maka alangkah baiknya mengikuti ``rule of thumb'' berikut ini : 
 \begin{enumerate}
 	\item Apa masukkan dari masalah ini ? Ini berhubungan dengan bentuk awal dari  masalah. Pertanyaan-pertanyaan ini selanjutnya boleh diperluas dengan memikirkan, berapa variabel yang dibutuhkan di awal? tipe variabel apa saja yang dibutuhkan  di awal ?
 	\item Apa keluaran dari masalah ini ? Kapan algoritma akan berhenti ? Apakah algoritma cukup berhenti jika semua proses sudah dijalankan ?  Jika sudah berhenti variabel apa yang akan saya tampilkan kepada pengguna ? Atau bentuk output apa yang akan saya tampilkan kepada pengguna ?  Apakah 
@@ -225,7 +228,7 @@ Misalnya $z = 17$\\
 \subsection{Pseudocode sebagai Notasi Algoritma}
 Untuk setiap soal dari contoh-contoh sebelumnya bisa tersedia berbagai macam algoritma yang berbeda untuk menyelesaikannya. Salah satu contoh sederhana dari Contoh \ref{cth:pengurutan} adalah Algoritma \ref{algo:bubble} yang disebut juga dengan nama \textit{Bubble Sort}. 
 
-Algoritma \ref{algo:bubble} ditulis dengan menggunakan pseudocode\sidenote{Pseudocode merupakan sebuah \textit{tool} untuk menuliskan algoritma. Pseudocode bukan merupakan bahasa pemrograman dan tidak bisa dieksekusi.}. Tujuan penggunaan pseudocode adalah agar tidak terikat terhadap bahasa pemrograman tertentu dan bisa lebih fokus ke algoritma saja.
+Algoritma \ref{algo:bubble} ditulis dengan menggunakan pseudocode\sidenote{Pseudocode merupakan sebuah \textit{tool} untuk menuliskan algoritma. Pseudocode bukan merupakan bahasa pemrograman dan tidak bisa dieksekusi.}. Tujuan penggunaan pseudocode adalah agar tidak terikat terhadap bahasa pemrograman tertentu dan bisa lebih fokus ke algoritma saja. Akan tetapi, di mata kuliah ini, yang Pseudocode tidak digunakan melainkan langsung menggunakan Python.
 
 \begin{algorithm}
 	\caption{BUBBLE-SORT($A$)}

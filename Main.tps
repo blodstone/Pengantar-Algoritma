@@ -11,14 +11,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=725
-NormalPos.bottom=26
+NormalPos.right=1120
+NormalPos.bottom=431
 Class=LaTeXView
 Document=ch_pengantarAlgoritma.tex
 
 [Frame0_View0,0]
-TopLine=707
-Cursor=31149
+TopLine=389
+Cursor=20181
 
 [Frame1]
 Flags=0
@@ -29,14 +29,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=725
-NormalPos.bottom=26
+NormalPos.right=1120
+NormalPos.bottom=431
 Class=LaTeXView
-Document=ch_perulangan.tex
+Document=Main.tex
 
 [Frame1_View0,0]
-TopLine=401
-Cursor=14383
+TopLine=18
+Cursor=520
 
 [Frame2]
 Flags=0
@@ -47,18 +47,18 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=725
-NormalPos.bottom=26
+NormalPos.right=1120
+NormalPos.bottom=431
 Class=LaTeXView
-Document=Main.tex
+Document=ch_konsepDasarAlgoritma.tex
 
 [Frame2_View0,0]
-TopLine=95
-Cursor=2261
+TopLine=140
+Cursor=8215
 
 [SessionInfo]
 FrameCount=3
-ActiveFrame=1
+ActiveFrame=2
 
 [Bookmarks]
 ch_kompleksitas.tex=55 

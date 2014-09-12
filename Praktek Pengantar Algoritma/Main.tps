@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=Main.tex
 
 [Frame0_View0,0]
-TopLine=123
-Cursor=777
+TopLine=126
+Cursor=3092
 
 [Frame1]
 Flags=0
@@ -35,8 +35,8 @@ Class=LaTeXView
 Document=ch_modul1.tex
 
 [Frame1_View0,0]
-TopLine=144
-Cursor=5424
+TopLine=0
+Cursor=63
 
 [Frame2]
 Flags=0
@@ -50,11 +50,11 @@ NormalPos.top=26
 NormalPos.right=1069
 NormalPos.bottom=492
 Class=LaTeXView
-Document=ch_modul2.tex
+Document=ch_modul2a.tex
 
 [Frame2_View0,0]
-TopLine=169
-Cursor=2424
+TopLine=30
+Cursor=440
 
 [Frame3]
 Flags=0
@@ -92,9 +92,27 @@ Document=ch2_app.tex
 TopLine=0
 Cursor=0
 
+[Frame5]
+Flags=0
+ShowCmd=1
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-1
+MaxPos.y=-1
+NormalPos.left=4
+NormalPos.top=26
+NormalPos.right=1069
+NormalPos.bottom=492
+Class=LaTeXView
+Document=ch_modul3.tex
+
+[Frame5_View0,0]
+TopLine=12
+Cursor=1007
+
 [SessionInfo]
-FrameCount=5
-ActiveFrame=1
+FrameCount=6
+ActiveFrame=2
 
 [Bookmarks]
 ch_modul1.tex=91 

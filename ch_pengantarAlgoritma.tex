@@ -288,3 +288,106 @@ Lakukan langkah-langkah berikut :
 \end{listprog}
 \end{enumerate}
 \end{pemrograman}
+
+\newpage
+\section{Pemrograman Kompetitif (\textit{Competitive Programming})}
+
+\newthought{Pemrograman Kompetitif} merupakan kompetisi pemrograman di bidang Teknik Informatika dimana salah satu kompetisi bertaraf Internasional adalah ACM (\textit{International Collegiate Programming Contest}) yang diselenggarakan oleh ACM (\textit{Association for Computing Machinery}\footnote{\url{www.acm.org}}). 
+
+Selain ACM ICPC masih banyak kompetisi serupa yang diadakan baik skala lokal maupun internasional \footnote{STMIK Mikroskil sendiri merupakan satu-satunya partner ACM ICPC untuk menyelenggarakan ACM ICPC Provincial Sumatera di kampus Mikroskil.}, secara offline dan online \footnote{\url{www.topcoder.com}, \url{www.codeforce.com}, dan masih banyak lagi}. 
+
+Tema Pemrograman Kompetitif adalah: ``\textit{diberikan sebuah permasalahan Teknik Informatika, selesaikan dengan secepat mungkin}''. Dalam Pemrograman Kompetitif, mahasiswa bertanding dalam 1 kelompok yang terdiri dari 3 orang dengan hanya 1 komputer. Untuk memenangkan kompetisi Pemrograman Kompetitif, mahasiswa membutuhkan pengetahuan yang mendalam akan algoritma dan telah menyelesaikan soal-soal yang banyak sebelumnya. Kerja sama kelompok yang baik juga merupakan faktor penentu dalam memenangkan kompetisi.
+
+Secara garis besar aturan dan prosedur dari Pemrograman Kompetitif adalah sebagai berikut.
+\begin{enumerate}
+	\item Peserta membaca soal yang berisikan permasalahan, aturan masukan dan keluaran yang ada.
+	\item Peserta kemudian membuat program dengan menggunakan bahasa C++ atau Java untuk menyelesaikan permasalahan dari soal tersebut. Program yang dibuat harus mampu memberikan keluaran sesuai dengan masukan yang ada.
+	\item Setelah selesai membuat program, peserta akan mengirimkan \textit{source code} ke sistem judge dari kompetisi. Sistem judge akan menilai apakah keluaran hasil dari program benar atau salah. 
+	\item Jika program yang dibuat benar, maka peserta akan melanjutkan mengerjakan soal lain. Jika salah peserta akan memperbaiki program tersebut.
+	\item Umumnya kompetisi akan berjalan selama 4-5 jam untuk menyelesaikan 8-10 soal.
+\end{enumerate}
+
+Selain mengikuti kompetisi, mahasiswa juga dapat menyelesaikan soal-soal dengan menggunakan \textit{online judge} yang ada seperti:
+\begin{enumerate}
+	\item \url{uva.onlinejudge.org}
+	\item \url{www.spoj.com}
+	\item \url{acm.timus.ru}
+	\item \url{www.topcoder.com}
+	\item \url{www.codeforces.com}\footnote{Website ini merupakan website yang paling sering digunakan untuk berlatih. Selain berlatih, website ini juga memberikan pertandingan online setiap minggu.}
+	\item \url{www.codechef.com}
+	\item dan sebagainya.
+\end{enumerate}
+
+Untuk codeforces, topcoder, dan codechef, website tersebut juga mengadakan kompetisi online setiap pekannya. Mahasiswa diusahakan mengikuti kompetisi online untuk menambah pengalaman kompetisi.
+
+Beberapa topik yang sering diperlombakan di Pemrograman Kompetitif adalah:
+\begin{enumerate}
+	\item Ad Hoc
+	\item \textit{Complete Search (Iterative/Recursive)}
+	\item \textit{Divide and Conquer)}
+	\item \textit{Greedy}
+	\item \textit{Dynamic Programming}
+	\item \textit{Graph}
+	\item \textit{Mathematics}
+	\item \textit{String Processing}
+	\item \textit{Computational Geometry}
+	\item \textit{Others/Rare problems}
+\end{enumerate}
+
+Dari topik-topik tersebut, kebanyakan dibahas di Mata Kuliah Analisis dan Desain Algoritma, tetapi tidak menutup kemungkinan juga mahasiswa mempelajari sendiri topik-topik tersebut secara otodidak melalui Internet.
+
+\newpage
+\begin{center}
+\textit{Illustrasi soal yang biasa dikeluarkan di ACM-ICPC}\footnote{Penguasaan bahasa Inggris mutlak karena soal yang di kompetisi pemrograman semua menggunakan Bahasa Inggris.}\\
+\textbf{Andy\'s First Dictionary}
+\end{center}
+\hfill\\
+Andy, 8, has a dream - he wants to produce his very own dictionary. This is not an easy task for him, as the number of words that he knows is, well, not quite enough. Instead of thinking up all the words himself, he has a briliant idea. From his bookshelf he would pick one of his favourite story books, from which he would copy out all the distinct words. By arranging the words in alphabetical order, he is done! Of course, it is a really time-consuming job, and this is where a computer program is helpful.
+\\
+You are asked to write a program that lists all the different words in the input text. In this problem, a word is defined as a consecutive sequence of alphabets, in upper and/or lower case. Words with only one letter are also to be considered. Furthermore, your program must be CaSe InSeNsItIvE. For example, words like "Apple", "apple" or "APPLE" must be considered the same.
+\\
+	\textbf{INPUT}
+\\
+The input file is a text with no more than 5000 lines. An input line has at most 200 characters. Input is terminated by EOF.
+\\
+	\textbf{OUTPUT}
+\\
+Your output should give a list of different words that appears in the input text, one in a line. The words should all be in lower case, sorted in alphabetical order. You can be sure that he number of distinct words in the text does not exceed 5000.
+\\
+	\textbf{Sample Input}\footnote{Peserta harus membuat program yang bisa membaca input berikut dan mengeluarkan output yang sama persis. Perlu diketahui, input dan output di sini hanya salah satu dari sekian input/output yang nantinya akan diuji oleh judge. Input/output lain dirahasiakan dari peserta.}
+\\
+\begin{verbatim}	
+Adventures in Disneyland
+
+Two blondes were going to Disneyland when they came to a fork 
+in the road. The sign read: "Disneyland Left."
+
+So they went home.
+\end{verbatim}
+\hfill\\
+	\textbf{Sample Output}
+\\
+\begin{verbatim}
+a
+adventures
+blondes
+came
+disneyland
+fork
+going
+home
+in
+left
+read
+road
+sign
+so
+the
+they
+to
+two
+went
+were
+when
+\end{verbatim}
+\newpage

@@ -14,11 +14,16 @@ NormalPos.top=26
 NormalPos.right=1069
 NormalPos.bottom=492
 Class=LaTeXView
-Document=Main.tex
+Document=ch_pengantarAlgoritma.tex
 
 [Frame0_View0,0]
-TopLine=126
-Cursor=3092
+<<<<<<< HEAD
+TopLine=436
+Cursor=23146
+=======
+TopLine=176
+Cursor=10852
+>>>>>>> f78fb970dbd14770767f41649508668e9175b19d
 
 [Frame1]
 Flags=0
@@ -32,11 +37,16 @@ NormalPos.top=26
 NormalPos.right=1069
 NormalPos.bottom=492
 Class=LaTeXView
-Document=ch_modul1.tex
+Document=ch_perulangan.tex
 
 [Frame1_View0,0]
-TopLine=0
-Cursor=63
+<<<<<<< HEAD
+TopLine=120
+Cursor=3189
+=======
+TopLine=474
+Cursor=18653
+>>>>>>> f78fb970dbd14770767f41649508668e9175b19d
 
 [Frame2]
 Flags=0
@@ -50,11 +60,19 @@ NormalPos.top=26
 NormalPos.right=1069
 NormalPos.bottom=492
 Class=LaTeXView
-Document=ch_modul2a.tex
+Document=Main.tex
 
 [Frame2_View0,0]
-TopLine=30
-Cursor=440
+<<<<<<< HEAD
+TopLine=189
+Cursor=4699
+
+[SessionInfo]
+FrameCount=3
+ActiveFrame=0
+=======
+TopLine=117
+Cursor=2813
 
 [Frame3]
 Flags=0
@@ -68,52 +86,18 @@ NormalPos.top=26
 NormalPos.right=1069
 NormalPos.bottom=492
 Class=LaTeXView
-Document=ch1_app.tex
+Document=ch_konsepDasarAlgoritma.tex
 
 [Frame3_View0,0]
-TopLine=20
-Cursor=6394
-
-[Frame4]
-Flags=0
-ShowCmd=1
-MinPos.x=-1
-MinPos.y=-1
-MaxPos.x=-1
-MaxPos.y=-1
-NormalPos.left=4
-NormalPos.top=26
-NormalPos.right=1069
-NormalPos.bottom=492
-Class=LaTeXView
-Document=ch2_app.tex
-
-[Frame4_View0,0]
 TopLine=0
 Cursor=0
 
-[Frame5]
-Flags=0
-ShowCmd=1
-MinPos.x=-1
-MinPos.y=-1
-MaxPos.x=-1
-MaxPos.y=-1
-NormalPos.left=4
-NormalPos.top=26
-NormalPos.right=1069
-NormalPos.bottom=492
-Class=LaTeXView
-Document=ch_modul3.tex
-
-[Frame5_View0,0]
-TopLine=12
-Cursor=1007
-
 [SessionInfo]
-FrameCount=6
-ActiveFrame=2
+FrameCount=4
+ActiveFrame=1
+>>>>>>> f78fb970dbd14770767f41649508668e9175b19d
 
 [Bookmarks]
-ch_modul1.tex=91 
+ch_kompleksitas.tex=55 
+ch_pengantarAlgoritma.tex=35 
 

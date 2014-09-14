@@ -1,22 +1,23 @@
 \chapter{Perulangan (\textit{Looping})}
 
 \section{Perulangan}
-Seperti sudah dijelaskan Bab Pengenalan Algoritma, perulangan(looping) merupakan salah satu stuktur dasar algoritma. Pada algoritma, perulangan dipanggil dengan menggunakan pernyataan (\textit{for}) dan (\textit{while}). Masing - masing dari pernyataan ini memiliki cara kerjanya masing - masing sesuai yang telah dijelaskan pada beberapa sub-bab sebelumnya. Bermodalkan kedua pernyataan perulangan, mari kita telusuri kapan sebenarnya struktur dasar algoritma perulangan digunakan.  \\
-
-Struktur perulangan secara umum terdiri atas dua bagian : 
+Seperti sudah dijelaskan Bab \ref{ch:konsepDasarAlgoritma} : ``Konsep Dasar Algoritma \& Pemrograman``, \textit{Repetition/Looping}(Perulangan) merupakan salah satu stuktur dasar algoritma. Pada algoritma, perulangan dipanggil dengan menggunakan \textit{statement} (\textit{for}) dan (\textit{while}). Masing - masing dari \textit{statement} ini memiliki cara kerjanya masing - masing sesuai yang telah dijelaskan pada beberapa sub-bab sebelumnya.   \\
+\hfill \break
+\textbf{Struktur perulangan secara umum terdiri atas dua bagian:}
 \begin{enumerate}
 	\item \textbf{Kondisi Perulangan}, yaitu ekspresi boolean yang harus dipenuhi untuk melaksanakan perulangan. Kondisi ini ada yang dinyatakan secara eksplisit maupun implisit
-		\item \textbf{Badan Perulangan(body)}, yaitu bagian algoritma yang akan diulang ketika kondisi dipenuhi
+		\item \textbf{Badan Perulangan(body)}, yaitu bagian algoritma yang akan diulang ketika kondisi dipenuhi \\
 \end{enumerate}
-
-Disamping itu, struktur pengulangan biasanya disertai dengan bagian berikut: 
+\hfill \break
+\textbf{Struktur pengulangan biasanya disertai dengan bagian berikut:} 
 \begin{enumerate}
-	\item \textbf{inisialisasi}, yaitu aksi yang dilakukan sebelum pengulangan dilakukan pertama kali 
-	\item \textbf{terminasi}, yaitu aksi yang dilakukan setelah pengulangan selesai dilaksanakan
+	\item \textbf{Inisialisasi}, yaitu aksi yang dilakukan sebelum pengulangan dilakukan pertama kali 
+	\item \textbf{Terminasi}, yaitu aksi yang dilakukan setelah pengulangan selesai dilaksanakan
 \end{enumerate}
-Inisialisasi dan terminasi tidak selalu arus ada, namun pada beberapa kasus (jika menggunakan \textit{while}), inisialiasi diperlukan
-
+Inisialisasi dan terminasi tidak selalu arus ada, namun pada beberapa kasus (jika menggunakan \textit{while}), inisialiasi diperlukan. \\
+\hfill \break
 Bedasarkan peraturan diatas, struktur perulangan secara umum adalah sebagai berikut : 
+\newpage
 \begin{Petunjuk}
 \label{Ptk:Struktur Perulangan}
 	\textbf{Struktur Perulangan}\\
@@ -27,22 +28,21 @@ Bedasarkan peraturan diatas, struktur perulangan secara umum adalah sebagai beri
 		\textit{terminasi}\\
 \end{Petunjuk}
 
-%Pernyataan \textit{for} digunakan untuk mengiterasi sebuah \textit{array}, \textit{list} ataupun kumpulan variabel/objek lainnya sedangkan pernyataan \textit{while} digunakan untuk perulangan yang berdasarkan kondisi tertentu.
-
-\newpage
+%\textit{statement} \textit{for} digunakan untuk mengiterasi sebuah \textit{array}, \textit{list} ataupun kumpulan variabel/objek lainnya sedangkan \textit{statement} \textit{while} digunakan untuk perulangan yang berdasarkan kondisi tertentu.
 
 \subsection{Perulangan dengan \textit{for}}
 Konstruksi \textit{for} digunakan untuk menghasilkan pengulangan sejumlah kali yang telah diberitahukan sebelumnya. Jumlah pengulangan sudah diketahui atau dapat ditentukan sebelum eksekusi. Perulangan \textit{for} juga bisa ditentukan dimulai dari kapan, berhenti pada saat kapan, dan melangkah seberapa banyak dari mulai sampai akhir. \\
 
 Untuk struktur \textit{while} bisa dilihat sebagai berikut : 
 \begin{tabbing}
-\textbf{for} $i$ \textbf{in} $x$:~~~~~~~~~~~~~~~\=\#$x$ adalah \textit{kumpulan variabel}, iterasi dilakukan sebanyak panjang $x$\\
-~~~~~statements\\
+
+\textbf{for} $i$ \textbf{in} $x$:~~\=\ \\
+~~~~~badan perulangan\\
 \end{tabbing}
 \textbf{atau}
 \begin{tabbing}
 \textbf{for} $i$ \textbf{in} range([start=0],stop,[step=1]):\\
-~~~~~badan pengulangan\\
+~~~~~badan perulangan\\
 \end{tabbing}
 
 
@@ -70,12 +70,12 @@ Sedangkan untuk mencetak rangkaian bilangan misalnya dari 1 sampai 10 bisa mengg
 \newpage
 
 Untuk \textit{flowchart} \textit{for} bisa dilihat di Gambar \ref{fig:flowchartFor}.
-\begin{figure}[h!]%
+\begin{marginfigure}[3cm]%
 \centering
-\includegraphics[scale=0.6]{fig/flowchart-FOR.eps}%
-\caption{Flowchart For}%
+\includegraphics[scale=0.5]{fig/flowchart-FOR.eps}%
+\caption{\Centering Notasi Algoritmik dengan Flowchart Untuk For}%
 \label{fig:flowchartFor}%
-\end{figure}
+\end{marginfigure}
 
 
 \subsection{Perulangan dengan \textit{while}}
@@ -85,7 +85,7 @@ Konstruksi \textit{while} digunakan untuk menghasilkan pengulangan sejumlah kali
 Untuk struktur \textit{while} bisa dilihat sebagai berikut.
 \begin{tabbing}
 \textbf{while} (Kondisi Logika):~~~~~~~~~~~~~~~\=\#Menjalankan perulangan selama kondisi benar\\
-~~~~~statements\\
+~~~~~\textit{statement}s\\
 \end{tabbing}
 
 Contoh penggunaan \textit{while} dalam bahasa Python untuk mencetak menurun bilang 10 sampai 1 bisa dilihat di Listing \ref{lst:cetakBilanganTurun}.
@@ -100,14 +100,14 @@ Contoh penggunaan \textit{while} dalam bahasa Python untuk mencetak menurun bila
 	\end{lstlisting}
 \end{listprog}
 
-\newpage
+
 Untuk \textit{flowchart} \textit{while} bisa dilihat di Gambar \ref{fig:flowchartWhile}.
-\begin{figure}[h!]%
+\begin{marginfigure}[3cm]%
 \centering
 \includegraphics[scale=0.6]{fig/flowchart-WHILE.eps}%
-\caption{Flowchart While}%
+\caption{\Centering Notasi Algoritmik dengan Flowchart Untuk While}%
 \label{fig:flowchartWhile}%
-\end{figure}
+\end{marginfigure}
 
 
 \section{Implementasi Perulangan}
@@ -175,7 +175,7 @@ Pada kasus pembuatan algoritma pada dunia nyata, perulangan tidak hanya dipakai 
 \end{listprog}
 	\end{contoh}
 
-Perhatikan bahwa ada kondisi-kondisi yang mempengaruhi kapan statement perulangan  \textit{while} atau \textit{for} digunakan. Namun,  Perulangan \textit{while} atau \textit{for} dapat dikonversi menjadi struktur yang berbeda satu sama lain. Kita dapat melakukan konversi atas Contoh \ref{cth:PengulanganPerintahWhile} menjadi dalam bentuk perulangan  \textit{for} berikut : 
+Perhatikan bahwa ada kondisi-kondisi yang mempengaruhi kapan \textit{statement} perulangan  \textit{while} atau \textit{for} digunakan. Namun,  Perulangan \textit{while} atau \textit{for} dapat dikonversi menjadi struktur yang berbeda satu sama lain. Kita dapat melakukan konversi atas Contoh \ref{cth:PengulanganPerintahWhile} menjadi dalam bentuk perulangan  \textit{for} berikut : 
 
 \begin{contoh}
 	\label{cth:PengulanganPerintahFor}
@@ -196,17 +196,18 @@ Perhatikan bahwa ada kondisi-kondisi yang mempengaruhi kapan statement perulanga
 \end{contoh}
 
 	\item Perulangan sering digunakan pada pemrosesan terhadap tipe-data jamak, misalnya \textit{array}, \textit{list}, \textit{string} dan bentuk tipe-data jamak lainnya yang membutuhkan penelusuran terhadap isi data yang lebih dari satu. Seluruh tipe-data jamak pada algoritma memiliki cara pemrosesan(baca/tulis) yang sama. Baik array, list, string atau tipe-data jamak lain semuanya memiliki properti indeks untuk mengakses data mana yang akan diproses.   
-	
-\FloatBarrier
+\end{enumerate}
+
 \subsection{Array}
 Array\sidenote{Di bahasa pemrograman Python, implementasi dari Array disebut sebagai List.} merupakan kumpulan dari variabel. Satu array bisa menampung beberapa data. Gambar \ref{fig:illustrasiArray} menunjukkan illustrasi dari sebuah array yang berkapasitas $j$. 
-\begin{center}
+
 	\begin{figure}[h!]%
+		\Centering
 		\includegraphics[scale=0.4]{fig/Array.eps}%
 		\caption{Illustrasi Array}%
 		\label{fig:illustrasiArray}%
 	\end{figure}
-\end{center}
+
 \begin{Petunjuk}
 \label{Ptk:Array}
 	\textbf{Penggunaan array}\\
@@ -214,17 +215,15 @@ Array\sidenote{Di bahasa pemrograman Python, implementasi dari Array disebut seb
 	$A[4] \rightarrow$ Mengakses lokasi ke $4$ dari array yang bernama $A$.\\
 	$A[i..j] \rightarrow$ Menandakan kumpulan isi array $A$ yang terdiri dari elemen $A[1],\ A[2],\ A[3],\ \ldots,\ A[j]$.\\
 	$A[4] = 5 \rightarrow$ Memasukkan nilai 5 ke lokasi ke 4 dari array $A$.\\
-	$b = A[4] \rightarrow$ Memasukkan nilai lokasi ke 4 dari array $A$ ke variabel $b$. 
-	$A.length \rightarrow$ Menandakan besar/panjang dari array $A$.
-	
-\marginnote[-4cm]{Catatan : Ilustrasi pada petunjuk ini, hanya menampilkan array 1 dimensi. Seiring dengan meningkatnya pembahasan, akan dikenalkan pada array berdimensi lebih dari satu !}
-	
+	$b = A[4] \rightarrow$ Memasukkan nilai lokasi ke 4 dari array $A$ ke variabel $b$. \\
+	$A.length \rightarrow$ Menandakan besar/panjang dari array $A$. \\
 \end{Petunjuk}
+
+		\marginnote[-4cm]{Catatan : Ilustrasi pada petunjuk \ref{Ptk:Array}, hanya menampilkan array 1 dimensi. Seiring dengan meningkatnya pembahasan, akan dikenalkan pada array berdimensi lebih dari satu !}
 	
+Petunjuk \ref{Ptk:Array} beberapa kali menyebutkan istilah \textbf{lokasi}. Pada algoritma ataupun pemrograman, ini lebih dikenal dengan dengan indeks. Walaupun pada gambar \ref{fig:illustrasiArray}, indeks dimulai dari 1(satu), perlu diketahui bahwa pada kebanyakan bahasa pemrograman, termasuk python, indeks pada array selalu dimulai dari 0 dan berakhir pada (panjang data-1). \\
 
-Petunjuk \ref{Ptk:Array} diatas, beberapa kali menyebutkan istilah \textbf{lokasi}. Pada algoritma ataupun pemrograman, ini lebih dikenal dengan dengan indeks. Walaupun pada gambar \ref{fig:illustrasiArray}, indeks dimulai dari 1(satu), perlu diketahui bahwa pada kebanyakan bahasa pemrograman, termasuk python, indeks pada array selalu dimulai dari 0 dan berakhir pada (panjang data-1). \\
-
-Perhatikan bahwa contoh \ref{Ptk:Array} diatas, sebuah pernyataan tunggal hanya mewakili satu nilai dari sekian banyak data yang ada di dalam array. $A[4]$ misalnya, hanya mengakses indeks ke-4 dari data A. Pertanyaannya adalah bagaimana jika kita memerlukan perhitungan jumlah total dari untuk seluruh data pada array yang berisi bilangan bulat ? Disinilah peran dari struktur perulangan(looping). Agar lebih mengerti mengenai hubungan perulangan dan array, perhatikan contoh berikut ini : 
+Perhatikan bahwa contoh \ref{Ptk:Array} diatas, sebuah \textit{statement} tunggal hanya mewakili satu nilai dari sekian banyak data yang ada di dalam array. $A[4]$ misalnya, hanya mengakses indeks ke-4 dari data A. Pertanyaannya adalah bagaimana jika kita memerlukan perhitungan jumlah total dari untuk seluruh data pada array yang berisi bilangan bulat ? Disinilah peran dari struktur \textit{Repetition/Looping}(Perulangan). Agar lebih mengerti mengenai hubungan perulangan dan array, perhatikan contoh berikut ini : 
 \pagebreak
  \begin{contoh}
 	\textbf{ Jumlah Total Pada Array I}
@@ -291,38 +290,186 @@ Sama seperti array bertipe data-lain, Sebuah \textit{String} sebenarnya sudah me
 	\end{lstlisting}
 \end{listprog}
 \end{contoh}
-\end{enumerate}
+
 
 \FloatBarrier
 \subsection{Perulangan Bersarang}
-Sebuah perulangan dapat memiliki perulangan di dalamnya dan perulangan yang di dalam tersebut juga dapat juga dapat memiliki perulangan lainnya di dalam. Perulangan yang di dalam tersebut tidaklah harus menggunakan pernyataan yang sama dengan perulangan induknya. Misalnya, boleh saja kita menggunakan pernyataan perulangan \textit{for} di dalam pernyataan perulangan \textit{while} dan juga sebaliknya. Algoritma berikut akan menunjukkan salah satu struktur perulangan bersarang. Ini merupakan salah satu dari kombinasi struktur dasar pada algoritma. \\
+Sebuah perulangan dapat memiliki perulangan di dalamnya dan perulangan yang di dalam tersebut juga dapat juga dapat memiliki perulangan lainnya di dalam. Perulangan yang di dalam tersebut tidaklah harus menggunakan \textit{statement} yang sama dengan perulangan induknya. Misalnya, boleh saja kita menggunakan \textit{statement} perulangan \textit{for} di dalam \textit{statement} perulangan \textit{while} dan juga sebaliknya. Algoritma berikut akan menunjukkan salah satu struktur perulangan bersarang. Ini merupakan salah satu dari kombinasi struktur dasar pada algoritma. \\
 
-Implementasi perulangan lanjut ini akan lebih banyak akan dijelaskan dalam bentuk permasalah - permasalahan pada latihan. Dua permasalahan perulangan bersarang dapat dilihat pada Latihan Menjumlahkan Matriks dan Pencetakan Dengan Baris Kolom.
+Implementasi Perulangan Bersarang dapat dijumpai pada beberapa permasalahan sebagai berikut : 
+\begin{itemize}
+	\item Ketika akan membandingkan kecocokan dua buah array yang tidak tidak terurut. 
+	\item Proses pengurutan 
+	\item Mencetak deret bilangan prima dari dari 0 sampai $N$
+	\item Proses perhitungan yang melibatkan array berdimensi lebih dari 1, misalnya matriks
+	\item Berbagai permasalahan lain yang membutuhkan perulangan bersarang
+\end{itemize}
+
+Perhatikan Contoh \ref{cth:angkaBertingkat1} dan \ref{cth:angkaBertingkat2} berikut yang menunjukkan penggunaan perulangan bersarang untuk mencetak bilangan secara bertingkat. 
+
+\begin{contoh}
+	\textbf{Bilangan Bertingkat (\textit{for})}
+	\label{cth:angkaBertingkat1}
+\begin{listprog}{AngkaBertingkat.py}
+\label{lst:angkaBertingkat}
+\begin{lstlisting}[language=Python]
+	for i in range(5):
+			for j in range(i+1):
+					print(j, end=' ')
+			print()
+	\end{lstlisting}
+\end{listprog}
+\end{contoh}
+
+\begin{contoh}
+	\textbf{Bilangan Bertingkat (\textit{while})}
+	\label{cth:angkaBertingkat2}
+\begin{listprog}{AngkaBertingkat2.py}
+\label{lst:angkaBertingkat2}
+\begin{lstlisting}[language=Python]
+	i=0
+	while(i<=4):
+			j=0    
+			while(j<=i):
+					print(j, end=' ')
+					j += 1
+			print()
+			i += 1
+	\end{lstlisting}
+\end{listprog}
+\end{contoh}
+
+Perhatikan bahwa sudah dijelaskan sebelumnya bahwa perulangan bersarang tidak wajib merupakan menggunaka \textit{statement} perulangan yang sama.
+
+\begin{contoh}
+	\textbf{Bilangan Bertingkat (\textit{while})}
+	\label{cth:angkaBertingkat3}
+\begin{listprog}{AngkaBertingkat3.py}
+\label{lst:angkaBertingkat3}
+\begin{lstlisting}[language=Python]
+	i=0
+	while (i<=4):
+			for j in range(i+1):
+					print(j, end=' ')
+			print()
+			i += 1
+	\end{lstlisting}
+\end{listprog}
+\end{contoh}
+
+\marginnote{Dapatkah Anda membuat kombinasi \textit{for} dan \textit{while} nya ?}
 
 
-%\begin{tabbing}
-%\textbf{for} $i=n$ \textbf{to} $m$~~~~~~~~~~~~~~~\=\#Mengisi variabel i, dan lakukan perulangan sebanyak (m-n-1)\\
-%~~~~~\textbf{for} $j=n$ \textbf{to} $m$~~~~~~~~~~~~~~~\=\#Mengisi variabel j, dan lakukan perulangan sebanyak (m-n-1)\\
-%~~~~~statements\\
-%~~~~~\textbf{end for}\\
-%\textbf{end for}
-%\end{tabbing}
+Agar mahir pada Implementasi perulangan lanjut, latihan sangat dibutuhkan. Maka, pembahasan akan lebih banyak akan dijelaskan dalam bentuk permasalahan - permasalahan pada latihan dan praktek. 
 
-\chapter{Latihan : Perulangan}
+\section{Latihan : Perulangan}
 
 \begin{pemrograman}
 Lakukan perumusan masalah, pembuatan algoritma \& program untuk membuat Urutan dan Deret sebagai berikut : 
+\begin{enumerate}
+	\item 1 + 2 + 3 + 4 + 5 + 6 + 7 ...  = HASIL
+	\item 2 + 4 + 6 + 8 + 10 + 12 + 14 ...  = HASIL
+	\item 3 + -5 + 7 + -9 + 11 + -13 + 15 ... = HASIL
+	\item 1/2 + 2/3 + 3/4 + 4/5 + 5/6 + 7/8 + ...  = HASIL
+	\item -2/1 + 4/3 + -6/5 + 8/7 + -10/9 + 12/11 + ...  = HASIL
+\end{enumerate}
 \end{pemrograman}
 
 \begin{pemrograman}
-Lakukan perumusan masalah, pembuatan algoritma \& program untuk kasus ``Menukarkan Isi Gelas`` jika variabel pada masing - masing gelas memiliki tipe data String !
+Lakukan perumusan masalah, pembuatan algoritma \& program untuk mengkonversi bilangan Desimal ke Biner dan Biner ke Desimal
 \end{pemrograman}
 
 \begin{pemrograman}
-Lakukan perumusan masalah, pembuatan algoritma \& program untuk kasus ``Menukarkan Isi Gelas`` jika variabel pada masing - masing gelas memiliki tipe data String !
+Sediakan sebuah Array yang memiliki 100 buah angka acak. Lakukan perhitungan terhadap : 
+\begin{enumerate}
+	\item Rata-Rata
+	\item Standar Deviasi
+\end{enumerate}
+\end{pemrograman}
+
+\begin{pemrograman}
+Lakukan proses enkripsi sederhana terhadap kata menjadi angka - angka sesuai urutan abjad dengan melakukan proses pembalikkan kata terlebih dahulu. Misalkan kata ``MAHA``, lakukan langkah - langkah berikut :
+\begin{enumerate}
+	\item 1. Balikkan Kata Menjadi ``AHAM``
+	\item 2. Ubah menjadi angka dengan hasil ``1 8 1 13``
+\end{enumerate}
 \end{pemrograman}
 
 
+
+\begin{pemrograman}
+Untuk setiap input N lakukan pencetakan terhadap pola sebagai berikut: (Contoh N = 5)
+\begin{itemize}
+	\item POLA 1 \\
+				* \\
+				** \\
+				*** \\
+				**** \\
+				***** \\
+	\item POLA 2 \\
+				***** \\
+				**** \\
+				*** \\
+				** \\
+				* \\
+	\item POLA 3 \\
+				***** \\
+				***** \\
+				***** \\
+				***** \\
+				***** \\
+	\item POLA 4 \\
+				54321 \\
+				5432 \\
+				543 \\
+				54 \\
+				5 \\
+		\item POLA 5 \\
+			1 \\
+			12 \\
+			123 \\
+			12345 \\
+			1234 \\
+			123 \\
+			12 \\
+			1 \\
+\end{itemize}
+\end{pemrograman}
+
+\begin{pemrograman}
+Cetak pola berukuran 5x10 berikut ini !
+OXOXOXOXOX\\
+OXOXOXOXOX\\
+OXOXOXOXOX\\
+OXOXOXOXOX\\
+OXOXOXOXOX\\
+OXOXOXOXOX\\
+OXOXOXOXOX\\
+OXOXOXOXOX\\
+OXOXOXOXOX\\
+OXOXOXOXOX\\
+Catatan: Lakukan tanpa melibatkan struktur percabangan !
+\end{pemrograman}
+
+\begin{pemrograman}
+Untuk setiap kata yang diinput lakukan pencetakan kata tersebut secara diagonal \\
+M \\
+~I \\
+~~K \\
+~~~R \\
+~~~~O \\
+~~~~~S \\
+~~~~~~K \\
+~~~~~~~I \\
+~~~~~~~~L \\
+\end{pemrograman}
+
+
+\begin{pemrograman}
+Untuk setiap kata yang diinput, lakukan pencetakan terhadap alfabet yang ada dalam kata tersebut (tidak harus berurutan)  \\
+Misal : Kata = ``pertemanan``
+p e r t m a n \\
+\end{pemrograman}
 
 
 	

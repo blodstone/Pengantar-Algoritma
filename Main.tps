@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=ch_pengantarAlgoritma.tex
 
 [Frame0_View0,0]
-TopLine=260
-Cursor=15288
+TopLine=307
+Cursor=15748
 
 [Frame1]
 Flags=0
@@ -53,8 +53,8 @@ Class=LaTeXView
 Document=Main.tex
 
 [Frame2_View0,0]
-TopLine=66
-Cursor=2054
+TopLine=118
+Cursor=2996
 
 [Frame3]
 Flags=0
@@ -72,11 +72,11 @@ Document=ch_konsepDasarAlgoritma.tex
 
 [Frame3_View0,0]
 TopLine=0
-Cursor=0
+Cursor=133
 
 [SessionInfo]
 FrameCount=4
-ActiveFrame=0
+ActiveFrame=3
 
 [Bookmarks]
 ch_kompleksitas.tex=55 

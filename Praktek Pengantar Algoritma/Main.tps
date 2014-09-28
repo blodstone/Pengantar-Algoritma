@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=Main.tex
 
 [Frame0_View0,0]
-TopLine=85
-Cursor=2254
+TopLine=133
+Cursor=3190
 
 [Frame1]
 Flags=0
@@ -35,8 +35,8 @@ Class=LaTeXView
 Document=ch_modul1.tex
 
 [Frame1_View0,0]
-TopLine=148
-Cursor=5013
+TopLine=150
+Cursor=5230
 
 [Frame2]
 Flags=0

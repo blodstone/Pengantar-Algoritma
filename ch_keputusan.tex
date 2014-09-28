@@ -25,7 +25,7 @@ Contoh kondisi logika bisa dilihat di Contoh \ref{cth:kondisiLogika}.
 	\hline
 	Kondisi & Hasil \\
 	\hline
-	7 $>$ 3 & Salah \\
+	7 $>$ 3 & Benar \\
 	8 $<$ 8 & Salah \\
 	(5 $>$ 9) AND Benar & Salah \\
 	(10 $<$ 2) OR (8 $\leq$ 8) & Benar \\
@@ -49,25 +49,6 @@ Percabangan biasanya menggunakan pernyataan \textbf{jika} (\textit{if}). Struktu
 \>~~~$<$\textbf{statements 3}$>$\>\\
 \>\textbf{end if}
 \end{tabbing}
-
-\FloatBarrier
-Contoh penggunaan statement \textit{IF} adalah sebagai berikut.
-
-\begin{contoh}
-	\textbf{Penggunaan IF..THEN..ELSE}
-	\begin{algorithm}[H]
-		\caption{PENENTUAN-NILAI()}
-		\begin{algorithmic}[1]
-		\IF{$x > 4$} 
-			\STATE $y = 5$ \COMMENT{Perintah ini hanya dijalankan jika nilai $x > 4$.}
-		\ELSIF{$x > 2$}
-			\STATE $y = 8$ \COMMENT{Perintah ini hanya dijalankan jika nilai $2 < x < 4$.}
-		\ELSE
-			\STATE $y = 6$ \COMMENT{Perintah ini hanya dijalankan jika nilai $x \leq 4$.}
-		\ENDIF
-		\end{algorithmic}
-	\end{algorithm}
-\end{contoh}
 
 
 Dalam bentuk flowchart, bisa dilihat di Gambar \ref{fig:flowchart-IF}.
@@ -94,11 +75,11 @@ Contoh program Python untuk mengecek bilangan genap atau ganjil bisa dilihat di 
 \begin{listprog}{genapDanGanjil.py}
 	\label{lst:genapDanGanjil}
 	\begin{lstlisting}[language=Python]
-		num = input("Masukkan sebuah angka")
+		num = int(input("Masukkan sebuah angka"))
 		if num%2 == 0:
-				print num, " adalah bilangan genap."
+				print(num, " adalah bilangan genap.")
 		else:
-				print num, " adalah bilangan ganjil."
+				print(num, " adalah bilangan ganjil.")
 	\end{lstlisting}
 \end{listprog}
 
@@ -120,3 +101,39 @@ Sebuah percabangan dapat memiliki percabangan di dalamnya dan percabangan yang d
 \>\textbf{end if}
 \end{tabbing}
 
+
+\section{Latihan : Percabangan}
+
+\begin{pemrograman}
+Lakukan perumusan masalah, pembuatan algoritma \& program untuk penentuan ganjil \& genap dari sebuah bilangan\end{pemrograman}
+
+\begin{pemrograman}
+Lakukan perumusan masalah, pembuatan algoritma \& program untuk panggilan saudara atau saudari sesuai jenis kelamin !
+\end{pemrograman}
+
+\begin{pemrograman}
+Lakukan perumusan masalah, pembuatan algoritma \& program untuk penentuan nilai akhir dan nilai huruf dari kelas Pengantar Algoritma !
+\begin{enumerate}
+	\item A diatas 80
+	\item B 70 - 79
+	\item C 60 - 79
+	\item D 50 - 79
+	\item E 1 - 49
+\end{enumerate}
+Lakukan dua versi pembatasan input, versi normal dan Competitive Programming !
+\end{pemrograman} 
+
+\begin{pemrograman}
+Lakukan perumusan masalah, pembuatan algoritma \& program untuk penentuan kuadran pada sumbu kartesian !
+Manfaatkan IF biasa dan bersarang !
+\end{pemrograman}
+
+\begin{pemrograman}
+Lakukan perumusan masalah, pembuatan algoritma \& program untuk penentuan jenis segitiga !
+Manfaatkan IF biasa dan bersarang !
+\end{pemrograman}
+
+\begin{pemrograman}
+Lakukan perumusan masalah, pembuatan algoritma \& program untuk penentuan jumlah hari pada bulan dan tahun tertentu !
+Manfaatkan IF biasa dan bersarang !
+\end{pemrograman}

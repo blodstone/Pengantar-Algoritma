@@ -1,183 +1,311 @@
 \chapter{Percabangan}
 
-\begin{permasalahan}{Permasalahan Bilangan Kelipatan}\\
-\label{prob:bilanganKelipatan}
-	Hasilkan serangkaian $n$ bilangan yang merupakan kelipatan dari angka $m$ yang dimasukkan.\\
-	\textbf{Masukan}\\
-	Dua baris dimana baris pertama adalah $n$ dan baris kedua adalah $m$. $n$ merupakan panjang rangkaian yang akan dihasilkan sedangkan $m$ adalah kelipatan bilangan yang diinginkan. $n$ dan $m$ adalah bilangan bulat\\
-	\textbf{Keluaran}\\
-	Satu set rangkaian bilangan bulat dengan panjang rangkaian $n$ dan merupakan kelipatan dari $m$. Semua rangkaian bermula dari angka $m$.\\
-	\begin{center}
-	\textbf{Test Case 1}\\
-	\end{center}
-	\textbf{Masukan}\\
-	6\\
-	5\\
-	\textbf{Keluaran}\\
-	5 10 15 20 25 30 \\
-	\begin{center}
-	\textbf{Test Case 2}\\
-	\end{center}
-	\textbf{Masukan}\\
-	3\\
-	4\\
-	\textbf{Keluaran}\\
-	4 8 12 \\
-	\begin{center}
-	\textbf{Test Case 3}\\
-	\end{center}
-	\textbf{Masukan}\\
-	10\\
-	2\\
-	\textbf{Keluaran}\\
-	2 4 6 8 10 12 14 16 18 20\\
+\section{Petunjuk}
+\begin{itemize}
+	\item Perhatikan petunjuk Dosen untuk masalah Percabangan!
+	\
+	\item Perhatikan dan ikuti petunjuk dosen mengenai bagaimana cara menggunakan program Judge untuk mengevaluasi permasalahan yang Anda kerjakan!
 
-\end{permasalahan}
-
-\begin{panduan}{Tes}
-\begin{enumerate}
-	\item Baca Permasalahan \ref{prob:bilanganKelipatan}.
-	\item Buka Pyscripter.
-	\item Ketikkan Listing \ref{lst:permasalahan1}.
-	\begin{listprog}{Permasalahan 1 (permasalahan1.py)}
-		\label{lst:permasalahan1}
-		\begin{lstlisting}[language=Python]
-		n = input()
-		m = input()
-		for i in range(1,n+1):
-	    print m*i,
-		\end{lstlisting}
-	\end{listprog}
-	\item \textit{Save} file tersebut sebagai permasalahan1.py
-	\item Masuk ke http://elearning.mikroskil.ac.id, dan masuk ke \textit{Course} Pengantar Algoritma.
-	\item Klik di \textbf{Tugas Praktek 1: Permasalahan Bilangan Kelipatan}.
-	\item Klik Browse.
-	\item Pilih file permasalahan1.py yang sudah anda \textit{save} dan klik ok.
-	\item Refresh Browser sampai tulisan \textbf{Status} dari Pending menjadi Accepted. Jika ada error berarti ada kesalahan. Cek kembali Listing \ref{lst:permasalahan1}.
-\end{enumerate}
-\end{panduan}
+\end{itemize}
 
 \newpage
-\begin{permasalahan}{Permasalahan Bilangan Genap Atau Ganjil}\\
-	Cari tahu apakah sebuah bilangan merupakan bilangan genap atau ganjil.\\
+\section{Permasalahan}
+\begin{itemize}
+
+		\item Hubungi Dosen atau Asisten Dosen jika Anda terdapat \textit{Permasalahan} yang Anda sudah yakin benar, namun tetap mendapatkan \textit{Wrong Answer}. 
+		\item \textbf{Periksa kembali berulang - ulang input, proses dan ouput Anda sebelum menghubungi Dosen atau Asisten Dosen}
+		
+		\item Anda akan dianggap menjawab satu sesi permasalahan jika telah mengkonfirmasi kode sumber Anda dengan seluruh \textit{test set}. Misal : Permasalahan 2-1 dianggap benar jika \textit{submission} Anda terhadap \textit{problem 2-1a, 2-1b, 2-1c ACCEPTED}
+		
+\end{itemize}
+
+
+\begin{permasalahan}{Dimana Posisi Ku ?}\\
+\label{prob:dimanaPosisiKu}
+Tentukanlah nilai sebenarnya dari sebuah titik yang diberikan nilai $x$ dan $y
+$ nya jika diberitahukan letak kuadran cartesian-nya ! \\
+Misalkan : Titik ( 3,4) \\
+Kuadran I : 3,4 \\
+Kuadran II: -3,4 \\
+Kuadran III : -3,-4 \\
+Kuadran IV : 3,-4 \\\\
 	\textbf{Masukan}\\
-	Sebuah bilangan $n$ yang merupakan bilangan bulat.\\
+	2 buah input bilangan bulat positif \\
+	1 buah input string yang berisi : \textbf{I, II, III, IV}\\\\
 	\textbf{Keluaran}\\
-	Keluaran antara dua bilangan saja, yaitu 1 apabila bilangan genap, atau, 2 apabilan bilangan ganjil.\\
+	Koordinat titik dengan format (x,y) \\
 	\begin{center}
-	\textbf{Test Case 1}\\
+	\textbf{Test Case}\\
 	\end{center}
 	\textbf{Masukan}\\
-	5\\
+	3 \\
+	4 \\
+	III \\\\
 	\textbf{Keluaran}\\
-	2\\
-	\begin{center}
-	\textbf{Test Case 2}\\
-	\end{center}
-	\textbf{Masukan}\\
-	98472\\
-	\textbf{Keluaran}\\
-	1\\
-	\begin{center}
-	\textbf{Test Case 3}\\
-	\end{center}
-	\textbf{Masukan}\\
-	6536\\
-	\textbf{Keluaran}\\
-	1\\
+	(-3,-4)
 \end{permasalahan}
 
 \newpage
-\begin{permasalahan}{Permasalahan Penjumlahan Bilangan Ganjil}\\
-	Diberikan sebuah bilangan $n$ carilah jumlah dari semua bilangan ganjil antara 0 sampai dengan bilangan $n$ tersebut.\\
+\begin{permasalahan}{30 Februari 2014}\\
+\label{prob:30Februari}
+Dapatkah Anda memberitahukan kepada saya apakah 30 - 2 - 2014 adalah tanggal yang benar ?  Sekaligus juga 31 - 4 - 2002 ? Dapatkah Anda memberitahu validitasnya setiap saya bertanya ? \\\\
 	\textbf{Masukan}\\
-	Sebuah bilangan bulat $n$.\\
+	3 buah input bilangan bulat positif berurutan berupa tanggal, bulan dan tahun\\
+	tanggal dapat berupa bilangan bulat positif dan negatif\\
+	bulan dapat berupa bilangan bulat positif dan negatif\\
+	tahun dapat berupa bilangan bulat positif dan negatif\\\\
 	\textbf{Keluaran}\\
-	Sebuah bilangan bulat $z$ dimana $z$ merupakan hasil penjumlahan dari semua bilangan ganjil yang ada antara 0 sampai bilangan $n$ tersebut (bilangan $n$ termasuk).\\
-	\begin{center}
-	\textbf{Test Case 1}\\
-	\end{center}
-	\textbf{Masukan}\\
-	20\\
-	\textbf{Keluaran}\\
-	100\\
-	\textit{Penjelasan: jumlah bilangan ganjil antara 1 sampai dengan 20 \\adalah 1+3+5+7+9+11+13+49=100}\\
-	\begin{center}
-	\textbf{Test Case 2}\\
-	\end{center}
-	\textbf{Masukan}\\
-	50\\
-	\textbf{Keluaran}\\
-	625\\
-	\begin{center}
-	\textbf{Test Case 3}\\
-	\end{center}
-	\textbf{Masukan}\\
-	90\\
-	\textbf{Keluaran}\\
-	2025\\
-\end{permasalahan}
+	Keluaran berupa keterangan dengan format :\\
+	(tanggal) (nama bulan) (tahun) (validitas)\\
+	\textbf{(tanggal)} : bilangan bulat positif / negatif \\
+	\textbf{(nama bulan)} : string jika nama bulan ada (lower case). bilangan bulat positif / negatif jika nama bulan tidak ada\\
+	\textbf{(tahun)} : bilangan bulat positif / negatif\\
+	\textbf{(validitas)} : keterangan berupa ``valid`` atau ``tidak valid``\\
 
-\newpage
-\begin{permasalahan}{Permasalahan Pengecekkan Bilangan Prima}\\
-	Diberikan sebuah bilangan $n$ cari tahu apakah itu bilangan prima atau bukan.\\
-	\textbf{Masukan}\\
-	Sebuah bilangan $n$ dimana $n$ adalah bilangan integer.\\
-	\textbf{Keluaran}\\
-	Keluaran bisa berupa dua yaitu 1 dan 0. Angka 1 menandakan bahwa itu adalah Prima, sedangkan angka 0 menandakan itu bukan bukan bilangan Prima.\\
+	\textbf{UKURAN VALIDITAS : }\\
+	tanggal valid jika sesuai dengan jumlah tanggal setiap bulan, hati - hati tahun kabisat ! \\
+	bulan valid jika masih diantara 1 - 12 \\
+	tahun valid jika dari 1900 - 2099 \\
+
 	\begin{center}
 	\textbf{Test Case 1}\\
 	\end{center}
 	\textbf{Masukan}\\
-	3\\
+	31 \\
+	1 \\
+	2012 \\\\
 	\textbf{Keluaran}\\
-	1\\
+	31 januari 2012 valid \\\\
 	
 	\begin{center}
 	\textbf{Test Case 2}\\
 	\end{center}
 	\textbf{Masukan}\\
-	26\\
+	29 \\
+	2 \\
+	2012 \\\\
 	\textbf{Keluaran}\\
-	0\\
-	
+	29 februari 2012 valid \\\\
+
 	\begin{center}
 	\textbf{Test Case 3}\\
 	\end{center}
 	\textbf{Masukan}\\
-	11\\
+	29 \\
+	13 \\
+	2012 \\\\
 	\textbf{Keluaran}\\
-	1\\
+	29 13 2012 tidak valid
+	
+	\begin{center}
+	\textbf{Test Case 4}\\
+	\end{center}
+	\textbf{Masukan}\\
+	29 \\
+	2 \\
+	2013 \\\\
+	\textbf{Keluaran}\\
+	29 februari 2013 tidak valid \\
+	
+	\begin{center}
+	\textbf{Test Case 5}\\
+	\end{center}
+	\textbf{Masukan}\\
+	29 \\
+	1 \\
+	2300 \\\\
+	\textbf{Keluaran}\\
+	29 januari 2300 tidak valid \\
 	
 \end{permasalahan}
 
+
 \newpage
-\begin{permasalahan}{Permasalahan Pencarian Bilangan Prima}\\
-	Hasilkan serangkaian bilangan prima dari bilangan $2$ sampai dengan bilangan $n$.\\
+\begin{permasalahan}{Pythagoras}\\
+\label{prob:pythagoras}
+Apakah aku Segitiga Siku-siku atau Sembarang ? Dapatkah kamu menebaknya ? \\ 
+Segitiga siku siku memiliki ciri - ciri : \begin{math}a^{2} + b^{2} = c^{2}\end{math}\\\\
 	\textbf{Masukan}\\
-	Sebuah bilangan bulat \textit{n} yang merupakan batas atas dari \textit{array} bilangan prima yang akan dihasilkan.\\
+	3 buah bilangan bulat \textbf{POSITIF (Tanpa negatif)} berupa tiga sisi segitiga\\
+	\textbf{Tidak ada input yang salah !}\\\\
 	\textbf{Keluaran}\\
-	Satu set (himpunan elemen yang tidak memiliki duplikat) bilangan $A$ yang terdiri dari bilangan $2$ sampai bilangan $n$ (termasuk $n$) dimana setiap bilangan hanya memiliki dua pembagi saja yaitu $1$ dan bilangan itu sendiri.\\
+	Keluaran berupa keterangan dengan format :\\
+	(sisiA) (sisiB) (sisiC) (hasil)\\	
+	\textbf{(sisi a)} : sisi pembentuk sudut siku - siku
+	\textbf{(sisi b)} : sisi pembentuk sudut siku - siku
+	\textbf{(sisi c)} : sisi miring bilangan bulat positif 
+	\textbf{(hasil)} : keterangan berupa ``segitiga siku-siku`` atau ``segitiga siku-siku``\\
+
+	sisi a, sisi b, dan sisi c adalah bilangan bulat positif. 
+	sisi a dan sisi b harus berurutan
+
 	\begin{center}
-	\textbf{Test Case 1}
+	\textbf{Test Case 1}\\
 	\end{center}
-	\textbf{Masukan}
-	10
-	\textbf{Keluaran}
-	2 3 5 7
+	\textbf{Masukan}\\
+	3 \\
+	4 \\
+	5 \\\\
+	\textbf{Keluaran}\\
+	3 4 5 segitiga siku-siku \\\\
+	
 	\begin{center}
-	\textbf{Test Case 2}
+	\textbf{Test Case 2}\\
 	\end{center}
-	\textbf{Masukan}
-	19
-	\textbf{Keluaran}
-	2 3 5 7 11 13 17 19
+	\textbf{Masukan}\\
+	4 \\
+	5 \\
+	3 \\\\
+	\textbf{Keluaran}\\
+	3 4 5 segitiga siku-siku \\\\
+
 	\begin{center}
-	\textbf{Test Case 3}
+	\textbf{Test Case 3}\\
 	\end{center}
-	\textbf{Masukan}
-	25
-	\textbf{Keluaran}
-	2 3 5 7 11 13 17 19 23 
+	\textbf{Masukan}\\
+	5 \\
+	4 \\
+	3 \\\\
+	\textbf{Keluaran}\\
+	3 4 5 segitiga siku-siku \\\\
+	
+	\begin{center}
+	\textbf{Test Case 4}\\
+	\end{center}
+	\textbf{Masukan}\\
+	141 \\
+	3 \\
+	141 \\\\
+	\textbf{Keluaran}\\
+	3 141 141 bukan segitiga siku-siku \\	
 \end{permasalahan}
 
+
+
+\newpage
+\begin{permasalahan}{OWNING !!!}\\
+\label{prob:OWNING}
+Defense of The Ancients(DOTA) merupakan salah satu permainan e-sport paling popular, di mana dua tim yang masing - masing terdiri dari 5 pemain bersaing untuk meruntuhkan pertahanan tim lawan dengan menghancurkan bangunan inti lawan, yang dikenal dengan nama “Ancient”. Dalam permainan ini, setiap kali pesaing hero mengeleminasi lawan, maka pemain akan mendapatkan gelar dan pujian.\\
+
+Berikut adalah urutan gelar bedasarkan \textbf{total skor / eleminasi} :\\
+         3 -  "killing spree" \\
+         4 -  "dominating" \\ 
+         5 - "mega kill" \\
+         6 -  "unstoppable" \\
+         7 - "wicked sick"
+         8 -  "monster kill" \\
+         9 -  "godlike" \\
+         lebih dari 10 -  "beyond godlike" \\
+
+Berikut adalah urutan pujian bedasarkan \textbf{jumlah eleminasi yang barusan terjadi} :\\
+         2 -  "double kill" \\ 
+         3 - "triple kill" \\
+         4 -  "ultra kill" \\
+				 lebih dari 5 - "rampage" \\
+				
+	Dapatkah Anda menentukan gelar dan pujian akan diucapkan Announcer jika diketahui jumlah eleminasi sebelumnya dan jumlah eleminasi baru ? \\\\
+ 
+	\textbf{Masukan}\\
+	2 buah bilangan bulat \textbf{POSITIF (Tanpa negatif)} berupa (jumlah eleminasi sebelumnya) dan (jumlah eleminasi baru) \\
+	\textbf{Tidak ada input yang salah !}\\\\
+	\textbf{Keluaran}\\
+	Keluaran berupa keterangan dengan format :\\
+	(total eleminasi:bilangan bulat positif) (gelar:string) (pujian:string) \\
+	
+	
+	ketiadaan (gelar) dan (pujian) akan diwakili dengan ``n/a``
+
+	\begin{center}
+	\textbf{Test Case 1}\\
+	\end{center}
+	\textbf{Masukan}\\
+	0 \\
+	0 \\
+	\textbf{Keluaran}\\
+	0 0 n/a n/a\\\\
+	
+	\begin{center}
+	\textbf{Test Case 2}\\
+	\end{center}
+	\textbf{Masukan}\\
+	5 \\
+	5 \\\\
+	\textbf{Keluaran}\\
+	5 5 beyond godlike rampage \\\\
+
+
+	\begin{center}
+	\textbf{Test Case 3}\\
+	\end{center}
+	\textbf{Masukan}\\
+	1 \\
+	4 \\\\
+	\textbf{Keluaran}\\
+	1 4 mega kill ultra kill \\\\
+	
+	\begin{center}
+	\textbf{Test Case 4}\\
+	\end{center}
+	\textbf{Masukan}\\
+	3 \\
+	2 \\\\
+	\textbf{Keluaran}\\
+	3 2 mega kill double kill \\	
+\end{permasalahan}
+
+
+
+\newpage
+\begin{permasalahan}{Twenty-Nine My Age}\\
+\label{prob:a29myage}
+Vicky mengerti bahasa Indonesia tetapi hanya bisa dapat menjawab dalam bahasa Inggris. Dapatkah kamu membuat algoritma yang mirip dengan dirinya, dimana jika diberikan hari dalam bahasa indonesia dan jumlah hari yang akan ditambahkan dia akan menjawab dengan hari dalam bahasa inggris serta jarak hari\\\\
+ 
+	\textbf{Masukan}\\
+	1 buah string berupa hari dalam minggu (bahasa Indonesia)\\
+	1 buah bilangan bulat \textbf{POSITIF (Tanpa negatif)} berupa jumlah hari kedepan \\
+	\textbf{Tidak ada input yang salah !}\\\\
+	\textbf{Keluaran}\\
+	Keluaran berupa keterangan dengan format :\\
+	(hari awal) (banyak hari) (hari akhir) (jarak hari)\\
+	- (hari awal) dalam bahasa Indonesia\\
+	- (banyak hari) yang akan ditambahkan : bilangan bulat positif\\
+	- (hari akhir) dalam bahasa Inggris \\
+	- (jarak hari) antara hari antara hari awal dengan hari akhir : bilangan bulat positif / negatif \\
+
+	\begin{center}
+	\textbf{Test Case 1}\\
+	\end{center}
+	\textbf{Masukan}\\
+	senin \\
+	14 \\
+	\textbf{Keluaran}\\
+	senin 14 monday 0\\\\
+	
+	\begin{center}
+	\textbf{Test Case 2}\\
+	\end{center}
+	\textbf{Masukan}\\
+	kamis \\
+	141 \\\\
+	\textbf{Keluaran}\\
+	kamis 141 friday -1 \\\\
+
+
+	\begin{center}
+	\textbf{Test Case 3}\\
+	\end{center}
+	\textbf{Masukan}\\
+	rabu \\
+	18 \\\\
+	\textbf{Keluaran}\\
+	rabu 18 sunday 3 \\\\
+	
+	\begin{center}
+	\textbf{Test Case 4}\\
+	\end{center}
+	\textbf{Masukan}\\
+	jumat \\
+	70 \\\\
+	\textbf{Keluaran}\\
+	jumat 70 friday 0 \\	
+\end{permasalahan}

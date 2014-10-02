@@ -11,14 +11,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1052
-NormalPos.bottom=492
+NormalPos.right=1120
+NormalPos.bottom=431
 Class=LaTeXView
 Document=ch_pengantarAlgoritma.tex
 
 [Frame0_View0,0]
-TopLine=494
-Cursor=17967
+TopLine=526
+Cursor=26241
 
 [Frame1]
 Flags=0
@@ -29,13 +29,13 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1052
-NormalPos.bottom=492
+NormalPos.right=1120
+NormalPos.bottom=431
 Class=LaTeXView
 Document=ch_perulangan.tex
 
 [Frame1_View0,0]
-TopLine=513
+TopLine=524
 Cursor=18866
 
 [Frame2]
@@ -47,8 +47,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1052
-NormalPos.bottom=492
+NormalPos.right=1120
+NormalPos.bottom=431
 Class=LaTeXView
 Document=Main.tex
 
@@ -65,8 +65,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1052
-NormalPos.bottom=492
+NormalPos.right=1120
+NormalPos.bottom=431
 Class=LaTeXView
 Document=ch_konsepDasarAlgoritma.tex
 
@@ -83,13 +83,13 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1052
-NormalPos.bottom=492
+NormalPos.right=1120
+NormalPos.bottom=431
 Class=LaTeXView
 Document=ch_keputusan.tex
 
 [Frame4_View0,0]
-TopLine=125
+TopLine=135
 Cursor=4613
 
 [SessionInfo]

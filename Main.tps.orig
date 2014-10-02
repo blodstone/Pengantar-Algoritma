@@ -11,19 +11,19 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1069
-NormalPos.bottom=492
+NormalPos.right=1120
+NormalPos.bottom=431
 Class=LaTeXView
-Document=ch_pengantarAlgoritma.tex
+Document=ch_keputusan.tex
 
 [Frame0_View0,0]
 <<<<<<< HEAD
-TopLine=436
-Cursor=23146
+TopLine=526
+Cursor=26241
 =======
-TopLine=176
-Cursor=10852
->>>>>>> f78fb970dbd14770767f41649508668e9175b19d
+TopLine=0
+Cursor=1952
+>>>>>>> 7e8c7f3dce32d8fefd01dea148484f9157f0c5fa
 
 [Frame1]
 Flags=0
@@ -34,19 +34,19 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1069
-NormalPos.bottom=492
+NormalPos.right=1120
+NormalPos.bottom=431
 Class=LaTeXView
-Document=ch_perulangan.tex
+Document=ch_pengantarAlgoritma.tex
 
 [Frame1_View0,0]
 <<<<<<< HEAD
-TopLine=120
-Cursor=3189
+TopLine=524
+Cursor=18866
 =======
-TopLine=474
-Cursor=18653
->>>>>>> f78fb970dbd14770767f41649508668e9175b19d
+TopLine=447
+Cursor=17967
+>>>>>>> 7e8c7f3dce32d8fefd01dea148484f9157f0c5fa
 
 [Frame2]
 Flags=0
@@ -57,22 +57,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1069
-NormalPos.bottom=492
+NormalPos.right=1120
+NormalPos.bottom=431
 Class=LaTeXView
-Document=Main.tex
+Document=ch_perulangan.tex
 
 [Frame2_View0,0]
-<<<<<<< HEAD
-TopLine=189
-Cursor=4699
-
-[SessionInfo]
-FrameCount=3
-ActiveFrame=0
-=======
-TopLine=117
-Cursor=2813
+TopLine=427
+Cursor=18866
 
 [Frame3]
 Flags=0
@@ -83,19 +75,41 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1069
-NormalPos.bottom=492
+NormalPos.right=1120
+NormalPos.bottom=431
+Class=LaTeXView
+Document=Main.tex
+
+[Frame3_View0,0]
+TopLine=118
+Cursor=2898
+
+[Frame4]
+Flags=0
+ShowCmd=1
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-1
+MaxPos.y=-1
+NormalPos.left=4
+NormalPos.top=26
+NormalPos.right=1120
+NormalPos.bottom=431
 Class=LaTeXView
 Document=ch_konsepDasarAlgoritma.tex
 
-[Frame3_View0,0]
-TopLine=0
-Cursor=0
+[Frame4_View0,0]
+<<<<<<< HEAD
+TopLine=135
+Cursor=4613
+=======
+TopLine=402
+Cursor=19992
+>>>>>>> 7e8c7f3dce32d8fefd01dea148484f9157f0c5fa
 
 [SessionInfo]
-FrameCount=4
-ActiveFrame=1
->>>>>>> f78fb970dbd14770767f41649508668e9175b19d
+FrameCount=5
+ActiveFrame=2
 
 [Bookmarks]
 ch_kompleksitas.tex=55 

@@ -1,6 +1,1 @@
 \contentsline {chapter}{\numberline {1}Percabangan}{2}{chapter.1}
-\contentsline {chapter}{\numberline {A}Lampiran: Bahasa Pemrograman Python}{8}{appendix.A}
-\contentsline {section}{\numberline {A.1}Tipe Data Python}{8}{section.A.1}
-\contentsline {section}{\numberline {A.2}Pengenalan IDLE dan IDE (PyScripter)}{9}{section.A.2}
-\contentsline {subsection}{\numberline {A.2.1}IDLE}{9}{subsection.A.2.1}
-\contentsline {subsection}{\numberline {A.2.2}IDE}{12}{subsection.A.2.2}

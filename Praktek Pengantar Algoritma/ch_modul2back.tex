@@ -1,0 +1,221 @@
+\chapter{Percabangan}
+
+\section{Petunjuk}
+\begin{itemize}
+	\item Perhatikan petunjuk Dosen untuk masalah Percabangan!
+	\
+	\item Perhatikan dan ikuti petunjuk dosen mengenai bagaimana cara menggunakan program Judge untuk mengevaluasi permasalahan yang Anda kerjakan!
+	
+		\item Hubungi Dosen atau Asisten Dosen jika Anda terdapat \textit{Permasalahan} yang Anda sudah yakin benar, namun tetap mendapatkan \textit{Wrong Answer}. \textbf{Periksa kembali berulang - ulang input, proses dan ouput Anda sebelum menghubungi Dosen atau Asisten Dosen}
+\end{itemize}
+
+\newpage
+\section{Permasalahan}
+\begin{permasalahan}{Cetak Mania}\\
+\label{prob:CetakMania}
+Tentukanlah nilai sebenarnya dari sebuah titik yang diberikan nilai $x$ dan $y$ nya jika diberitahukan letak kuadran cartesian-nya ! \\
+Misalkan : Titik ( 3,4) \\
+Kuadran I : 3,4 \\
+Kuadran II: -3,4 \\
+Kuadran III : -3,-4 \\
+Kuadran IV : 3,-4 \\
+	\textbf{Masukan}\\
+	2 buah input bilangan bulat positif \\
+	1 buah input string yang berisi : textbf{I, II, III, IV}
+	\textbf{Keluaran}\\
+	Koordinat titik dengan format (x,y) \\
+	\begin{center}
+	\textbf{Test Case}\\
+	\end{center}
+	\textbf{Masukan}\\
+	Budi \\
+	15 \\
+	12 \\
+	1990 \\
+	\textbf{Keluaran}\\
+	http:\textbackslash\textbackslash www.blogbuatanku.co.id\textbackslash Budi1512.1990 \\	
+\end{permasalahan}
+
+
+
+\begin{permasalahan}{Permasalahan Bilangan Kelipatan}\\
+\label{prob:bilanganKelipatan}
+	Hasilkan serangkaian $n$ bilangan yang merupakan kelipatan dari angka $m$ yang dimasukkan.\\
+	\textbf{Masukan}\\
+	Dua baris dimana baris pertama adalah $n$ dan baris kedua adalah $m$. $n$ merupakan panjang rangkaian yang akan dihasilkan sedangkan $m$ adalah kelipatan bilangan yang diinginkan. $n$ dan $m$ adalah bilangan bulat\\
+	\textbf{Keluaran}\\
+	Satu set rangkaian bilangan bulat dengan panjang rangkaian $n$ dan merupakan kelipatan dari $m$. Semua rangkaian bermula dari angka $m$.\\
+	\begin{center}
+	\textbf{Test Case 1}\\
+	\end{center}
+	\textbf{Masukan}\\
+	6\\
+	5\\
+	\textbf{Keluaran}\\
+	5 10 15 20 25 30 \\
+	\begin{center}
+	\textbf{Test Case 2}\\
+	\end{center}
+	\textbf{Masukan}\\
+	3\\
+	4\\
+	\textbf{Keluaran}\\
+	4 8 12 \\
+	\begin{center}
+	\textbf{Test Case 3}\\
+	\end{center}
+	\textbf{Masukan}\\
+	10\\
+	2\\
+	\textbf{Keluaran}\\
+	2 4 6 8 10 12 14 16 18 20\\
+
+\end{permasalahan}
+
+\begin{panduan}{Tes}
+\begin{enumerate}
+	\item Baca Permasalahan \ref{prob:bilanganKelipatan}.
+	\item Buka Pyscripter.
+	\item Ketikkan Listing \ref{lst:permasalahan1}.
+	\begin{listprog}{Permasalahan 1 (permasalahan1.py)}
+		\label{lst:permasalahan1}
+		\begin{lstlisting}[language=Python]
+		n = input()
+		m = input()
+		for i in range(1,n+1):
+	    print m*i,
+		\end{lstlisting}
+	\end{listprog}
+	\item \textit{Save} file tersebut sebagai permasalahan1.py
+	\item Masuk ke http://elearning.mikroskil.ac.id, dan masuk ke \textit{Course} Pengantar Algoritma.
+	\item Klik di \textbf{Tugas Praktek 1: Permasalahan Bilangan Kelipatan}.
+	\item Klik Browse.
+	\item Pilih file permasalahan1.py yang sudah anda \textit{save} dan klik ok.
+	\item Refresh Browser sampai tulisan \textbf{Status} dari Pending menjadi Accepted. Jika ada error berarti ada kesalahan. Cek kembali Listing \ref{lst:permasalahan1}.
+\end{enumerate}
+\end{panduan}
+
+\newpage
+\begin{permasalahan}{Permasalahan Bilangan Genap Atau Ganjil}\\
+	Cari tahu apakah sebuah bilangan merupakan bilangan genap atau ganjil.\\
+	\textbf{Masukan}\\
+	Sebuah bilangan $n$ yang merupakan bilangan bulat.\\
+	\textbf{Keluaran}\\
+	Keluaran antara dua bilangan saja, yaitu 1 apabila bilangan genap, atau, 2 apabilan bilangan ganjil.\\
+	\begin{center}
+	\textbf{Test Case 1}\\
+	\end{center}
+	\textbf{Masukan}\\
+	5\\
+	\textbf{Keluaran}\\
+	2\\
+	\begin{center}
+	\textbf{Test Case 2}\\
+	\end{center}
+	\textbf{Masukan}\\
+	98472\\
+	\textbf{Keluaran}\\
+	1\\
+	\begin{center}
+	\textbf{Test Case 3}\\
+	\end{center}
+	\textbf{Masukan}\\
+	6536\\
+	\textbf{Keluaran}\\
+	1\\
+\end{permasalahan}
+
+\newpage
+\begin{permasalahan}{Permasalahan Penjumlahan Bilangan Ganjil}\\
+	Diberikan sebuah bilangan $n$ carilah jumlah dari semua bilangan ganjil antara 0 sampai dengan bilangan $n$ tersebut.\\
+	\textbf{Masukan}\\
+	Sebuah bilangan bulat $n$.\\
+	\textbf{Keluaran}\\
+	Sebuah bilangan bulat $z$ dimana $z$ merupakan hasil penjumlahan dari semua bilangan ganjil yang ada antara 0 sampai bilangan $n$ tersebut (bilangan $n$ termasuk).\\
+	\begin{center}
+	\textbf{Test Case 1}\\
+	\end{center}
+	\textbf{Masukan}\\
+	20\\
+	\textbf{Keluaran}\\
+	100\\
+	\textit{Penjelasan: jumlah bilangan ganjil antara 1 sampai dengan 20 \\adalah 1+3+5+7+9+11+13+49=100}\\
+	\begin{center}
+	\textbf{Test Case 2}\\
+	\end{center}
+	\textbf{Masukan}\\
+	50\\
+	\textbf{Keluaran}\\
+	625\\
+	\begin{center}
+	\textbf{Test Case 3}\\
+	\end{center}
+	\textbf{Masukan}\\
+	90\\
+	\textbf{Keluaran}\\
+	2025\\
+\end{permasalahan}
+
+\newpage
+\begin{permasalahan}{Permasalahan Pengecekkan Bilangan Prima}\\
+	Diberikan sebuah bilangan $n$ cari tahu apakah itu bilangan prima atau bukan.\\
+	\textbf{Masukan}\\
+	Sebuah bilangan $n$ dimana $n$ adalah bilangan integer.\\
+	\textbf{Keluaran}\\
+	Keluaran bisa berupa dua yaitu 1 dan 0. Angka 1 menandakan bahwa itu adalah Prima, sedangkan angka 0 menandakan itu bukan bukan bilangan Prima.\\
+	\begin{center}
+	\textbf{Test Case 1}\\
+	\end{center}
+	\textbf{Masukan}\\
+	3\\
+	\textbf{Keluaran}\\
+	1\\
+	
+	\begin{center}
+	\textbf{Test Case 2}\\
+	\end{center}
+	\textbf{Masukan}\\
+	26\\
+	\textbf{Keluaran}\\
+	0\\
+	
+	\begin{center}
+	\textbf{Test Case 3}\\
+	\end{center}
+	\textbf{Masukan}\\
+	11\\
+	\textbf{Keluaran}\\
+	1\\
+	
+\end{permasalahan}
+
+\newpage
+\begin{permasalahan}{Permasalahan Pencarian Bilangan Prima}\\
+	Hasilkan serangkaian bilangan prima dari bilangan $2$ sampai dengan bilangan $n$.\\
+	\textbf{Masukan}\\
+	Sebuah bilangan bulat \textit{n} yang merupakan batas atas dari \textit{array} bilangan prima yang akan dihasilkan.\\
+	\textbf{Keluaran}\\
+	Satu set (himpunan elemen yang tidak memiliki duplikat) bilangan $A$ yang terdiri dari bilangan $2$ sampai bilangan $n$ (termasuk $n$) dimana setiap bilangan hanya memiliki dua pembagi saja yaitu $1$ dan bilangan itu sendiri.\\
+	\begin{center}
+	\textbf{Test Case 1}
+	\end{center}
+	\textbf{Masukan}
+	10
+	\textbf{Keluaran}
+	2 3 5 7
+	\begin{center}
+	\textbf{Test Case 2}
+	\end{center}
+	\textbf{Masukan}
+	19
+	\textbf{Keluaran}
+	2 3 5 7 11 13 17 19
+	\begin{center}
+	\textbf{Test Case 3}
+	\end{center}
+	\textbf{Masukan}
+	25
+	\textbf{Keluaran}
+	2 3 5 7 11 13 17 19 23 
+\end{permasalahan}
+

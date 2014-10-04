@@ -35,7 +35,7 @@ Class=LaTeXView
 Document=ch_modul1.tex
 
 [Frame1_View0,0]
-TopLine=93
+TopLine=86
 Cursor=3726
 
 [Frame2]
@@ -53,8 +53,8 @@ Class=LaTeXView
 Document=ch_modul2.tex
 
 [Frame2_View0,0]
-TopLine=271
-Cursor=8183
+TopLine=202
+Cursor=5884
 
 [SessionInfo]
 FrameCount=3

@@ -17,13 +17,8 @@ Class=LaTeXView
 Document=ch_keputusan.tex
 
 [Frame0_View0,0]
-<<<<<<< HEAD
-TopLine=526
-Cursor=26241
-=======
-TopLine=0
-Cursor=1952
->>>>>>> 7e8c7f3dce32d8fefd01dea148484f9157f0c5fa
+TopLine=135
+Cursor=5199
 
 [Frame1]
 Flags=0
@@ -40,13 +35,8 @@ Class=LaTeXView
 Document=ch_pengantarAlgoritma.tex
 
 [Frame1_View0,0]
-<<<<<<< HEAD
-TopLine=524
-Cursor=18866
-=======
-TopLine=447
+TopLine=526
 Cursor=17967
->>>>>>> 7e8c7f3dce32d8fefd01dea148484f9157f0c5fa
 
 [Frame2]
 Flags=0
@@ -63,7 +53,7 @@ Class=LaTeXView
 Document=ch_perulangan.tex
 
 [Frame2_View0,0]
-TopLine=427
+TopLine=491
 Cursor=18866
 
 [Frame3]
@@ -82,7 +72,7 @@ Document=Main.tex
 
 [Frame3_View0,0]
 TopLine=118
-Cursor=2898
+Cursor=2966
 
 [Frame4]
 Flags=0
@@ -99,17 +89,12 @@ Class=LaTeXView
 Document=ch_konsepDasarAlgoritma.tex
 
 [Frame4_View0,0]
-<<<<<<< HEAD
-TopLine=135
-Cursor=4613
-=======
-TopLine=402
+TopLine=189
 Cursor=19992
->>>>>>> 7e8c7f3dce32d8fefd01dea148484f9157f0c5fa
 
 [SessionInfo]
 FrameCount=5
-ActiveFrame=2
+ActiveFrame=3
 
 [Bookmarks]
 ch_kompleksitas.tex=55 

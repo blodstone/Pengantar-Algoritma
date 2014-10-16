@@ -11,14 +11,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=586
-NormalPos.bottom=388
+NormalPos.right=1120
+NormalPos.bottom=431
 Class=LaTeXView
-Document=ch_perulangan.tex
+Document=Main.tex
 
 [Frame0_View0,0]
-TopLine=55
-Cursor=2457
+TopLine=122
+Cursor=3215
 
 [Frame1]
 Flags=0
@@ -29,14 +29,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=586
-NormalPos.bottom=388
+NormalPos.right=1120
+NormalPos.bottom=431
 Class=LaTeXView
-Document=Main.tex
+Document=ch_perulangan.tex
 
 [Frame1_View0,0]
-TopLine=125
-Cursor=3138
+TopLine=209
+Cursor=8461
 
 [SessionInfo]
 FrameCount=2

@@ -9,40 +9,32 @@ Dalam kondisi tertentu, suatu perulangan dapat memiliki percabangan di dalamnya.
 \end{enumerate}
 Dua contoh berikut akan menunjukkannya.
 
-\begin{contoh}
-	\textbf{Penggunaan BREAK}
-	\begin{algorithm}
-	\caption{PERULANGAN-CETAK-ANGKA-DENGAN-BREAK()}
-		\begin{algorithmic}[1]
-		\FOR{$i=1$ \TO $5$}
-			\IF {$i == 4$}
-				\STATE \textbf{break}
-			\ENDIF
-			\STATE print $i$
-		\ENDFOR
-		\STATE\COMMENT{Maka yang dicetak adalah 1 2 3.}
-		\STATE\COMMENT{Pada saat $i$ mencapai nilai 4, perulangan langsung berhenti sebelum sempat mencetak.}
-		\end{algorithmic}
-	\end{algorithm}
-\end{contoh}
+\begin{listprog}{contohBreak.py}
+	\label{lst:contohBreak}
+	\begin{lstlisting}[language=Python]
+	for i in range(1,6):
+    if i==4:
+        break
+    print(i)
+	#Maka yang dicetak adalah 1,2,3
+	#Pada saat i mencapai nilai 4, perulangan langsung berhenti sebelum sempat mencetak
+
+	\end{lstlisting}
+\end{listprog}
 
 \FloatBarrier
-\begin{contoh}
-	\textbf{Penggunaan CONTINUE}
-	\begin{algorithm}
-	\caption{PERULANGAN-CETAK-ANGKA-DENGAN-CONTINUE()}
-		\begin{algorithmic}[1]
-		\FOR{$i=1$ \TO $5$}
-			\IF {$i == 4$}
-				\STATE \textbf{continue}
-			\ENDIF
-			\STATE print $i$
-		\ENDFOR
-		\STATE\COMMENT{Maka yang dicetak adalah 1 2 3 5.}
-		\STATE\COMMENT{Perulangan tetap akan dilanjutkan hingga i = 5, tanpa mencetak nilai 4.}
-		\end{algorithmic}
-	\end{algorithm}
-\end{contoh}
+\begin{listprog}{contohContinue.py}
+	\label{lst:contohContinue}
+	\begin{lstlisting}[language=Python]
+	for i in range(1,6):
+    if i==4:
+        continue
+    print(i)
+	#Maka yang dicetak adalah 1,2,3,5
+	#Pada saat i mencapai nilai 4, perulangan langsung berhenti sebelum sempat mencetak
+
+	\end{lstlisting}
+\end{listprog}
 
 \FloatBarrier
 \begin{konsep}

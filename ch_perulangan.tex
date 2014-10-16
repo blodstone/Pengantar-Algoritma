@@ -1,7 +1,7 @@
 \chapter{Perulangan (\textit{Looping})}
 
 \section{Perulangan}
-Seperti sudah dijelaskan Bab \ref{ch:konsepDasarAlgoritma} : ``Konsep Dasar Algoritma \& Pemrograman``, \textit{Repetition/Looping}(Perulangan) merupakan salah satu stuktur dasar algoritma. Pada algoritma, perulangan dipanggil dengan menggunakan \textit{statement} (\textit{for}) dan (\textit{while}). Masing - masing dari \textit{statement} ini memiliki cara kerjanya masing - masing sesuai yang telah dijelaskan pada beberapa sub-bab sebelumnya.   \\
+Seperti sudah dijelaskan Bab ``Konsep Dasar Algoritma \& Pemrograman``, \textit{Repetition/Looping}(Perulangan) merupakan salah satu stuktur dasar algoritma. Pada algoritma, perulangan dipanggil dengan menggunakan \textit{statement} (\textit{for}) dan (\textit{while}). Masing - masing dari \textit{statement} ini memiliki cara kerjanya masing - masing sesuai yang telah dijelaskan pada beberapa sub-bab sebelumnya.   \\
 \hfill \break
 \textbf{Struktur perulangan secara umum terdiri atas dua bagian:}
 \begin{enumerate}
@@ -208,8 +208,6 @@ Array\sidenote{Di bahasa pemrograman Python, implementasi dari Array disebut seb
 		\label{fig:illustrasiArray}%
 	\end{figure}
 
-\begin{Petunjuk}
-\label{Ptk:Array}
 	\textbf{Penggunaan array}\\
 	$A[i] \rightarrow$ Mengakses lokasi ke $i$ dari array yang bernama $A$.\\
 	$A[4] \rightarrow$ Mengakses lokasi ke $4$ dari array yang bernama $A$.\\
@@ -217,14 +215,13 @@ Array\sidenote{Di bahasa pemrograman Python, implementasi dari Array disebut seb
 	$A[4] = 5 \rightarrow$ Memasukkan nilai 5 ke lokasi ke 4 dari array $A$.\\
 	$b = A[4] \rightarrow$ Memasukkan nilai lokasi ke 4 dari array $A$ ke variabel $b$. \\
 	$A.length \rightarrow$ Menandakan besar/panjang dari array $A$. \\
-\end{Petunjuk}
 
-		\marginnote[-4cm]{Catatan : Ilustrasi pada petunjuk \ref{Ptk:Array}, hanya menampilkan array 1 dimensi. Seiring dengan meningkatnya pembahasan, akan dikenalkan pada array berdimensi lebih dari satu !}
+		\marginnote[-4cm]{Catatan : Ilustrasi untuk Array, hanya menampilkan array 1 dimensi. Seiring dengan meningkatnya pembahasan, akan dikenalkan pada array berdimensi lebih dari satu !}
 	
-Petunjuk \ref{Ptk:Array} beberapa kali menyebutkan istilah \textbf{lokasi}. Pada algoritma ataupun pemrograman, ini lebih dikenal dengan dengan indeks. Walaupun pada gambar \ref{fig:illustrasiArray}, indeks dimulai dari 1(satu), perlu diketahui bahwa pada kebanyakan bahasa pemrograman, termasuk python, indeks pada array selalu dimulai dari 0 dan berakhir pada (panjang data-1). \\
+Pada penjelasan Array beberapa kali menyebutkan istilah \textbf{lokasi}. Pada algoritma ataupun pemrograman, ini lebih dikenal dengan dengan indeks. Walaupun pada gambar \ref{fig:illustrasiArray}, indeks dimulai dari 1(satu), perlu diketahui bahwa pada kebanyakan bahasa pemrograman, termasuk python, indeks pada array selalu dimulai dari 0 dan berakhir pada (panjang data-1). \\
 
-Perhatikan bahwa contoh \ref{Ptk:Array} diatas, sebuah \textit{statement} tunggal hanya mewakili satu nilai dari sekian banyak data yang ada di dalam array. $A[4]$ misalnya, hanya mengakses indeks ke-4 dari data A. Pertanyaannya adalah bagaimana jika kita memerlukan perhitungan jumlah total dari untuk seluruh data pada array yang berisi bilangan bulat ? Disinilah peran dari struktur \textit{Repetition/Looping}(Perulangan). Agar lebih mengerti mengenai hubungan perulangan dan array, perhatikan contoh berikut ini : 
-\pagebreak
+Perhatikan bahwa contoh  diatas, sebuah \textit{statement} tunggal hanya mewakili satu nilai dari sekian banyak data yang ada di dalam array. $A[4]$ misalnya, hanya mengakses indeks ke-4 dari data A. Pertanyaannya adalah bagaimana jika kita memerlukan perhitungan jumlah total dari untuk seluruh data pada array yang berisi bilangan bulat ? Disinilah peran dari struktur \textit{Repetition/Looping}(Perulangan). Agar lebih mengerti mengenai hubungan perulangan dan array, perhatikan contoh berikut ini : 
+
  \begin{contoh}
 	\textbf{ Jumlah Total Pada Array I}
 \begin{listprog}{JumlahTotalArray.py}

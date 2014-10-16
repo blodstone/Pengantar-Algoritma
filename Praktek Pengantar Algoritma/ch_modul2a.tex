@@ -1,100 +1,258 @@
-\chapter{Perulangan dan Array}
-
-\section{Petunjuk}
-\begin{itemize}
-	\item Perhatikan petunjuk Dosen mengenai beda Latihan dan Permasalahan !
-	\
-	\item Perhatikan dan ikuti petunjuk dosen mengenai bagaimana cara menggunakan program Judge untuk mengevaluasi permasalahan yang Anda kerjakan!
-\end{itemize}
-
-\section{Latihan}
-
-
-\begin{latihan}
-Ketikkan dan jalankan listing \ref{lst:anakAyam1} dan \ref{lst:anakAyam2} berikut pada dua file berbeda ! 
-\lstinputlisting[language=Python,
-									label={lst:anakAyam1},
-									caption=Lagu Anak Ayam (for)]									
- 							  {code/AnakAyam.py}
-
-
-
-\lstinputlisting[language=Python,
-									label={lst:anakAyam2},
-									caption=Lagu Anak ayam (while)]									
- 							  {code/AnakAyam2.py}
-								
-Bandingkan kedua hasil listing diatas ! 
-\end{latihan}
-
-\begin{latihan}
-Ketikkan dan jalankan listing \ref{lst:polaAngka1}  berikut  ! 
-\lstinputlisting[language=Python,
-									label={lst:polaAngka1},
-									caption=Lagu Anak Ayam (for)]									
- 							  {code/PolaAngka1.py}
-Dapatkah Anda menerangkan apa tujuan algoritma diatas ?  
-\end{latihan}
-
-
-\begin{latihan}
-Ketikkan dan jalankan listing \ref{lst:polaBintang1}  berikut  ! 
-\lstinputlisting[language=Python,
-									label={lst:polaBintang1},
-									caption=Pola Bintang (for bersarang)]									
- 							  {code/PolaBintang1.py}
-Dapatkah Anda menerangkan apa tujuan algoritma diatas ?  
-
-\end{latihan}
-
-Ubah seluruh listing diatas menjadi bentuk kompetisi pemrograman, submit masing - masing program secara berurutan pada Problem 2-1-Latihan, Problem 2-2-Latihan, Problem 2-3-Latihan, dan Problem 2-4-Latihan
-
-\newpage
+%\chapter{Perulangan dan Array}
+%
+%%\section{Petunjuk}
+%%\begin{itemize}
+	%%\item Perhatikan petunjuk Dosen mengenai beda Latihan dan Permasalahan !
+	%%\
+	%%\item Perhatikan dan ikuti petunjuk dosen mengenai bagaimana cara menggunakan program Judge untuk mengevaluasi permasalahan yang Anda kerjakan!
+%%\end{itemize}
+%%
+%%\section{Latihan}
+%%
+%%
+%%\begin{latihan}
+%%Ketikkan dan jalankan listing \ref{lst:anakAyam1} dan \ref{lst:anakAyam2} berikut pada dua file berbeda ! 
+%%\lstinputlisting[language=Python,
+									%%label={lst:anakAyam1},
+									%%caption=Lagu Anak Ayam (for)]									
+ 							  %%{code/AnakAyam.py}
+%%
+%%
+%%
+%%\lstinputlisting[language=Python,
+									%%label={lst:anakAyam2},
+									%%caption=Lagu Anak ayam (while)]									
+ 							  %%{code/AnakAyam2.py}
+								%%
+%%Bandingkan kedua hasil listing diatas ! 
+%%\end{latihan}
+%%
+%%\begin{latihan}
+%%Ketikkan dan jalankan listing \ref{lst:polaAngka1}  berikut  ! 
+%%\lstinputlisting[language=Python,
+									%%label={lst:polaAngka1},
+									%%caption=Lagu Anak Ayam (for)]									
+ 							  %%{code/PolaAngka1.py}
+%%Dapatkah Anda menerangkan apa tujuan algoritma diatas ?  
+%%\end{latihan}
+%%
+%%\begin{latihan}
+%%Ketikkan dan jalankan listing \ref{lst:polaBintang1}  berikut  ! 
+%%\lstinputlisting[language=Python,
+									%%label={lst:polaBintang1},
+									%%caption=Pola Bintang (for bersarang)]									
+ 							  %%{code/PolaBintang1.py}
+%%Dapatkah Anda menerangkan apa tujuan algoritma diatas ?  
+%%
+%%\end{latihan}
+%%
+%%Ubah seluruh listing diatas menjadi bentuk kompetisi pemrograman, submit masing - masing program secara berurutan pada Problem 3-1-Latihan, Problem 3-2-Latihan, Problem 3-3-Latihan, dan Problem 3-4-Latihan
+%
+%\newpage
 \section{Permasalahan}
 \begin{permasalahan}{Permasalahan Bilangan Kelipatan}\\
 \label{prob:bilanganKelipatan}
-	Hasilkan serangkaian $n$ bilangan yang merupakan kelipatan dari angka $m$ yang dimasukkan.\\
+	Hasilkan serangkaian $n$ bilangan yang merupakan kelipatan dari angka $m$ yang dimasukkan.\\\\
 	\textbf{Masukan}\\
-	Dua baris dimana baris pertama adalah $n$ dan baris kedua adalah $m$. $n$ merupakan panjang rangkaian yang akan dihasilkan sedangkan $m$ adalah kelipatan bilangan yang diinginkan. $n$ dan $m$ adalah bilangan bulat\\
+	Satu baris masukkan yang terdiri dari $n$ dan $m$. $n$ merupakan panjang rangkaian yang akan dihasilkan sedangkan $m$ adalah kelipatan bilangan yang diinginkan. $n$ dan $m$ adalah bilangan bulat\\
 	\textbf{Keluaran}\\
 	Satu set rangkaian bilangan bulat dengan panjang rangkaian $n$ dan merupakan kelipatan dari $m$. Semua rangkaian bermula dari angka $m$.\\
 	\begin{center}
 	\textbf{Test Case 1}\\
 	\end{center}
 	\textbf{Masukan}\\
-	6\\
-	5\\
+	6 5\\
 	\textbf{Keluaran}\\
 	5 10 15 20 25 30 \\
 	\begin{center}
 	\textbf{Test Case 2}\\
 	\end{center}
 	\textbf{Masukan}\\
-	3\\
-	4\\
+	3 4\\
 	\textbf{Keluaran}\\
 	4 8 12 \\
 	\begin{center}
 	\textbf{Test Case 3}\\
 	\end{center}
 	\textbf{Masukan}\\
-	10\\
-	2\\
+	10 2\\
 	\textbf{Keluaran}\\
 	2 4 6 8 10 12 14 16 18 20\\
-	
-
 \end{permasalahan}
+
+\newpage
+\begin{permasalahan}{Palindrom}\\
+\label{prob:Palindrom}
+	 Palindrom adalah kata yang dibaca dari depan atau belakang dengan cara yang sama. Dalam bahasa Inggris, kata ``a`` dan ``I`` adalah palindrom yang paling sederhana.``Racecar`` dan ``Hannah`` adalah yang paling ilustrative. Dalam bahasa Indonesia misalnya ``ada`` dan ``kayak``. Dapatkah kamu menentukan sebuah kata palindrom atau tidak ?\\\\
+	\textbf{Masukan}\\
+	Sebuah string terdiri dari satu kata dengan case yang bervariasi. \\
+	\textbf{Keluaran}\\
+	palindrom atau bukan palindrom\\
+	\begin{center}
+	\textbf{Test Case 1}\\
+	\end{center}
+	\textbf{Masukan}\\
+	budidaya\\
+	\textbf{Keluaran}\\
+	bukan palindrom\\
+	
+	\begin{center}
+	\textbf{Test Case 2}\\
+	\end{center}
+	\textbf{Masukan}\\
+	rotavator\\
+	\textbf{Keluaran}\\
+	palindrom\\
+	
+	\textit{Catatan :}\\
+	\begin{enumerate}
+	\item \textit{Proses Reverse harus menggunakan perulangan ! Tidak boleh menggunakan shortcut array !}
+	\item \textit{NB : Walau melibatkan percabangan, percabangan yang dilibatkan di luar perulangan.}
+	\end{enumerate}
+\end{permasalahan}
+
+\newpage
+\begin{permasalahan}{Jumlah dan Rata I}\\
+\label{prob:BanyakDiriku}
+	 Tentukan Jumlah dan Rata dari masukkan\\\\
+	\textbf{Masukan}\\
+	(banyak angka) 1 buah bilangan bulat yang menentukan berapa banyak angka \\
+	Kumpulan bilangan bulat acak sebanyak (banyak angka) \\
+	\textbf{Keluaran}\\
+	Format : (Jumlah) (Rata)\\
+	(Jumlah) dalam bilangan bulat\\
+	(Rata)  dalam bilangan pecahan 3 dibelakang koma\\
+	\begin{center}
+	\textbf{Test Case}\\
+	\end{center}
+	\textbf{Masukan}\\
+	5\\
+	100\\
+	100\\
+	100\\
+	100\\
+	100\\
+	\textbf{Keluaran} \\
+		500 100.000
+\end{permasalahan}
+
+
+\newpage
+\begin{permasalahan}{Jumlah dan Rata II}\\
+\label{prob:BanyakDiriku2}
+	  Tentukan Jumlah dan Rata dari masukkan\\\\
+	\textbf{Masukan}\\
+	Kumpulan bilangan bulat acak \\
+	\textbf{Keluaran}\\
+	Format : (Jumlah) (Rata)\\
+	(Jumlah) dalam bilangan bulat\\
+	(Rata)  dalam bilangan pecahan 3 dibelakang koma
+	\begin{center}
+	\textbf{Test Case}\\
+	\end{center}
+	\textbf{Masukan}\\
+	100 100 100 100 100 \\
+	\textbf{Keluaran}\\
+		500 100.000\\
+\end{permasalahan}
+
+
+\newpage
+\begin{permasalahan}{Konversi}\\
+\label{prob:Konversi}
+	 Dapatkah kamu mengkonversi desimal ke biner, oktal dan hexa ?\\\\
+	\textbf{Masukan}\\
+	Sebuah Bilangan bulat positif yang mewakili desimal yang akan dikonversi
+	\textbf{Keluaran}\\
+	3 buah tipe data string dengan format : (biner) (oktal) (hexa) 	
+	\begin{center}
+	\textbf{Test Case}\\
+	\end{center}
+	\textbf{Masukan}\\
+  65535\\
+	\textbf{Keluaran}\\
+		1111111111111111 177777 FFFF 
+\end{permasalahan}
+
+
+\newpage
+\begin{permasalahan}{Berapakah Banyak Diriku ? }\\
+\label{prob:BanyakDiriku}
+	 Dapatkah kamu menentukan ada berapa banyak angka 0 sampai 9 dari masukkan ?\\\\
+	\textbf{Masukan}\\
+	(banyak angka) 1 buah bilangan bulat positif yang menentukan berapa banyak angka.\\
+	Kumpulan bilangan acak dari 0 sampai 9 sebanyak (banyak angka) \\
+	\textbf{Keluaran}\\
+	(banyak angka 0)\\(banyak angka 1)\\(banyak angka 2)\\...\\(banyak angka 9)\\secara berurutan dan dalam bilangan bulat positif
+	\begin{center}
+	\textbf{Test Case}\\
+	\end{center}
+	\textbf{Masukan}\\
+	15\\
+	3\\
+	8\\
+	2\\
+	0\\
+	4\\
+	5\\
+	6\\
+	9\\
+	1\\
+	7\\
+	3\\
+	3\\
+	1\\
+	2\\
+	2\\
+	\textbf{Keluaran}\\
+		1\\2\\3\\3\\1\\1\\1\\1\\1\\1
+\end{permasalahan}
+
+
+\newpage
+\begin{permasalahan}{Berapakah Banyak Diriku ? (Versi II) }\\
+\label{prob:BanyakDiriku2}
+	 Dapatkah kamu menentukan ada berapa banyak angka 0 sampai 9 dari masukkan ?\\\\
+	\textbf{Masukan}\\
+	Kumpulan bilangan acak dari 0 sampai 9 dengan banyak tertentu\\
+	\textbf{Keluaran}\\
+	(banyak angka 0)\\(banyak angka 1)\\(banyak angka 2)\\...\\(banyak angka 9)\\secara berurutan dan dalam bilangan bulat positif
+	\begin{center}
+	\textbf{Test Case}\\
+	\end{center}
+	\textbf{Masukan}\\
+	3 
+	8  
+	2 
+	0 
+	4 
+	5 
+	6 
+	9 
+	1 
+	7 
+	3 
+	3 
+	1 
+	2 
+	2 \\
+	\textbf{Keluaran}\\
+		1\\2\\3\\3\\1\\1\\1\\1\\1\\1
+\end{permasalahan}
+
+
 
 %\begin{permasalahan}
 %Cetak Pola Bintang
 %\end{permasalahan}
 %
 %\begin{permasalahan}
+
 %Cetak Pola Deret
 %\end{permasalahan}
 %
 %\begin{permasalahan}
+
 %Diberikan String
 %Ambil Huruf Awal, Tengah dan Akhir
 %\end{permasalahan}

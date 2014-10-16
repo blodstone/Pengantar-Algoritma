@@ -266,7 +266,7 @@ Vicky mengerti bahasa Indonesia tetapi hanya bisa dapat menjawab dalam bahasa In
 	\textbf{Tidak ada input yang salah !}\\\\
 	\textbf{Keluaran}\\
 	Keluaran berupa keterangan dengan format :\\
-	(hari awal) (banyak hari) (hari akhir) (jarak hari)\\
+	(hari awal) (banyak hari) (hari akhir)\\
 	- (hari awal) dalam bahasa Indonesia\\
 	- (banyak hari) yang akan ditambahkan : bilangan bulat positif\\
 	- (hari akhir) dalam bahasa Inggris \\
@@ -308,3 +308,57 @@ Vicky mengerti bahasa Indonesia tetapi hanya bisa dapat menjawab dalam bahasa In
 	\textbf{Keluaran}\\
 	jumat 70 friday\\	
 \end{permasalahan}
+
+
+
+\newpage
+\begin{permasalahan}{Batu Gunting Kertas}\\
+\label{prob:kaibaibok}
+Amir dan Budi bermaksud memperebutkan siapa duluan yang akan menggunakan PC untuk bermain DOTA 2. Untuk menentukan siapa duluan, mereka memutuskan melakukan suit ``Batu Gunting Kertas`` sebanyak 10 babak. Jika diketahui skor sementara dari 7 babak dan tersisa 3 babak pertandingan. Dapatkah kamu menentukan siapa pemenangnya dari hasil 3 babak tersebut ?  \\\\
+ 
+	\textbf{Masukan}\\
+	Skor Amir : bilangan bulat positif\\
+	Skor Budi : bilangan bulat positif\\
+	Suit Babak ke 8 Amir : String\\
+	Suit Babak ke 8 Budi : String\\
+	Suit Babak ke 9 Amir : String\\
+	Suit Babak ke 9 Budi : String\\
+	Suit Babak ke 10 Amir : String\\
+	Suit Babak ke 10 Budi: String	\\
+	Masukkan suit dapat berupa batu, gunting dan kertas (semua dalam lower case)\\
+	\textbf{Tidak ada input yang salah !}\\\\
+	\textbf{Keluaran}\\
+	Keluaran berupa keterangan dengan format :\\
+	(Pemenang Babak 8) (Pemenang Babak 9) (Pemenang Babak 10) (Skor Akhir Amir) (Skor Akhir Budi) (Informasi Pemenang)\\
+	
+	(Pemenang Babak 8/9/10) di wakili oleh A, B atau O \\
+	A menandakan Amir Menang\\
+	B menandakan Budi Menang\\
+	O menandakan Seri\\\\
+
+	(Skor Akhir Amir / Budi) dalam bentuk bilangan bulat positif.\\\\
+	
+	(Informasi Pemenang) bedasarkan skor akhir,  ada 3 jenis informasi pemenang : \\
+	A menang.\\
+	B menang.\\
+	Seri.\\\\
+	
+	\begin{center}
+	\textbf{Test Case}\\
+	\end{center}
+	\textbf{Masukan}\\
+		3\\
+		2\\
+		batu\\
+		gunting\\
+		gunting\\
+		batu\\
+		batu\\
+		batu\\
+	\textbf{Keluaran}\\
+	  A B O 4 3 A menang.\\\\		
+		
+		\textit{NB : batu menang melawan gunting, gunting menang melawan kertas, kertas menang melawan batu.}
+\end{permasalahan}
+
+

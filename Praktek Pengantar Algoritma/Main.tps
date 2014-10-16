@@ -18,7 +18,7 @@ Document=Main.tex
 
 [Frame0_View0,0]
 TopLine=133
-Cursor=3128
+Cursor=3214
 
 [Frame1]
 Flags=0
@@ -32,11 +32,11 @@ NormalPos.top=26
 NormalPos.right=1052
 NormalPos.bottom=492
 Class=LaTeXView
-Document=ch_modul1.tex
+Document=ch_modul2a.tex
 
 [Frame1_View0,0]
-TopLine=86
-Cursor=3726
+TopLine=54
+Cursor=5441
 
 [Frame2]
 Flags=0
@@ -53,12 +53,12 @@ Class=LaTeXView
 Document=ch_modul2.tex
 
 [Frame2_View0,0]
-TopLine=202
-Cursor=5884
+TopLine=0
+Cursor=0
 
 [SessionInfo]
 FrameCount=3
-ActiveFrame=2
+ActiveFrame=1
 
 [Bookmarks]
 ch_modul1.tex=91 

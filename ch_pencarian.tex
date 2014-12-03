@@ -1,81 +1,153 @@
 \chapter{Teknik \textit{Pencarian}}\label{ch:modul4}
 
-\section{Permasalahan Pencarian Minimum dan Maksimum}
-Diberikan sebuah rangkaian bilangan, bagaimana cara paling cepat untuk mencari bilangan terbesar dan terkecil dari rangkaian tersebut? 
+\section{Algoritma Pencarian}
+Pencarian(Searching) merupakan proses yang fundamental dalam pengolahan data. Berbagai proses dalam strukur data (Misalnya : array), sering kali membutuhkan pencarian sebelum melakukan proses selanjutnya, misalnya proses penghapusan ataupun penyisipan elemen pada struktur data. 
 
-Untuk menyelesaikan masalah tersebut, ada beberapa pendekatan. Pendekatan yang naif adalah dengan melakukan \textit{looping} dari awal rangkaian sampai akhir rangkaian yang diperlihatkan di Algoritma \ref{algo:minmaxnaif}. Sedangkan untuk pendekatan \textit{Divide and Conguer} bisa dilihat di Algoritma \ref{algo:minmaxdac}.
+Dalam masalah pencarian, masukkan utama yang diberikan umumnya adalah sebuah struktur data (Misal : Array, Tree, Linked List dan lainnya) dengan elemen terbatas dan elemen yang akan dicari. Normalnya, carilah elemen X dalam Struktur Data L.\\
 
-\begin{algorithm}[H]
-	\caption{MIN-MAX-NAIF($A$)}
-	\label{algo:minmaxnaif}
-	\begin{algorithmic}[1]
-		\STATE $min = A[1]$
-		\STATE $max = A[1]$
-		\FOR{$i=2$ \TO $A.length$}
-			\IF{$A[i] < min$}
-				\STATE $min = A[i]$
-			\ENDIF
-			\IF{$A[i] > max$}
-				\STATE $max = A[i]$
-			\ENDIF
-		\ENDFOR
-		\RETURN $min,max$
-	\end{algorithmic}
-\end{algorithm}
+Hasil atau keluaran dari persoalan perncarian dapat bermacam, macam bergantung pada spesifikasi rinci dari persoalan tersebut, misalnya  : \\
+\begin{itemize}
+\item{Pencarian hanya untuk memeriksa keberadaan dari X. Keluaran yang diinginkan merupakan pesan(\textit{message} bahwa elemen X telah ditemukan atau tidak}
+\item{Hasil pencarian mengembalikan indeks elemen dari struktur data L. Jika X ditemukan, maka indeks elemen tempat X berada akan dimasukkan pada sebuah variable $indeks$, yang selanjutnya akan dikembalikan atau diproses lebih lanjut. Kegagalan menemukan elemen X pada struktur data umumnya akan ditangani dengan memberikan variable $indeks$ dengan nilai -1}
+\item{Hasil pencarian adalah sebuah nilai $boolean$ yang menyatakan status hasil pencarian. Jika X ditemukan maka dikembalikan $True$ sedangkan jika salah dikembalikan $False$}
+\end{itemize}
+Terdapat dua algoritma pencarian yang paling umum yaitu : 
+\begin{enumerate}
+\item{Algoritma Pencarian Beruntun (Sequential Search), dan}
+\item{Algoritma Pencarian Bagi Dua (Binary Search)}
+\end{enumerate}
 
-Algoritma \ref{algo:minmaxnaif} memiliki jumlah komparasi sebanyak $2n-2$. Akan tetapi dengan menggunakan strategi \textit{divide and conquer} jumlah komparasi yang dilakukan bisa dikecilkan menjadi $(3n/2)-2$. Ini mungkin tidak signifikan, walaupun demikian untuk kasus lain strategi \textit{divide and conguer} bisa mengurangi jumlah instruksi secara drastis. 
-
-Algoritma \ref{algo:minmaxdac} menggunakan strategi \textit{divide and conquer} untuk mencari nilai minimum dan maksimum dari rangkaian angka. Prinsipnya adalah dengan membagi rangkaian angka tersebut menjadi dua bagian yaitu $A[1..n/2]$ dan $A[(n/2)+2..n]$, mencari minimum dan maksimum di kedua bagian tersebut, dan terakhir mengambil minimum terkecil dari maksimum terbesar dari kedua bagian tersebut.
-
-\begin{algorithm}[H]
-	\caption{MIN-MAX-DAC($A$,$low$,$high$)}
-	\label{algo:minmaxdac}
-	\begin{algorithmic}[1]
-		\IF{$high - low = 1$}
-			\IF{$A[low] < A[high]$}
-				\RETURN ($A[low]$,$A[high]$)
-			\ELSE
-				\RETURN ($A[high]$,$A[low]$)
-			\ENDIF
-		\ELSE
-			\STATE $mid = \left\lfloor (low+high)/2\right\rfloor$
-			\STATE $x_1,y_1$ = MIN-MAX-DAC($A$,$low$,$mid$)
-			\STATE $x_2,y_2$ = MIN-MAX-DAC($A$,$mid+1$,$high$)
-			\IF{$x_1 < x_2$}
-				\STATE $x = x_1$
-			\ELSE
-				\STATE $x = x_2$
-			\ENDIF
-			\IF{$y_1 < y_2$}
-				\STATE $y = y_1$
-			\ELSE
-				\STATE $y = y_2$
-			\ENDIF  
-			\RETURN $(x,y)$
-		\ENDIF
-	\end{algorithmic}
-\end{algorithm}
+\section{\textit{Algoritma Pencarian Beruntun (Sequential Search)}}
+Algoritma Pencarian Beruntun (Sequential Search) merupakan algoritma pencarian yang paling sederhana. Pada dasarnya, algoritma pencarian beruntun adalah proses membandingkan setiap elemen struktur data satu persatu secara beruntun mulai dari elemen pertama, sampai elemen yang dicari ditemukan, atau sampai elemen sudah diperiksa keseluruhan.
 
 
+\begin{listprog}{SequentialSearch.py}
+	\label{lst:seqSearch}
+	\begin{lstlisting}[language=Python]
+	
+		arr = [9, 2, 5, 4, 12, 7, 8, 11, 9, 3, 7, 4, 12, 5, 4, 10, 9, 6, 9, 4]
+		cari = 12
+		indeks = -1
+		
+    for i in range(len(arr)):
+        if(cari==arr[i]):
+            indeks = i
+						break
+    
+		if(indeks != -1):
+			print(arr[indeks], ``ditemukan pada indeks ke-``, indeks)
+		else:
+			print(``elemen tidak ditemukan``)
+	\end{lstlisting}
+\end{listprog}
 
-\section{\textit{Binary Search}}
 
+Bermodalkan Algoritma Pencarian Beruntun yang dibuat secara runtunan tanpa menggunakan fungsi, Buatlah Anda membuat algoritma pencarian ini dengan syarat sebagai berikut : 
+\begin{enumerate}
+\item{Menggunakan fungsi dan mengembalikan nilai boolean}
+\item{Menggunakan fungsi dan mengembalikan nilai indeks}
+\item{Menggunakan fungsi rekursif dan mengembalikan nilai indeks}
+\item{Menggunakan fungsi rekursif dan mengembalikan nilai indeks}
+\end{enumerate}
+
+
+\pagebreak
+\section{\textit{Algoritma Pencarian Bagi Dua (Binary Search)}}
 \textit{Binary Search} merupakan metode pencarian elemen di suatu rangkaian tertentu dengan menggunakan strategi \textit{divide and conquer}. Worst case \textit{binary search} adalah $O(log n)$ dimana jumlah komparasi terbanyak yang dilakukan adalah sebanyak $\left\lfloor log n \right\rfloor + 1$ untuk $n$ input.
 
-\begin{algorithm}[H]
-	\caption{BINARY-SEARCH($A,low,high,x$)}
-	\begin{algorithmic}[1]
-		\IF{$low > high$}
-			\RETURN 0
-		\ELSE
-			\STATE $mid = \left\lfloor(low+high)/2)\right\rfloor$
-			\IF{$x==A[mid]$}
-				\RETURN $mid$
-			\ELSIF{$x<A[mid]$}
-				\RETURN BINARY-SEARCH($A,low,mid-1,x$) 
-			\ELSE
-				\RETURN BINARY-SEARCH($A,mid+1,high,x$)
-			\ENDIF
-		\ENDIF
-	\end{algorithmic}
-\end{algorithm}
+\begin{listprog}{BinarySearch.py}
+	\label{lst:binSearch}
+	\begin{lstlisting}[language=Python]
+	
+	
+		arr = [9, 2, 5, 4, 12, 7, 8, 11, 9, 3, 7, 4, 12, 5, 4, 10, 9, 6, 9, 4]
+		cari = 12
+		indeks = -1
+		
+    low = 0
+    high = len(l) - 1
+
+    while low <= high: 
+        mid = (low+high)//2
+        
+        if l[mid] > value:
+            high = mid-1
+        elif l[mid] < value:
+            low = mid+1
+        else:
+            indeks = mid
+			
+		if(indeks != -1):
+			print(arr[indeks], ``ditemukan pada indeks ke-``, indeks)
+		else:
+			print(``elemen tidak ditemukan``)
+			
+	\end{lstlisting}
+\end{listprog}
+
+Bermodalkan Algoritma Pencarian Bagi Dua yang dibuat secara runtunan tanpa menggunakan fungsi, Buatlah Anda membuat algoritma pencarian ini dengan syarat sebagai berikut : 
+\begin{enumerate}
+\item{Menggunakan fungsi dan mengembalikan nilai boolean}
+\item{Menggunakan fungsi dan mengembalikan nilai indeks}
+\item{Menggunakan fungsi rekursif dan mengembalikan nilai indeks}
+\item{Menggunakan fungsi rekursif dan mengembalikan nilai indeks}
+\end{enumerate}
+
+
+
+
+%\section{Permasalahan Pencarian Minimum dan Maksimum}
+%Diberikan sebuah rangkaian bilangan, bagaimana cara paling cepat untuk mencari bilangan terbesar dan terkecil dari rangkaian tersebut? 
+%
+%Untuk menyelesaikan masalah tersebut, ada beberapa pendekatan. Pendekatan yang naif adalah dengan melakukan \textit{looping} dari awal rangkaian sampai akhir rangkaian yang diperlihatkan di Algoritma \ref{algo:minmaxnaif}. Sedangkan untuk pendekatan \textit{Divide and Conguer} bisa dilihat di Algoritma \ref{algo:minmaxdac}.
+%
+%\begin{algorithm}[H]
+	%\caption{MIN-MAX-NAIF($A$)}
+	%\label{algo:minmaxnaif}
+	%\begin{algorithmic}[1]
+		%\STATE $min = A[1]$
+		%\STATE $max = A[1]$
+		%\FOR{$i=2$ \TO $A.length$}
+			%\IF{$A[i] < min$}
+				%\STATE $min = A[i]$
+			%\ENDIF
+			%\IF{$A[i] > max$}
+				%\STATE $max = A[i]$
+			%\ENDIF
+		%\ENDFOR
+		%\RETURN $min,max$
+	%\end{algorithmic}
+%\end{algorithm}
+%
+%Algoritma \ref{algo:minmaxnaif} memiliki jumlah komparasi sebanyak $2n-2$. Akan tetapi dengan menggunakan strategi \textit{divide and conquer} jumlah komparasi yang dilakukan bisa dikecilkan menjadi $(3n/2)-2$. Ini mungkin tidak signifikan, walaupun demikian untuk kasus lain strategi \textit{divide and conguer} bisa mengurangi jumlah instruksi secara drastis. 
+%
+%Algoritma \ref{algo:minmaxdac} menggunakan strategi \textit{divide and conquer} untuk mencari nilai minimum dan maksimum dari rangkaian angka. Prinsipnya adalah dengan membagi rangkaian angka tersebut menjadi dua bagian yaitu $A[1..n/2]$ dan $A[(n/2)+2..n]$, mencari minimum dan maksimum di kedua bagian tersebut, dan terakhir mengambil minimum terkecil dari maksimum terbesar dari kedua bagian tersebut.
+%
+%\begin{algorithm}[H]
+	%\caption{MIN-MAX-DAC($A$,$low$,$high$)}
+	%\label{algo:minmaxdac}
+	%\begin{algorithmic}[1]
+		%\IF{$high - low = 1$}
+			%\IF{$A[low] < A[high]$}
+				%\RETURN ($A[low]$,$A[high]$)
+			%\ELSE
+				%\RETURN ($A[high]$,$A[low]$)
+			%\ENDIF
+		%\ELSE
+			%\STATE $mid = \left\lfloor (low+high)/2\right\rfloor$
+			%\STATE $x_1,y_1$ = MIN-MAX-DAC($A$,$low$,$mid$)
+			%\STATE $x_2,y_2$ = MIN-MAX-DAC($A$,$mid+1$,$high$)
+			%\IF{$x_1 < x_2$}
+				%\STATE $x = x_1$
+			%\ELSE
+				%\STATE $x = x_2$
+			%\ENDIF
+			%\IF{$y_1 < y_2$}
+				%\STATE $y = y_1$
+			%\ELSE
+				%\STATE $y = y_2$
+			%\ENDIF  
+			%\RETURN $(x,y)$
+		%\ENDIF
+	%\end{algorithmic}
+%\end{algorithm}
